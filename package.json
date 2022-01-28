@@ -1,0 +1,17 @@
+{
+  "name": "AOC_Tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Blockchainxtech/AOC_Tokens.git",
+  "author": "shobika-babu <shobika@sparkouttech.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.4.0",
+    "@openzeppelin/truffle-upgrades": "^1.11.0",
+    "@truffle/hdwallet-provider": "^2.0.0",
+    "truffle-assertions": "^0.9.2"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.18"
+  }
+}
