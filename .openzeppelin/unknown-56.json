@@ -1,0 +1,198 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xd2FaC4F4CF2EB07aE0472971779535CB4EA064e1",
+      "txHash": "0x9dd522fd2396505bbe3ae562a43665d067df647d7ba0851be3ab8832b2865994",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "9ad9cd109ceaea73970cf5a159f530423c47710a4ae6b386de344467fe12e232": {
+      "address": "0x9315c4e6641Da1Ef5DB87eBDBbA60CF7dB548463",
+      "txHash": "0xfa3296c3987435b680dce10b846b2612a46a9bba450e5d2e6c85f288e84ffdf9",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:97"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/AOC_BEP.sol:46"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/AOC_BEP.sol:47"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "blacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_BEP.sol:48"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "excludedFromRAMS",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_BEP.sol:49"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "includedInLTAF",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_BEP.sol:50"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "levels",
+            "type": "t_mapping(t_uint256,t_struct(Level)2345_storage)",
+            "src": "../project:/contracts/AOC_BEP.sol:51"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_struct(UserInfo)2354_storage)",
+            "src": "../project:/contracts/AOC_BEP.sol:52"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "../project:/contracts/AOC_BEP.sol:54"
+          },
+          {
+            "contract": "AOC_BEP",
+            "label": "ltafPercentage",
+            "type": "t_uint256",
+            "src": "../project:/contracts/AOC_BEP.sol:58"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_struct(Level)2345_storage)": {
+            "label": "mapping(uint256 => struct AOC_BEP.Level)"
+          },
+          "t_struct(Level)2345_storage": {
+            "label": "struct AOC_BEP.Level",
+            "members": [
+              {
+                "label": "start",
+                "type": "t_uint256"
+              },
+              {
+                "label": "end",
+                "type": "t_uint256"
+              },
+              {
+                "label": "percentage",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(UserInfo)2354_storage)": {
+            "label": "mapping(address => struct AOC_BEP.UserInfo)"
+          },
+          "t_struct(UserInfo)2354_storage": {
+            "label": "struct AOC_BEP.UserInfo",
+            "members": [
+              {
+                "label": "balance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "level",
+                "type": "t_uint256"
+              },
+              {
+                "label": "year",
+                "type": "t_uint256"
+              },
+              {
+                "label": "month",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          }
+        }
+      }
+    }
+  }
+}
