@@ -1,0 +1,405 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x2510b1D295dB451d4caa993bAB7a1c3D8eb152e6",
+      "txHash": "0x19f0a9f1c64164ce9fa17d20fc1de0bd862947d0ca029a59d44f1b29a86530b2",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "b3e55353aac5a5f151f16b1a5584af0cfcd6a1750b1d65b0a41366eae43b2220": {
+      "address": "0xb54f54B2265796B808b5F7b767430f900e2C2FDF",
+      "txHash": "0x634e908ab3536a1106b9e76eebd0858c05f0c960f9ccf360e647df296b1ec84c",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:39"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:44"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:31"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:82"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:97"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:215"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:81"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/AOC_ERC20.sol:46"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/AOC_ERC20.sol:47"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "blacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_ERC20.sol:48"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "excludedFromRAMS",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_ERC20.sol:49"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "includedInLTAF",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_ERC20.sol:50"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "levels",
+            "type": "t_mapping(t_uint256,t_struct(Level)3608_storage)",
+            "src": "../project:/contracts/AOC_ERC20.sol:51"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_struct(UserInfo)3617_storage)",
+            "src": "../project:/contracts/AOC_ERC20.sol:52"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "../project:/contracts/AOC_ERC20.sol:54"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "ltafPercentage",
+            "type": "t_uint256",
+            "src": "../project:/contracts/AOC_ERC20.sol:58"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_struct(Level)3608_storage)": {
+            "label": "mapping(uint256 => struct AOC_ERC20.Level)"
+          },
+          "t_struct(Level)3608_storage": {
+            "label": "struct AOC_ERC20.Level",
+            "members": [
+              {
+                "label": "start",
+                "type": "t_uint256"
+              },
+              {
+                "label": "end",
+                "type": "t_uint256"
+              },
+              {
+                "label": "percentage",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(UserInfo)3617_storage)": {
+            "label": "mapping(address => struct AOC_ERC20.UserInfo)"
+          },
+          "t_struct(UserInfo)3617_storage": {
+            "label": "struct AOC_ERC20.UserInfo",
+            "members": [
+              {
+                "label": "balance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "level",
+                "type": "t_uint256"
+              },
+              {
+                "label": "year",
+                "type": "t_uint256"
+              },
+              {
+                "label": "month",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          }
+        }
+      }
+    },
+    "beda67de8a1f6913636ec2e98b926360d2bb1af49c9e0c76253f8eaa98926af0": {
+      "address": "0xe7cE7e6c772f927f999b7855E57CAF8Bd61B0Dbd",
+      "txHash": "0xcf12309bc2d7ec3d6672d0258dfb26fb038579e87d49b4899df0c472037ad174",
+      "layout": {
+        "solcVersion": "0.8.9",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:68"
+          },
+          {
+            "contract": "ContextUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol:40"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "_owner",
+            "type": "t_address",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:22"
+          },
+          {
+            "contract": "OwnableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol:94"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "_paused",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:29"
+          },
+          {
+            "contract": "PausableUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)49_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol:116"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:169"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:111"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "_balances",
+            "type": "t_mapping(t_address,t_uint256)",
+            "src": "../project:/contracts/AOC_ERC20.sol:46"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "_allowances",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "src": "../project:/contracts/AOC_ERC20.sol:47"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "blacklisted",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_ERC20.sol:48"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "excludedFromRAMS",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_ERC20.sol:49"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "includedInLTAF",
+            "type": "t_mapping(t_address,t_bool)",
+            "src": "../project:/contracts/AOC_ERC20.sol:50"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "levels",
+            "type": "t_mapping(t_uint256,t_struct(Level)3901_storage)",
+            "src": "../project:/contracts/AOC_ERC20.sol:51"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "userInfo",
+            "type": "t_mapping(t_address,t_struct(UserInfo)3910_storage)",
+            "src": "../project:/contracts/AOC_ERC20.sol:52"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "_totalSupply",
+            "type": "t_uint256",
+            "src": "../project:/contracts/AOC_ERC20.sol:54"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "ltafPercentage",
+            "type": "t_uint256",
+            "src": "../project:/contracts/AOC_ERC20.sol:58"
+          },
+          {
+            "contract": "AOC_ERC20",
+            "label": "txPerMonth",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_mapping(t_uint256,t_uint256)))",
+            "src": "../project:/contracts/AOC_ERC20.sol:60"
+          }
+        ],
+        "types": {
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_mapping(t_uint256,t_struct(Level)3901_storage)": {
+            "label": "mapping(uint256 => struct AOC_ERC20.Level)"
+          },
+          "t_struct(Level)3901_storage": {
+            "label": "struct AOC_ERC20.Level",
+            "members": [
+              {
+                "label": "start",
+                "type": "t_uint256"
+              },
+              {
+                "label": "end",
+                "type": "t_uint256"
+              },
+              {
+                "label": "percentage",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_struct(UserInfo)3910_storage)": {
+            "label": "mapping(address => struct AOC_ERC20.UserInfo)"
+          },
+          "t_struct(UserInfo)3910_storage": {
+            "label": "struct AOC_ERC20.UserInfo",
+            "members": [
+              {
+                "label": "balance",
+                "type": "t_uint256"
+              },
+              {
+                "label": "level",
+                "type": "t_uint256"
+              },
+              {
+                "label": "year",
+                "type": "t_uint256"
+              },
+              {
+                "label": "month",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_mapping(t_uint256,t_uint256)))": {
+            "label": "mapping(address => mapping(uint256 => mapping(uint256 => uint256)))"
+          },
+          "t_mapping(t_uint256,t_mapping(t_uint256,t_uint256))": {
+            "label": "mapping(uint256 => mapping(uint256 => uint256))"
+          },
+          "t_mapping(t_uint256,t_uint256)": {
+            "label": "mapping(uint256 => uint256)"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          }
+        },
+        "namespaces": {}
+      }
+    }
+  }
+}

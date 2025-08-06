@@ -1,0 +1,34 @@
+{
+  "name": "aoc_tokens",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blockchainxtech/AOC_Tokens.git"
+  },
+  "author": "shobika-babu <shobika@sparkouttech.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@nomicfoundation/hardhat-verify": "^2.0.13",
+    "@openzeppelin/contracts": "^4.9.6",
+    "@openzeppelin/contracts-upgradeable": "^4.9.6",
+    "@openzeppelin/hardhat-upgrades": "^3.9.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "chai": "^4.5.0",
+    "hardhat": "^2.22.19"
+  },
+  "description": "",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Blockchainxtech/AOC_Tokens/issues"
+  },
+  "homepage": "https://github.com/Blockchainxtech/AOC_Tokens#readme"
+}
