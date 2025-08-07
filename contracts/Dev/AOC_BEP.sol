@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.0;
 
 import "../library/DateTime.sol";
 
@@ -322,10 +322,10 @@ contract AOC_BEP_DEV is Context, IBEP20, IBEP20Metadata, Ownable, Pausable {
      */
     constructor () {
         _mint(_msgSender(), (1000 * 10**9 * 10**18)); // mint the initial total supply
-        addLevels(1, 1640995200, 1704153599, 20);
-        addLevels(2, 1704153600, 1767311999, 15);
-        addLevels(3, 1767312000, 1830383999, 10);
-        addLevels(4, 1830384000, 0, 5);
+        addLevels(1, 1609459200, 1640995140, 20);
+        addLevels(2, 1640995200, 1672531140, 15);
+        addLevels(3, 1672531200, 1704067140, 10);
+        addLevels(4, 1704067200, 0, 5);
     }
 
     /**
@@ -558,7 +558,6 @@ contract AOC_BEP_DEV is Context, IBEP20, IBEP20Metadata, Ownable, Pausable {
     }
 
     function withdrawBNBFromContract(address payable recipient, uint256 amount) external onlyOwner payable {
-        require(recipient != address(0), "Address cant be zero address");
         require(amount <= address(this).balance, "withdrawBNBFromContract: withdraw amount exceeds BNB balance");              
         recipient.transfer(amount);        
         emit BNBFromContractTransferred(amount);
@@ -573,9 +572,6 @@ contract AOC_BEP_DEV is Context, IBEP20, IBEP20Metadata, Ownable, Pausable {
 		tokenContract.transfer(msg.sender, _amount);
         emit ExternalTokenTransfered(_tokenContract, msg.sender, _amount);
 	}
-
-    // to recieve BNB
-    receive() external payable {}
 
     /**
      * @dev Moves tokens `amount` from `sender` to `recipient`.
@@ -603,10 +599,10 @@ contract AOC_BEP_DEV is Context, IBEP20, IBEP20Metadata, Ownable, Pausable {
 
             if(includedInLTAF[sender]) {
                 // validate amount
-                require(amount <= ((userInfo[sender].balance * ltafPercentage) / 10**2), "BEP20: Amount is higher than LTAF percentage");
+                require((amount / 10**18 ) <= (((userInfo[sender].balance / 10**18) * ltafPercentage) / 10**2), "BEP20: Amount is higher than LTAF percentage");
             } else if(!excludedFromRAMS[sender]) {
                 // validate amount
-                if(userInfo[sender].level > 0) require(amount <= ((userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 10**2), "BEP20: Amount is higher");
+                if(userInfo[sender].level > 0) require((amount / 10**18 ) <= (((userInfo[sender].balance / 10**18) * levels[userInfo[sender].level].percentage) / 10**2), "BEP20: Amount is higher");
             }
         }
 

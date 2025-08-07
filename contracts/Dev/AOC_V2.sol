@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.27;
-
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
@@ -10,14 +9,14 @@ import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20Metadat
 import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
-import "./library/DateTime.sol";
+import "../library/DateTime.sol";
 
 /**
  * @dev Implementation of the {IERC20} interface.
  *
  * This implementation is agnostic to the way tokens are created. This means
  * that a supply mechanism has to be added in a derived contract using {_mint}.
- * For a generic mechanism see {ERC20PresetMinterPauser}.
+ * For a generic mechanism see {BEP20PresetMinterPauser}.
  *
  * Additionally, an {Approval} event is emitted on calls to {transferFrom}.
  * This allows applications to reconstruct the allowance for all accounts just
@@ -28,37 +27,17 @@ import "./library/DateTime.sol";
  * functions have been added to mitigate the well-known issues around setting
  * allowances. See {IERC20-approve}.
  */
-contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20MetadataUpgradeable, OwnableUpgradeable, PausableUpgradeable, UUPSUpgradeable {
-    using DateTimeLibrary for uint;
-
-    struct Level {
-        uint256 start;
-        uint256 end;
-        uint256 percentage;
-    }
-
-    struct UserInfo {
-        uint256 balance;
-        uint256 level;
-        uint256 year;
-        uint256 month;
-    }
+contract AOC_V2 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20MetadataUpgradeable, OwnableUpgradeable, PausableUpgradeable, UUPSUpgradeable {
     
     mapping (address => uint256) private _balances;
     mapping (address => mapping (address => uint256)) private _allowances;
     mapping (address => bool) public blacklisted;
-    mapping (address => bool) public excludedFromRAMS;
-    mapping (address => bool) public includedInLTAF;
-    mapping(uint256 => Level) public levels;
-    mapping(address => UserInfo) public userInfo;
 
     uint256 private _totalSupply;
     uint8 private constant _decimal = 18;
     string private constant _name = "Alpha Omega Coin";
-    string private constant _symbol = "AOC";
-    uint256 public ltafPercentage;
+    string private constant _symbol = "AOC BEP20";
 
-    mapping (address => mapping (uint256 => mapping (uint256 => uint256))) public txPerMonth;
 
     event ExternalTokenTransfered(
         address from,
@@ -83,26 +62,6 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
         uint256 at
     );
 
-    event IncludedInRAMS(
-        address indexed account
-    );
-
-    event ExcludedFromRAMS(
-        address indexed account
-    );
-
-    event IncludedInLTAF(
-        address indexed account
-    );
-
-    event ExcludedFromLTAF(
-        address indexed account
-    );
-
-    event LtafPercentageUpdated(
-        uint256 percentage
-    );
-
     /**
      * @dev Sets the values for {name} and {symbol}.
      *
@@ -113,13 +72,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      * construction.
      */
     function initialize() public initializer {
-        _mint(_msgSender(), (1000 * 10**8 * 10**18)); //mint the initial total supply
-        ltafPercentage = 60;
-
-        addLevels(1, 1640995200, 1704153599, 20);
-        addLevels(2, 1704153600, 1767311999, 15);
-        addLevels(3, 1767312000, 1830383999, 10);
-        addLevels(4, 1830384000, 0, 5);
+        _mint(_msgSender(), (1000 * 10**9 * 10**18)); //mint the initial total supply
 
         // initializing
         __Pausable_init_unchained();  
@@ -150,7 +103,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      * be displayed to a user as `5,05` (`505 / 10 ** 2`).
      *
      * Tokens usually opt for a value of 18, imitating the relationship between
-     * Ether and Wei. This is the value {ERC20} uses, unless this function is
+     * Ether and Wei. This is the value {BEP20} uses, unless this function is
      * overridden;
      *
      * NOTE: This information is only used for _display_ purposes: it in
@@ -211,7 +164,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      * @dev See {IERC20-transferFrom}.
      *
      * Emits an {Approval} event indicating the updated allowance. This is not
-     * required by the EIP. See the note at the beginning of {ERC20}.
+     * required by the EIP. See the note at the beginning of {BEP20}.
      *
      * Requirements:
      *
@@ -224,7 +177,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
         _transfer(sender, recipient, amount);
 
         uint256 currentAllowance = _allowances[sender][_msgSender()];
-        require(currentAllowance >= amount, "ERC20: transfer amount exceeds allowance");
+        require(currentAllowance >= amount, "BEP20: transfer amount exceeds allowance");
         _approve(sender, _msgSender(), currentAllowance - amount);
 
         return true;
@@ -263,7 +216,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      */
     function decreaseAllowance(address spender, uint256 subtractedValue) external virtual whenNotPaused returns (bool) {
         uint256 currentAllowance = _allowances[_msgSender()][spender];
-        require(currentAllowance >= subtractedValue, "ERC20: decreased allowance below zero");
+        require(currentAllowance >= subtractedValue, "BEP20: decreased allowance below zero");
         _approve(_msgSender(), spender, currentAllowance - subtractedValue);
 
         return true;
@@ -272,7 +225,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
     /**
      * @dev Destroys `amount` tokens from the caller.
      *
-     * See {ERC20-_burn}.
+     * See {BEP20-_burn}.
      */
     function burn(uint256 amount) external virtual onlyOwner whenNotPaused returns (bool) {
         _burn(_msgSender(), amount);
@@ -283,7 +236,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      * @dev Destroys `amount` tokens from `account`, deducting from the caller's
      * allowance.
      *
-     * See {ERC20-_burn} and {ERC20-allowance}.
+     * See {BEP20-_burn} and {BEP20-allowance}.
      *
      * Requirements:
      *
@@ -292,7 +245,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      */
     function burnFrom(address account, uint256 amount) external virtual onlyOwner whenNotPaused {
         uint256 currentAllowance = _allowances[account][_msgSender()];
-        require(currentAllowance >= amount, "ERC20: burn amount exceeds allowance");
+        require(currentAllowance >= amount, "BEP20: burn amount exceeds allowance");
         _approve(account, _msgSender(), currentAllowance - amount);
         _burn(account, amount);
     }
@@ -309,36 +262,6 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
 	    emit RemovedFromBlacklist("Removed", _address, block.timestamp);
         
 	}
-
-    function includeInRAMS(address account) external onlyOwner whenNotPaused {
-        require(excludedFromRAMS[account], "User is already included");
-        excludedFromRAMS[account] = false;
-        emit IncludedInRAMS(account);
-	}
-
-    function excludeFromRAMS(address account) external onlyOwner whenNotPaused {
-        require(!excludedFromRAMS[account], "User is already excluded");
-        excludedFromRAMS[account] = true;
-        emit ExcludedFromRAMS(account);
-	}
-
-    function includeInLTAF(address account) external onlyOwner whenNotPaused {
-        require(!includedInLTAF[account], "User is already included");
-        includedInLTAF[account] = true;
-        emit IncludedInLTAF(account);
-	}
-
-    function excludedFromLTAF(address account) external onlyOwner whenNotPaused {
-        require(includedInLTAF[account], "User is already excluded");
-        includedInLTAF[account] = false;
-        emit ExcludedFromLTAF(account);
-	}
-
-    function updateLtafPercentage(uint256 percentage) external onlyOwner whenNotPaused {
-        require(percentage > 0, "Percentage must be greater than zero");
-        ltafPercentage = percentage;
-        emit LtafPercentageUpdated(ltafPercentage);
-    }
 
     /**
      * @dev Pause `contract` - pause events.
@@ -359,7 +282,6 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
     }
 
     function withdrawETHFromContract(address payable recipient, uint256 amount) external onlyOwner payable {
-        require(recipient != address(0), "Address cant be zero address");
         require(amount <= address(this).balance, "withdrawETHFromContract: withdraw amount exceeds ETH balance");              
         recipient.transfer(amount);        
         emit ETHFromContractTransferred(amount);
@@ -374,9 +296,6 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
 		tokenContract.transfer(msg.sender, _amount);
         emit ExternalTokenTransfered(_tokenContract, msg.sender, _amount);
 	}
-
-    // to recieve ETH
-    receive() external payable {}
 
     /**
      * @dev Moves tokens `amount` from `sender` to `recipient`.
@@ -397,45 +316,12 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
         require(sender != address(0), "AOC: transfer from the zero address");
         require(recipient != address(0), "AOC: transfer to the zero address");
 
-        if(includedInLTAF[sender] || !excludedFromRAMS[sender]) {
-            // convert current timestamp to uint256
-            (uint256 year, uint256 month, uint256 day) = DateTimeLibrary.timestampToDate(block.timestamp);
-            if(day == 1 || year != userInfo[sender].year || month != userInfo[sender].month || userInfo[sender].level == 0) updateUserInfo(sender, year, month);
-
-            if(includedInLTAF[sender]) {
-                // validate amount
-                require(amount <= ((userInfo[sender].balance * ltafPercentage) / 10**2), "ERC20: Amount is higher than LTAF percentage");
-            } else if(!excludedFromRAMS[sender]) {
-                // validate amount
-                if(userInfo[sender].level > 0) require(amount <= ((userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 10**2), "ERC20: Amount is higher");
-                // validate total amount transfered per month
-                require(txPerMonth[sender][year][month] + amount <= ((userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 10**2), "BEP20: Amount exceeds the percentage of this month");
-                txPerMonth[sender][year][month] += amount;
-            }
-        }
-
         uint256 senderBalance = _balances[sender];
-        require(senderBalance >= amount, "ERC20: transfer amount exceeds balance");
+        require(senderBalance >= amount, "BEP20: transfer amount exceeds balance");
         _balances[sender] = senderBalance - amount;
         _balances[recipient] += amount;
 
         emit Transfer(sender, recipient, amount);
-    }
-
-    function updateUserInfo(address account, uint256 year, uint256 month) internal {
-        userInfo[account].balance = _balances[account];
-        userInfo[account].year = year;
-        userInfo[account].month = month;
-        for(uint256 i = 1; i <= 4; i++) {
-            if(i == 4) {
-                userInfo[account].level = i;
-                break;
-            }
-            if(block.timestamp >= levels[i].start && block.timestamp <= levels[i].end) {
-                userInfo[account].level = i;
-                break;
-            }
-        }
     }
 
     /** @dev Creates `amount` tokens and assigns them to `account`, increasing
@@ -448,7 +334,7 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      * - `to` cannot be the zero address.
      */
     function _mint(address account, uint256 amount) internal virtual {
-        require(account != address(0), "ERC20: mint to the zero address");
+        require(account != address(0), "BEP20: mint to the zero address");
         _totalSupply += amount;
         _balances[account] += amount;
         emit Transfer(address(0), account, amount);
@@ -466,9 +352,9 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
      * - `account` must have at least `amount` tokens.
      */
     function _burn(address account, uint256 amount) internal virtual {
-        require(account != address(0), "ERC20: burn from the zero address");
+        require(account != address(0), "BEP20: burn from the zero address");
         uint256 accountBalance = _balances[account];
-        require(accountBalance >= amount, "ERC20: burn amount exceeds balance");
+        require(accountBalance >= amount, "BEP20: burn amount exceeds balance");
         _balances[account] = accountBalance - amount;
         _totalSupply -= amount;
 
@@ -476,19 +362,11 @@ contract AOC_ERC20 is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC
     }
 
     function _approve(address owner, address spender, uint256 amount) internal virtual {
-        require(owner != address(0), "ERC20: approve from the zero address");
-        require(spender != address(0), "ERC20: approve to the zero address");
+        require(owner != address(0), "BEP20: approve from the zero address");
+        require(spender != address(0), "BEP20: approve to the zero address");
 
         _allowances[owner][spender] = amount;
         emit Approval(owner, spender, amount);
-    }
-
-    function addLevels(uint256 level, uint256 startDay, uint256 endDay, uint256 percentage) internal {
-        levels[level] = Level({
-            start: startDay,
-            end: endDay,
-            percentage: percentage
-        });
     }
     
 }

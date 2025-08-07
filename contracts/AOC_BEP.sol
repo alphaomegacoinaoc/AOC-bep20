@@ -1,233 +1,22 @@
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.27;
+pragma solidity ^0.8.0;
 
-import "../library/DateTime.sol";
-
-interface IERC20 {
-    /**
-     * @dev Returns the amount of tokens in existence.
-     */
-    function totalSupply() external view returns (uint256);
-
-    /**
-     * @dev Returns the amount of tokens owned by `account`.
-     */
-    function balanceOf(address account) external view returns (uint256);
-
-    /**
-     * @dev Moves `amount` tokens from the caller's account to `recipient`.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transfer(address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Returns the remaining number of tokens that `spender` will be
-     * allowed to spend on behalf of `owner` through {transferFrom}. This is
-     * zero by default.
-     *
-     * This value changes when {approve} or {transferFrom} are called.
-     */
-    function allowance(address owner, address spender) external view returns (uint256);
-
-    /**
-     * @dev Sets `amount` as the allowance of `spender` over the caller's tokens.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits an {Approval} event.
-     */
-    function approve(address spender, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Moves `amount` tokens from `sender` to `recipient` using the
-     * allowance mechanism. `amount` is then deducted from the caller's
-     * allowance.
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function transferFrom(address sender, address recipient, uint256 amount) external returns (bool);
-
-    /**
-     * @dev Burn `amount` tokens from 'owner'
-     *
-     * Returns a boolean value indicating whether the operation succeeded.
-     *
-     * Emits a {Transfer} event.
-     */
-    function burn(uint256 amount) external returns (bool);
-    
-    /**
-     * @dev Emitted when `value` tokens are moved from one account (`from`) to
-     * another (`to`).
-     *
-     * Note that `value` may be zero.
-     */
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    /**
-     * @dev Emitted when the allowance of a `spender` for an `owner` is set by
-     * a call to {approve}. `value` is the new allowance.
-     */
-    event Approval(address indexed owner, address indexed spender, uint256 value);
-}
-
-/**
- * @dev Interface for the optional metadata functions from the ERC20 standard.
- */
-interface IERC20Metadata is IERC20 {
-    /**
-     * @dev Returns the name of the token.
-     */
-    function name() external view returns (string memory);
-
-    /**
-     * @dev Returns the symbol of the token.
-     */
-    function symbol() external view returns (string memory);
-
-    /**
-     * @dev Returns the decimals places of the token.
-     */
-    function decimals() external view returns (uint8);
-}
-
-abstract contract Context {
-    function _msgSender() internal view virtual returns (address) {
-        return msg.sender;
-    }
-
-    function _msgData() internal view virtual returns (bytes calldata) {
-        this; // silence state mutability warning without generating bytecode
-        return msg.data;
-    }
-}
-
-/**
- * @title Ownable
- * @dev The Ownable contract has an owner address, and provides basic authorization control
- * functions, this simplifies the implementation of "user permissions".
- */
-contract Ownable is Context {
-  address private _owner;
-
-  /**
-   * @dev The Ownable constructor sets the original `owner` of the contract to the sender
-   * account.
-   */
-  constructor() {
-    _owner = msg.sender;
-  }
-
-  function owner() public view returns (address) {
-      return _owner;
-  }
-
-  /**
-   * @dev Throws if called by any account other than the owner.
-   */
-  modifier onlyOwner() {
-    require(msg.sender == _owner, "Ownable: caller is not the owner");
-    _;
-  }
-}
-
-/**
- * @dev Contract module which allows children to implement an emergency stop
- * mechanism that can be triggered by an authorized account.
- *
- * This module is used through inheritance. It will make available the
- * modifiers `whenNotPaused` and `whenPaused`, which can be applied to
- * the functions of your contract. Note that they will not be pausable by
- * simply including this module, only once the modifiers are put in place.
- */
-abstract contract Pausable is Context {
-    /**
-     * @dev Emitted when the pause is triggered by `account`.
-     */
-    event Paused(address account);
-
-    /**
-     * @dev Emitted when the pause is lifted by `account`.
-     */
-    event Unpaused(address account);
-
-    bool private _paused;
-
-    /**
-     * @dev Initializes the contract in unpaused state.
-     */
-    constructor () {
-        _paused = false;
-    }
-
-    /**
-     * @dev Returns true if the contract is paused, and false otherwise.
-     */
-    function paused() public view virtual returns (bool) {
-        return _paused;
-    }
-
-    /**
-     * @dev Modifier to make a function callable only when the contract is not paused.
-     *
-     * Requirements:
-     *
-     * - The contract must not be paused.
-     */
-    modifier whenNotPaused() {
-        require(!paused(), "Pausable: paused");
-        _;
-    }
-
-    /**
-     * @dev Modifier to make a function callable only when the contract is paused.
-     *
-     * Requirements:
-     *
-     * - The contract must be paused.
-     */
-    modifier whenPaused() {
-        require(paused(), "Pausable: not paused");
-        _;
-    }
-
-    /**
-     * @dev Triggers stopped state.
-     *
-     * Requirements:
-     *
-     * - The contract must not be paused.
-     */
-    function _pause() internal virtual whenNotPaused {
-        _paused = true;
-        emit Paused(_msgSender());
-    }
-
-    /**
-     * @dev Returns to normal state.
-     *
-     * Requirements:
-     *
-     * - The contract must be paused.
-     */
-    function _unpause() internal virtual whenPaused {
-        _paused = false;
-        emit Unpaused(_msgSender());
-    }
-}
+import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
+import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/token/ERC20/extensions/IERC20MetadataUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
+import "./library/DateTime.sol";
 
 /**
  * @dev Implementation of the {IERC20} interface.
  *
  * This implementation is agnostic to the way tokens are created. This means
  * that a supply mechanism has to be added in a derived contract using {_mint}.
- * For a generic mechanism see {ERC20PresetMinterPauser}.
+ * For a generic mechanism see {BEP20PresetMinterPauser}.
  *
  * Additionally, an {Approval} event is emitted on calls to {transferFrom}.
  * This allows applications to reconstruct the allowance for all accounts just
@@ -238,8 +27,8 @@ abstract contract Pausable is Context {
  * functions have been added to mitigate the well-known issues around setting
  * allowances. See {IERC20-approve}.
  */
-contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
-   using DateTimeLibrary for uint;
+contract AOC_BEP is Initializable, ContextUpgradeable, IERC20Upgradeable, IERC20MetadataUpgradeable, OwnableUpgradeable, PausableUpgradeable, UUPSUpgradeable {
+    using DateTimeLibrary for uint;
 
     struct Level {
         uint256 start;
@@ -253,7 +42,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
         uint256 year;
         uint256 month;
     }
-
+    
     mapping (address => uint256) private _balances;
     mapping (address => mapping (address => uint256)) private _allowances;
     mapping (address => bool) public blacklisted;
@@ -265,8 +54,9 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
     uint256 private _totalSupply;
     uint8 private constant _decimal = 18;
     string private constant _name = "Alpha Omega Coin";
-    string private constant _symbol = "AOC";
-    uint256 public ltafPercentage = 60;
+    string private constant _symbol = "AOC BEP20";
+    uint256 public ltafPercentage;
+
 
     event ExternalTokenTransfered(
         address from,
@@ -320,13 +110,22 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      * All two of these values are immutable: they can only be set once during
      * construction.
      */
-    constructor () {
-        _mint(_msgSender(), (1000 * 10**8 * 10**18)); // mint the initial total supply
-        addLevels(1, 1640995200, 1704153599, 20);
-        addLevels(2, 1704153600, 1767311999, 15);
-        addLevels(3, 1767312000, 1830383999, 10);
-        addLevels(4, 1830384000, 0, 5);
+    function initialize() public initializer {
+        _mint(_msgSender(), (1000 * 10**9 * 10**18)); //mint the initial total supply
+        ltafPercentage = 50;
+
+        addLevels(1, 1609459200, 1640995140, 20);
+        addLevels(2, 1640995200, 1672531140, 15);
+        addLevels(3, 1672531200, 1704067140, 10);
+        addLevels(4, 1704067200, 0, 5);
+
+        // initializing
+        __Pausable_init_unchained();  
+        __Ownable_init_unchained();  
+        __Context_init_unchained();
     }
+
+    function _authorizeUpgrade(address) internal override onlyOwner {}
 
     /**
      * @dev Returns the name of the token.
@@ -349,7 +148,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      * be displayed to a user as `5,05` (`505 / 10 ** 2`).
      *
      * Tokens usually opt for a value of 18, imitating the relationship between
-     * Ether and Wei. This is the value {ERC20} uses, unless this function is
+     * Ether and Wei. This is the value {BEP20} uses, unless this function is
      * overridden;
      *
      * NOTE: This information is only used for _display_ purposes: it in
@@ -410,7 +209,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      * @dev See {IERC20-transferFrom}.
      *
      * Emits an {Approval} event indicating the updated allowance. This is not
-     * required by the EIP. See the note at the beginning of {ERC20}.
+     * required by the EIP. See the note at the beginning of {BEP20}.
      *
      * Requirements:
      *
@@ -423,7 +222,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
         _transfer(sender, recipient, amount);
 
         uint256 currentAllowance = _allowances[sender][_msgSender()];
-        require(currentAllowance >= amount, "ERC20: transfer amount exceeds allowance");
+        require(currentAllowance >= amount, "BEP20: transfer amount exceeds allowance");
         _approve(sender, _msgSender(), currentAllowance - amount);
 
         return true;
@@ -462,7 +261,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      */
     function decreaseAllowance(address spender, uint256 subtractedValue) external virtual whenNotPaused returns (bool) {
         uint256 currentAllowance = _allowances[_msgSender()][spender];
-        require(currentAllowance >= subtractedValue, "ERC20: decreased allowance below zero");
+        require(currentAllowance >= subtractedValue, "BEP20: decreased allowance below zero");
         _approve(_msgSender(), spender, currentAllowance - subtractedValue);
 
         return true;
@@ -471,9 +270,9 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
     /**
      * @dev Destroys `amount` tokens from the caller.
      *
-     * See {ERC20-_burn}.
+     * See {BEP20-_burn}.
      */
-    function burn(uint256 amount) external virtual onlyOwner whenNotPaused override returns (bool) {
+    function burn(uint256 amount) external virtual onlyOwner whenNotPaused returns (bool) {
         _burn(_msgSender(), amount);
         return true;
     }
@@ -482,7 +281,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      * @dev Destroys `amount` tokens from `account`, deducting from the caller's
      * allowance.
      *
-     * See {ERC20-_burn} and {ERC20-allowance}.
+     * See {BEP20-_burn} and {BEP20-allowance}.
      *
      * Requirements:
      *
@@ -491,7 +290,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      */
     function burnFrom(address account, uint256 amount) external virtual onlyOwner whenNotPaused {
         uint256 currentAllowance = _allowances[account][_msgSender()];
-        require(currentAllowance >= amount, "ERC20: burn amount exceeds allowance");
+        require(currentAllowance >= amount, "BEP20: burn amount exceeds allowance");
         _approve(account, _msgSender(), currentAllowance - amount);
         _burn(account, amount);
     }
@@ -558,7 +357,6 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
     }
 
     function withdrawBNBFromContract(address payable recipient, uint256 amount) external onlyOwner payable {
-        require(recipient != address(0), "Address cant be zero address");
         require(amount <= address(this).balance, "withdrawBNBFromContract: withdraw amount exceeds BNB balance");              
         recipient.transfer(amount);        
         emit BNBFromContractTransferred(amount);
@@ -568,14 +366,11 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
         require(_tokenContract != address(0), "Address cant be zero address");
 		// require amount greter than 0
 		require(_amount > 0, "amount cannot be 0");
-        IERC20 tokenContract = IERC20(_tokenContract);
+        IERC20Upgradeable tokenContract = IERC20Upgradeable(_tokenContract);
         require(tokenContract.balanceOf(address(this)) > _amount, "withdrawToken: withdraw amount exceeds token balance");
 		tokenContract.transfer(msg.sender, _amount);
         emit ExternalTokenTransfered(_tokenContract, msg.sender, _amount);
 	}
-
-    // to recieve BNB
-    receive() external payable {}
 
     /**
      * @dev Moves tokens `amount` from `sender` to `recipient`.
@@ -603,15 +398,15 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
 
             if(includedInLTAF[sender]) {
                 // validate amount
-                require(amount <= ((userInfo[sender].balance * ltafPercentage) / 10**2), "ERC20: Amount is higher than LTAF percentage");
+                require((amount / 10**18 ) <= (((userInfo[sender].balance / 10**18) * ltafPercentage) / 10**2), "BEP20: Amount is higher than LTAF percentage");
             } else if(!excludedFromRAMS[sender]) {
                 // validate amount
-                if(userInfo[sender].level > 0) require(amount <= ((userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 10**2), "ERC20: Amount is higher");
+                if(userInfo[sender].level > 0) require((amount / 10**18 ) <= (((userInfo[sender].balance / 10**18) * levels[userInfo[sender].level].percentage) / 10**2), "BEP20: Amount is higher");
             }
         }
 
         uint256 senderBalance = _balances[sender];
-        require(senderBalance >= amount, "ERC20: transfer amount exceeds balance");
+        require(senderBalance >= amount, "BEP20: transfer amount exceeds balance");
         _balances[sender] = senderBalance - amount;
         _balances[recipient] += amount;
 
@@ -644,7 +439,7 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      * - `to` cannot be the zero address.
      */
     function _mint(address account, uint256 amount) internal virtual {
-        require(account != address(0), "ERC20: mint to the zero address");
+        require(account != address(0), "BEP20: mint to the zero address");
         _totalSupply += amount;
         _balances[account] += amount;
         emit Transfer(address(0), account, amount);
@@ -662,9 +457,9 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
      * - `account` must have at least `amount` tokens.
      */
     function _burn(address account, uint256 amount) internal virtual {
-        require(account != address(0), "ERC20: burn from the zero address");
+        require(account != address(0), "BEP20: burn from the zero address");
         uint256 accountBalance = _balances[account];
-        require(accountBalance >= amount, "ERC20: burn amount exceeds balance");
+        require(accountBalance >= amount, "BEP20: burn amount exceeds balance");
         _balances[account] = accountBalance - amount;
         _totalSupply -= amount;
 
@@ -672,8 +467,8 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
     }
 
     function _approve(address owner, address spender, uint256 amount) internal virtual {
-        require(owner != address(0), "ERC20: approve from the zero address");
-        require(spender != address(0), "ERC20: approve to the zero address");
+        require(owner != address(0), "BEP20: approve from the zero address");
+        require(spender != address(0), "BEP20: approve to the zero address");
 
         _allowances[owner][spender] = amount;
         emit Approval(owner, spender, amount);
@@ -686,4 +481,5 @@ contract AOC_ERC20_DEV is Context, IERC20, IERC20Metadata, Ownable, Pausable {
             percentage: percentage
         });
     }
+    
 }
