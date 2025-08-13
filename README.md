@@ -191,4 +191,4 @@ Blacklisting: Prevents malicious addresses from participating.
 Restricted Transfers: LTAF/RAMS ensure controlled token circulation.
 
 # Deploy AlphaOmegaCoin:
-Deploy with the initializer to mint 1 trillion tokens to the deployer and set initial LTAF percentage (60%) and levels.
+Deploy with the initializer to produce the total supply 1 trillion tokens to the deployer and set initial LTAF percentage (60%) and levels.
