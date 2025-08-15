@@ -41,9 +41,9 @@
 ---
 
 ## Overview
-Alpha Omega Coin (AOC) is a Solidity-based BEP-20 token on **BNB Smart Chain**, designed with **upgradeable smart contracts**.  
-It includes advanced features like transfer restrictions, blacklisting, and bulk operations for efficient token management.  
-The project consists of two main contracts: **AlphaOmegaCoin** and **BulkOperations**.
+Alpha Omega Coin (AOC), The Queen of Cryptocurrencies has an interoperable Monetary, Financial and Economic Galaxy (AOC MFEG) which is composed of several tokens including the AOC BEP20 Token the version 2 (V2) of which we are dealing with in this documentation…
+
+AOC BEP20 Token V2 smart contract is an ERC20-compliant token with transfer restrictions, blacklisting, and level-based limits,...It has no burning and no minting features..
 
 ---
 
