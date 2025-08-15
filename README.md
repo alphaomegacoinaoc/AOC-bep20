@@ -1,6 +1,8 @@
 
 # Alpha Omega Coin (AOC) Project
 
+## Alpha Omega Coin (AOC) Bep20 Token V2
+
 ## Table of Contents
 1. [Overview](#overview)
 2. [AlphaOmegaCoin](#alphaomegacoin)  
