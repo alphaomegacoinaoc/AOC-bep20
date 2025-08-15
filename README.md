@@ -51,7 +51,7 @@ AOC BEP20 Token V2 smart contract is an ERC20-compliant token with transfer rest
 AOC BEP20 Token V2 Functions are categorized as read (retrieve data) and write (modify state)
 
 
-### Token Details Identification
+### Token Identification Details
 
 - **Name:** Alpha Omega Coin (AOC)  
 - **Symbol:** AOC  
