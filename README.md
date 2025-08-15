@@ -5,8 +5,7 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [AlphaOmegaCoin](#alphaomegacoin)  
-   - [Key Features](#key-features)  
+2. [AlphaOmegaCoin](#alphaomegacoin)   
    - [Token Details](#token-details)  
    - [Transfer Restrictions](#transfer-restrictions)  
    - [Levels (MPP/PMP)](#levels-mpppmp)  
@@ -49,18 +48,23 @@ AOC BEP20 Token V2 smart contract is an ERC20-compliant token with transfer rest
 
 ## AlphaOmegaCoin
 
-The core BEP-20 token contract with added features for controlling token transfers and user restrictions.
+AOC BEP20 Token V2 Functions are categorized as read (retrieve data) and write (modify state)
 
-### Key Features
 
-#### Token Details
+### Token Details Identification
+
 - **Name:** Alpha Omega Coin (AOC)  
 - **Symbol:** AOC  
 - **Decimals:** 18  
-- **Initial Supply:** 1,000,000,000,000 (1 trillion AOC)  
-- **Upgradeability:** Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard).  
-- **Pausable:** Owner can pause/unpause transfers.  
-- **Blacklist:** Owner can block addresses from sending/receiving tokens.
+- **Initial Supply:** 1,000,000,000,000 (1 trillion AOC)
+- **Total Maximum Supply:** 1,000,000,000,000 (1 trillion AOC) ```No minting and No Burning```
+- **TYPE:** Utility, Donation and Payment Token (UDPT)
+- **Network / Blockchain:** Binance Smart Chain
+- **Upgradeability:** Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)  
+- **Pausable:** Owner can pause/unpause transfers for security sake, migration sake or of a community-oriented intervention
+- **Blacklist:** Owner can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake 
+
+
 
 ---
 
