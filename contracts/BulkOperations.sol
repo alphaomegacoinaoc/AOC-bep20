@@ -5,9 +5,10 @@ import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 import "./AlphaOmegaCoin.sol";
 
-contract BulkOperations is Initializable, OwnableUpgradeable, PausableUpgradeable, UUPSUpgradeable {
+contract BulkOperations is Initializable, OwnableUpgradeable, PausableUpgradeable, UUPSUpgradeable, ReentrancyGuardUpgradeable {
     AlphaOmegaCoin public aoc;
 
     event BulkTransfer(address indexed sender, address[] recipients, uint256[] amounts);
@@ -15,22 +16,31 @@ contract BulkOperations is Initializable, OwnableUpgradeable, PausableUpgradeabl
 
     function _authorizeUpgrade(address newImplementation) internal override onlyOwner{}
 
-    function initialize(address _aoc) public initializer {
-        aoc = AlphaOmegaCoin(_aoc);
-        __Ownable_init();
-        __Pausable_init();
+    /// @custom:oz-upgrades-unsafe-allow constructor
+    constructor() {
+    _disableInitializers();
     }
 
-    function bulkTransfer(address[] calldata recipients, uint256[] calldata amounts) external onlyOwner whenNotPaused {
+
+    function initialize(address aocAddress) public initializer {
+        aoc = AlphaOmegaCoin(aocAddress);
+        __Ownable_init();
+        __Pausable_init();
+        __ReentrancyGuard_init();
+    }
+
+    function bulkTransfer(address[] calldata recipients, uint256[] calldata amounts) external onlyOwner whenNotPaused nonReentrant {
         require(recipients.length == amounts.length, "AOC: Mismatched arrays");
-        uint256 senderBalanceAmount = aoc.balanceOf(msg.sender);
-        for (uint256 i = 0; i < recipients.length; i++) {
-            uint256 amountWithDecimals = amounts[i];
-            require(senderBalanceAmount >= amountWithDecimals, "AOC: Insufficient balance");
-            senderBalanceAmount -= amountWithDecimals;
-            aoc.transferFrom(msg.sender, recipients[i], amountWithDecimals);
+        uint256 totalAmount;
+        for (uint256 i = 0; i < amounts.length; i++) {
+            require(recipients[i] != address(0), "AOC: Invalid recipient");
+            totalAmount += amounts[i];
         }
+        require(aoc.balanceOf(msg.sender) >= totalAmount, "AOC: Insufficient balance");
         emit BulkTransfer(msg.sender, recipients, amounts);
+        for (uint256 i = 0; i < recipients.length; i++) {
+            require(aoc.transferFrom(msg.sender, recipients[i], amounts[i]), "AOC: Transfer failed");
+        }
     }
 
     function bulkDistribution(string calldata date, uint256 count) external onlyOwner whenNotPaused {
