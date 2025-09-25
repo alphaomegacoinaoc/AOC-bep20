@@ -1,186 +1,244 @@
-
-# Alpha Omega Coin (AOC) Project
-
 ## Alpha Omega Coin (AOC) Bep20 Token V2
 
 ## Table of Contents
+
 1. [Overview](#overview)
-2. [AlphaOmegaCoin](#alphaomegacoin)   
-   - [Token Details](#token-details)  
-   - [Transfer Restrictions](#transfer-restrictions)  
-   - [Levels (MPP/PMP)](#levels-mpppmp)  
-   - [Reentrancy Protection](#reentrancy-protection)  
-   - [Events](#events)  
-3. [Read Functions](#read-functions)  
-4. [Write Functions](#write-functions)  
-   - [initialize()](#function-initialize)  
-   - [_authorizeUpgrade(address)](#function-_authorizeupgradeaddress)  
-   - [transfer(address,uint256)](#function-transferaddress-recipient-uint256-amount)  
-   - [approve()](#function-approve)  
-   - [renounceOwnership](#function-renounceownership)  
-   - [transferFrom](#function-transferfrom)  
-   - [includeInLTAF](#function-includeinltafaddress-account)  
-   - [excludeFromLTAF](#function-excludefromltafaddress-account)  
-   - [includeInRAMS](#function-includeinramsaddress-account)  
-   - [excludeFromRAMS](#function-excludefromramsaddress-account)  
-   - [updateLtafPercentage](#function-updateltafpercentageuint256-percentage)  
-   - [updateUserInfo](#function-updateuserinfoaddress-account-uint256-year-uint256-month)  
-   - [addLevels](#function-addlevelsuint256-level-uint256-startday-uint256-endday-uint256-percentage)  
-5. [How It Works](#how-it-works)  
-6. [Dependencies](#dependencies)  
-7. [Setup and Deployment](#setup-and-deployment)  
-   - [Install Dependencies](#install-dependencies)  
-   - [Configure](#configure)  
-8. [Usage](#usage)  
-   - [For Users](#for-users)  
-   - [For Admins (Owner)](#for-admins-owner)  
-9. [Security](#security)  
-10. [Deploy AlphaOmegaCoin](#deploy-alphaomegacoin)  
+2. [AlphaOmegaCoin](#alphaomegacoin)
+
+   * [Token Details](#token-details)
+   * [Transfer Restrictions](#transfer-restrictions)
+   * [Levels (MPP/PMP)](#levels-mpppmp)
+   * [Reentrancy Protection](#reentrancy-protection)
+   * [Events](#events)
+3. [Read Functions](#read-functions)
+4. [Write Functions](#write-functions)
+
+   * [initialize()](#function-initialize)
+   * [_authorizeUpgrade(address)](#function-_authorizeupgradeaddress)
+   * [transfer(address,uint256)](#function-transferaddress-recipient-uint256-amount)
+   * [approve()](#function-approve)
+   * [renounceOwnership](#function-renounceownership)
+   * [transferFrom](#function-transferfrom)
+   * [includeInLTAF](#function-includeinltafaddress-account)
+   * [excludeFromLTAF](#function-excludefromltafaddress-account)
+   * [includeInRAMS](#function-includeinramsaddress-account)
+   * [excludeFromRAMS](#function-excludefromramsaddress-account)
+   * [updateLtafPercentage](#function-updateltafpercentageuint256-percentage)
+   * [updateUserInfo](#function-updateuserinfoaddress-account-uint256-year-uint256-month)
+   * [addLevels](#function-addlevelsuint256-level-uint256-startday-uint256-endday-uint256-percentage)
+5. [How It Works](#how-it-works)
+6. [Dependencies](#dependencies)
+7. [Setup and Deployment](#setup-and-deployment)
+
+   * [Install Dependencies](#install-dependencies)
+   * [Configure](#configure)
+8. [Usage](#usage)
+
+   * [For Users](#for-users)
+   * [For Admins (Owner)](#for-admins-owner)
+9. [Security](#security)
+10. [Deploy AlphaOmegaCoin](#deploy-alphaomegacoin)
 
 ---
 
 ## Overview
-Alpha Omega Coin (AOC), The Queen of Cryptocurrencies has an interoperable Monetary, Financial and Economic Galaxy (AOC MFEG) which is composed of several tokens including the AOC BEP20 Token the version 2 (V2) of which we are dealing with in this documentation…
 
-AOC BEP20 Token V2 smart contract is an ERC20-compliant token with transfer restrictions, blacklisting, and level-based limits,...It has no burning and no minting features..
+Alpha Omega Coin (AOC), *The Queen of Cryptocurrencies*, is composed of several tokens including the **AOC BEP20 Token** we are dealing with in this documentation.
+
+The AOC BEP20 Token contract is **ERC20-compliant** with **transfer restrictions, blacklisting, and level-based limits**.
+It has **no burning** and **no minting** features.
 
 ---
 
 ## AlphaOmegaCoin
 
-AOC BEP20 Token V2 Functions are categorized as read (retrieve data) and write (modify state)
+AOC BEP20 Token V2 Functions are categorized as:
 
+* **Read (retrieve data)**
+* **Write (modify state)**
 
-### Token Identification Details
+---
 
-- **Name:** Alpha Omega Coin (AOC)  
-- **Symbol:** AOC  
-- **Decimals:** 18  
-- **Initial Supply:** 1,000,000,000,000 (1 trillion AOC)
-- **Total Maximum Supply:** 1,000,000,000,000 (1 trillion AOC) ```No minting and No Burning```
-- **TYPE:** Utility, Donation and Payment Token (UDPT)
-- **Network / Blockchain:** Binance Smart Chain
-- **Upgradeability:** Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)  
-- **Pausable:** Owner can pause/unpause transfers for security sake, migration sake or of a community-oriented intervention
-- **Blacklist:** Owner can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake 
+### Token Details
 
-
+* **Name:** Alpha Omega Coin (AOC)
+* **Symbol:** AOC
+* **Decimals:** 18
+* **Initial Supply:** 1,000,000,000,000 (1 trillion AOC)
+* **Total Maximum Supply:** 1,000,000,000,000 (1 trillion AOC) *(no minting, no burning)*
+* **Type:** Utility, Donation, and Payment Token (UDPT)
+* **Network / Blockchain:** Binance Smart Chain
+* **Upgradeability:** Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
+* **Blacklist:** Owner can block addresses for fraud prevention or regulation
+* **Pausable:** Owner can pause/unpause transfers in emergencies
 
 ---
 
 ### Transfer Restrictions
-- **LTAF (Limited Transfer Amount Framework)**: Restricts monthly transfer percentage (default: 60%).  
-- **RAMS (Restricted Address Monthly Schedule)**: Uses time-based levels to restrict transfer percentages.  
-- Restrictions reset monthly.
+
+* **LTAF (Large Transaction Autorisation Functionality):** Special allowance where selected accounts can transfer up to a percentage (default 50%) of their balance monthly.
+* **RAMS (Regressive Anti-Manipulation Strategy):** Enforced by default for most users, based on time-period levels, reducing permissible monthly percentages as time passes.
+
+Restrictions reset monthly.
 
 ---
 
 ### Levels (MPP/PMP)
-- **Level 1** (Jan 1, 2022 – Jan 1, 2024): 20%  
-- **Level 2** (Jan 2, 2024 – Jan 1, 2026): 15%  
-- **Level 3** (Jan 2, 2026 – Jan 1, 2028): 10%  
-- **Level 4** (Jan 2, 2028 onward): 5%  
 
-These percentages are known as **Monthly Permissive Percentage (MPP)** or **PMP**.
+* **Jan 1, 2022 – Jan 1, 2024:** 20%
+* **Jan 2, 2024 – Jan 1, 2026:** 15%
+* **Jan 2, 2026 – Jan 1, 2028:** 10%
+* **Jan 2, 2028 onward:** 5%
+
+These are called **Monthly Permissive Percentages (MPP)** or **PMP**.
 
 ---
 
 ### Reentrancy Protection
-All token transfers are protected with `ReentrancyGuard`.
+
+All transfers are protected using `ReentrancyGuard`.
 
 ---
 
 ### Events
-- `Blacklisted(address)` / `RemovedFromBlacklist(address)`  
-- `IncludedInLTAF(address)` / `ExcludedFromLTAF(address)`  
-- `IncludedInRAMS(address)` / `ExcludedFromRAMS(address)`  
-- `LtafPercentageUpdated(uint256)`  
+
+* `Blacklisted(address)` / `RemovedFromBlacklist(address)`
+* `IncludedInLTAF(address)` / `ExcludedFromLTAF(address)`
+* `IncludedInRAMS(address)` / `ExcludedFromRAMS(address)`
+* `LtafPercentageUpdated(uint256)`
+* `OwnershipTransferred(address,address)`
+* `Transfer(address,address,uint256)`
+* `Approval(address,address,uint256)`
 
 ---
 
 ## Read Functions
-- **balanceOf(address)** → returns token balance  
-- **allowance(owner, spender)** → returns approved allowance  
-- **isBlacklisted(address)** → returns blacklist status  
-- **isInLTAF(address)** → returns LTAF status  
-- **isInRAMS(address)** → returns RAMS status  
-- **getLevelData(level)** → returns level details  
+
+* **name()** → returns "Alpha Omega Coin"
+* **symbol()** → returns "AOC"
+* **decimals()** → returns 18
+* **totalSupply()** → returns 1 trillion AOC
+* **balanceOf(address)** → returns balance of a wallet
+* **allowance(owner, spender)** → returns approved allowance
 
 ---
 
 ## Write Functions
 
-### Function: initialize
-Sets up the contract:  
-- Produces total supply to owner  
-- Sets default LTAF percentage (60%)  
-- Defines RAMS levels
+### Function: initialize()
+
+Sets up:
+
+* Name: Alpha Omega Coin
+* Symbol: AOC
+* Decimals: 18
+* Initial supply: 1 trillion AOC (to deployer)
+* RAMS levels (20%, 15%, 10%, 5% over time)
+* Default LTAF percentage = 50%
+
+---
 
 ### Function: _authorizeUpgrade(address)
-Allows only the owner to authorize upgrades.
+
+Owner-only authorization for contract upgrades.
+
+---
 
 ### Function: transfer(address recipient, uint256 amount)
-Transfers tokens between users, respecting LTAF/RAMS limits.
 
-### Function: approve
-Approves spender to spend tokens on behalf of owner.
+Transfers tokens while respecting blacklist, RAMS, and LTAF rules.
 
-### Function: renounceOwnership
-Renounces ownership permanently.
+---
 
-### Function: transferFrom
-Transfers tokens using an approved allowance.
+### Function: approve()
+
+Grants permission to another account/contract to spend tokens on behalf of owner.
+
+---
+
+### Function: renounceOwnership()
+
+Permanently removes contract ownership, making the token fully decentralized.
+
+---
+
+### Function: transferFrom()
+
+Allows an approved spender (exchange, app, etc.) to transfer tokens from an owner’s account.
+
+---
 
 ### Function: includeInLTAF(address account)
-Marks account under LTAF restrictions.
+
+Adds an account to **LTAF** with higher monthly transfer allowance (default 50%).
+
+---
 
 ### Function: excludeFromLTAF(address account)
-Removes account from LTAF restrictions.
+
+Removes account from LTAF → back to RAMS restrictions.
+
+---
 
 ### Function: includeInRAMS(address account)
-Adds account to RAMS restrictions.
+
+Adds account to RAMS, applying **regressive limits** (20% → 5% over years).
+
+---
 
 ### Function: excludeFromRAMS(address account)
-Removes account from RAMS restrictions.
+
+Removes RAMS restrictions, allowing free transfers (unless blacklisted or in LTAF).
+
+---
 
 ### Function: updateLtafPercentage(uint256 percentage)
-Updates monthly transfer limit percentage for LTAF.
+
+Owner can adjust the monthly transfer limit percentage for LTAF.
+
+---
 
 ### Function: updateUserInfo(address account, uint256 year, uint256 month)
-Manually updates user's restriction reset date.
+
+Internal function to update balances and reset monthly restrictions.
+
+---
 
 ### Function: addLevels(uint256 level, uint256 startDay, uint256 endDay, uint256 percentage)
-Adds or updates RAMS level configuration.
+
+Defines time-based transfer restrictions (RAMS levels).
 
 ---
 
 ## How It Works
-1. **User transfers tokens** → LTAF/RAMS restrictions are checked.  
-2. **If limits exceeded** → transaction reverts.  
-3. **Monthly reset** → limits refresh automatically.  
-4. **Admins** can blacklist, pause, or adjust limits anytime.
+
+1. **Transfers check restrictions** (RAMS/LTAF/blacklist).
+2. **If limits exceeded → revert.**
+3. **Restrictions reset monthly.**
+4. **Admins** can manage LTAF, RAMS, and blacklist settings.
 
 ---
 
 ## Dependencies
-- **OpenZeppelin Contracts Upgradeable**  
-- **DateTime library** for date-based restrictions.
+
+* OpenZeppelin Contracts Upgradeable
+* DateTime utilities for RAMS/LTAF checks
 
 ---
 
 ## Setup and Deployment
 
 ### Install Dependencies
+
 ```bash
 npm install @openzeppelin/contracts-upgradeable
-````
+```
 
 ### Configure
 
-* Set contract owner
-* Define initial LTAF percentage
-* Configure RAMS levels
-* Add initial blacklists if required
+* Owner address
+* Default LTAF percentage (50%)
+* RAMS levels (20%, 15%, 10%, 5%)
 
 ---
 
@@ -188,25 +246,27 @@ npm install @openzeppelin/contracts-upgradeable
 
 ### For Users
 
-* Use `transfer` or `transferFrom` within allowed limits.
-* Check status with `isInLTAF` or `isInRAMS`.
+* Use `transfer` / `transferFrom` to send tokens.
+* Check allowance with `allowance`.
+* Verify restrictions with `isInRAMS` / `isInLTAF`.
 
 ### For Admins (Owner)
 
-* Blacklist/unblacklist addresses
-* Adjust LTAF percentage
-* Manage RAMS levels
-* Pause/unpause the contract
+* Blacklist/unblacklist wallets.
+* Include/exclude users from LTAF/RAMS.
+* Adjust LTAF percentage.
+* Renounce ownership when decentralizing.
 
 ---
 
 ## Security
 
-* **Upgradeable** via UUPS
-* **Pausable** in emergencies
-* **ReentrancyGuard** applied
-* **Blacklist** support
-* **Monthly restrictions** for stability
+* Upgradeable via UUPS
+* Owner-only privileged functions
+* Pausable in emergencies
+* Blacklist support
+* ReentrancyGuard protection
+* Strict RAMS/LTAF restrictions for market stability
 
 ---
 
@@ -214,7 +274,6 @@ npm install @openzeppelin/contracts-upgradeable
 
 Deploy with initializer to:
 
-1. Produce Total Supply **1 trillion AOC** to owner
-2. Set LTAF default to **60%**
-3. Configure RAMS levels (20%, 15%, 10%, 5%)
-
+1. Mint **1 trillion AOC** to deployer.
+2. Set **LTAF percentage = 50%**.
+3. Configure **RAMS levels** (20%, 15%, 10%, 5%).
