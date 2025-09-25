@@ -79,7 +79,6 @@ AOC BEP20 Token V2 Functions are categorized as:
 * **LTAF (Large Transaction Autorisation Functionality):** Special allowance where selected accounts can transfer up to a percentage (default 50%) of their balance monthly.
 * **RAMS (Regressive Anti-Manipulation Strategy):** Enforced by default for most users, based on time-period levels, reducing permissible monthly percentages as time passes.
 
-Restrictions reset monthly.
 
 ---
 
