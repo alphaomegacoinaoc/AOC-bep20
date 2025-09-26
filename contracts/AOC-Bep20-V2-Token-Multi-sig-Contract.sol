@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity ^0.8.27;
+pragma solidity ^0.8.24;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
@@ -66,6 +66,11 @@ contract MultiSigTokenVault is
         _;
     }
 
+    modifier onlyMultiSig() {
+    require(msg.sender == address(this), "Only via multisig");
+    _;
+}
+
     // modifier notEmergencyPaused() {
     //     require(!paused(), "Contract is paused");
     //     _;
@@ -87,24 +92,24 @@ contract MultiSigTokenVault is
 
     //Initialize
     function initialize(
-        address[] memory _signers,
-        uint256 _requiredApprovals,
-        address _tokenAddress
+        address[] memory signers_,
+        uint256 requiredApprovals_,
+        address tokenAddress_
     ) public initializer{
-        require(_signers.length > 0, "Signers required");
-        require(_signers.length <= MAX_SIGNERS, "Too many signers");
-        require(_requiredApprovals > 0 && _requiredApprovals <= _signers.length, "Invalid threshold");
-        require(_tokenAddress != address(0), "Invalid token address");
+        require(signers_.length > 0, "Signers required");
+        require(signers_.length <= MAX_SIGNERS, "Too many signers");
+        require(requiredApprovals_ > 0 && requiredApprovals_ <= signers_.length, "Invalid threshold");
+        require(tokenAddress_ != address(0), "Invalid token address");
 
-        for(uint256 i = 0; i < _signers.length; i++){
-            require(_signers[i] != address(0), "Zero address signer");
-            require(!isSigner[_signers[i]], "Duplicate signer");
-            isSigner[_signers[i]] = true;
+        for(uint256 i = 0; i < signers_.length; i++){
+            require(signers_[i] != address(0), "Zero address signer");
+            require(!isSigner[signers_[i]], "Duplicate signer");
+            isSigner[signers_[i]] = true;
         }
 
-        signers = _signers;
-        requiredApprovals = _requiredApprovals;
-        token = IERC20Upgradeable(_tokenAddress);
+        signers = signers_;
+        requiredApprovals = requiredApprovals_;
+        token = IERC20Upgradeable(tokenAddress_);
         transactionTimeout = 2 days; // Default timeout (can be updated in seconds)
 
         __Ownable_init();
@@ -116,10 +121,9 @@ contract MultiSigTokenVault is
     function _authorizeUpgrade(address newImplementation) internal override onlyOwner{}
 
     //Add a new signer
-    function addSigner(address newSigner) external onlySigner whenNotPaused {
+    function addSigner(address newSigner) external onlyMultiSig {
         require(newSigner != address(0), "Zero address signer");
         require(!isSigner[newSigner], "Already a signer");
-        require(newSigner != msg.sender, "Cannot add yourself");
         require(signers.length < MAX_SIGNERS, "Maximum signers limit reached");
         
         isSigner[newSigner] = true;
@@ -129,9 +133,8 @@ contract MultiSigTokenVault is
     }
 
     //Remove an existing Signer
-    function removeSigner(address signerToRemove) external onlySigner whenNotPaused {
+    function removeSigner(address signerToRemove) external onlyMultiSig {
         require(isSigner[signerToRemove], "Not a signer");
-        require(signerToRemove != msg.sender, "Cannot remove yourself");
         require(signers.length - 1 >= requiredApprovals, "Cannot remove - would violate minimum requirements");
         require(signers.length > 1, "Cannot remove the last signer");
         
@@ -288,7 +291,7 @@ contract MultiSigTokenVault is
     function getConfig() external view returns (
         uint256 _requiredApprovals,
         uint256 _transactionTimeout,
-        bool _paused
+        bool pausedState
     ) {
         return (
             requiredApprovals,
