@@ -303,8 +303,7 @@ contract AlphaOmegaCoin is
     }
 
     function _approve(address account, address spender, uint256 amount) internal virtual {
-        // require(owner != address(0), "AOC: Zero owner");
-        // require(spender != address(0), "AOC: Zero spender");
+        require(spender != address(0), "AOC: Zero spender");
         _allowances[account][spender] = amount;
         emit Approval(account, spender, amount);
     }
