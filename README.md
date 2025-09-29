@@ -211,7 +211,7 @@ The admin uses LTAF function to motivate  results-driving AOC actors who keep fi
 ---
 
 
-## Alpha Omega Coin
+## Alpha Omega Coin (AOC) Write and Read Functions
 
 AOC BEP20 V2 Token  Functions are categorized as read (retrieve data) and write (modify state)
 
