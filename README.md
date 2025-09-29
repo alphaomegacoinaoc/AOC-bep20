@@ -97,23 +97,28 @@ From there, all **AOC Mother Coin and all AOC Tokens**  (AOC ERC20 ; AOC BEP20;.
 **1** - MAMA / MAMP / MAMF / MAMS / MA2M Level 1 : **Progressive Anti-Manipulation Functionality (PAMF)** 
 
 1.1 **PAMF’s HISTORIC CONTEXT**
+
 By the grace of God, the Regular Distribution of AOC BEP20 V2 token starts at any time in 2025. It will be handled by a Dapp (Decentralized Application) the smart contract of which is equipped with one of Alpha Omega Coin (AOC)’s Innovations called : Progressive Anti-Manipulation Functionality (PAMF). 
 
 
 1.2  **PAMF’s DEFINITION**
+
 The Progressive Anti-Manipulation Functionality (PAMF) is the very first level of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M. 
 
 Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) **as distribution regulator**, the **Progressive Anti-Manipulation Functionality (PAMF)** is a key mechanism built or implemented into AOC Mother Coin Algorithm and into all AOC  Tokens’ Smart Contracts , except for AOC ERC20 Token, by AOC Administration, under Jesus Christ guidance. 
 
 1.3 **PAMF’s SYNONYMS**
+
 Progressive Anti-Manipulation Functionality (PAMF)   =  Progressive Anti-Manipulation Strategy (PAMS) =  Progressive Anti-Manipulation Algorithm (PAMA) =  Progressive Anti-Manipulation Protocol (PAMP) = Progressive Anti-Manipulation Mechanism (PAMP). 
 
 1.4  **PAMF’s PURPOSE**
+
 The **primary purpose** of the Progressive Anti-Manipulation Functionality (PAMF) **is to regulate AOC Mother Coin and all AOC Tokens** (including AOC BEP20 V2 Token) **distribution**, based on the **algorithmic principle** called **PMDP** (=**P**ermissive **M**onthly **D**istributed **P**ercentage) or MPDP (= **M**onthly **P**ermissive **D**istributed **P**ercentage). And this, in order  to durably and permanently prevent AOC Mother Coin and AOC tokens market manipulation and ensure their price stability.
 
 
 
 1.5 **PAMF’s OPERATING SYSTEM**
+
 In fact, **instead of distributing immediately the totality of AOC Mother Coin and AOC tokens to each holder**, AOC Administration uses the PAMF / PAMP/PAMA/ PAMS / PA2M to stagger the distribution of AOC Mother Coin and AOC tokens over an extended period.
 
 From there, all **AOC Mother Coin and AOC tokens’ Members**, whether small or large holders, **are set to receive their AOC Mother Coin balance and AOC tokens gradually**, through a **distribution timeframe** which, depending on their holding category..
@@ -133,6 +138,7 @@ In doing so, **AOC CORE TEAM** is **preventing sudden price drops** that can occ
 **R**egressive **A**nti-**M**anipulation **S**trategy (**RAMS**)
 
 2.1 **RAMS’ HISTORIC CONTEXT**
+
 For AOC Members who freely and voluntarily participated in AOC BEP20 Manual Initiatives in between February 7, 2022 and July 1, 2024, and for those who participated in AOC BEP20 Automatic or Web3 Initiatives via web3.alphaomegacoin.com , from May 18, 2024 to September 5, 2025,  AOC BEP20 V2 Token Regular Distribution starts very shortly in 2025 by Kairos time.
 
 While, for contributors who will contribute to AOC Project after September 5, 2025 , during the effective AOC 100% Online Aggressive Marketing Campaigns , they will start receiving their AOC BEP20 V2 Tokens once the said Aggressive Marketing Campaigns are over…
@@ -141,15 +147,18 @@ From there, and especially from the moment when AOC BEP20 V2 Token is listed on 
 
 
 2.2  **RAMS’ DEFINITION**
+
 The Regressive Anti-Manipulation Strategy (RAMS)  is the second level of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M. 
 
 Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as a transaction regulator, the Regressive Anti-Manipulation Strategy (RAMS) is a key mechanism built or implemented into AOC Mother Coin Algorithm and into all AOC  Tokens’ Smart Contracts , including AOC BEP20 V2 Token, by AOC Administration, under Jesus Christ guidance. 
 
 2.3 **RAMS’ SYNONYMS**
+
 **R**egressive **A**nti-**M**anipulation **S**trategy (**RAMS**) =  **R**egressive  **A**nti-**M**anipulation **F**unctionality (**RAMF**) =  **R**egressive  **A**nti-**M**anipulation **A**lgorithm (**RAMA**) =  **R**egressive **A**nti-**M**anipulation **P**rotocol (**RAMP**) = **R**egressive **A**nti-**M**anipulation **M**echanism (**RA2M**).     
 
 
 2.4  **RAMS’ PURPOSE**
+
  The **primary objective** of the  RAMS / RAMF / RAMA/ RAMP / RA2M is to prevent market flooding after the token's listing, which could lead to extreme price fluctuations.
  
  In other words, the RAMS / RAMF / RAMA / RAMP / RA2M protects AOC Mother Coin and all AOC tokens (including AOC BEP20 Token) ,  AOC  ecosystem and market from price dumping and manipulation by limiting transaction sizes, promoting stability and long-term commitment from holders. 
@@ -157,6 +166,7 @@ Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as a trans
  By limiting transactions, the RAMS / RAMF / RAMA / RAMP / RA2M helps maintain a more stable and predictable value of AOC Mother Coin and the one of all AOC Tokens, thereby promoting sustainable growth within AOC Community International .
 
 2. 5 **RAMS’ OPERATING SYSTEM**
+   
 Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as a transaction regulatory mechanism, the RAMS / RAMF / RAMA/ RAMP / RA2M is designed to preserve the stability and value of AOC Mother Coin and the one of all AOC Tokens. It regulates transactions made by Members by setting a Permissive Monthly Percentage (PMP) or Monthly Permissive Percentage (MPP), which determines the amount of tokens that can be transferred to another wallet or exchange during a month, counting from the first day of the month, by 2 PM GMT+1… 
 
 Within AOC BEP20 V2 Token ecosystem, the **RAMS / RAMF / RAMA/ RAMP / RA2M is enforced through a levels mapping**, with specific time periods and decreasing monthly transfer limits through years as as follows :
