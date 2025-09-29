@@ -53,7 +53,7 @@ AOC BEP20 Token V2 smart contract is an ERC20-compliant token with AOC level 2 M
 ---
 
 
-### Token Identification Details
+### Alpha Omega Coin (AOC) Bep20 Token V2 Identification Details
 
 - **Name:** Alpha Omega Coin (AOC)  
 - **Symbol:** AOC  
