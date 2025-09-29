@@ -6,7 +6,8 @@
 ## Table of Contents
 1. [Overview](#overview)
 2. [AlphaOmegaCoin](#alphaomegacoin)   
-   - [Token Details](#token-details)  
+   - [Token Details](#token-details)
+   - [AOC TECHNOLOGICAL INNOVATIONS](#aoc-technological-innovations-)
    - [Transfer Restrictions](#transfer-restrictions)  
    - [Levels (MPP/PMP)](#levels-mpppmp)  
    - [Reentrancy Protection](#reentrancy-protection)  
@@ -68,7 +69,7 @@ AOC BEP20 Token V2 smart contract is an ERC20-compliant token with AOC level 2 M
 **ANTI-PRICE-DUMPING AND MARKET ANTI-MANIPULATION FUNCTIONALITIES**
 
 ---
-**PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES**
+#### **PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES**
 
 As you all know, all the existing cryptocurrencies are facing price and market deadly volatility, caused by the so-called minority crypto-whales (=the biggest crypto holders)  who are used to orchestrating crypto price/value pumping and dumping events by manipulating the market to their will and to their selfish interests.
 
