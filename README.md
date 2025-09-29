@@ -231,7 +231,7 @@ AOC BEP20 V2 Token  Functions are categorized as read (retrieve data) and write 
 ### Function: initialize
 Sets up the contract:  
 - Produces total supply to owner  
-- Sets default LTAF percentage (60%)  
+- Sets default LTAF percentage (50%)  
 - Defines RAMS levels
 
 ### Function: _authorizeUpgrade(address)
