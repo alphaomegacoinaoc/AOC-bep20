@@ -78,35 +78,36 @@ Similarly, because of crypto whales, cryptocurrency holders with small and mediu
 
 The first Alpha Omega Coin (AOC) Token (=AOC ERC20 V1) launched on October 28, 2020,which was listed on Latoken on May 3, 2021 : with the start price of $2, suffered the same fate, till to drop under 0.1…
 
+---
 
-PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS  (MA2M)
+## **PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS  (MA2M)**
 
- Fortunately, in the end of December 2021, God, through Jesus Christ ,  inspired AOC CEO and Founder - ABRAHAM Mankponsè Samuel (from Ouessè Wogoudo ; Département des Collines ; Republic of Benin ; West Africa) to resolve the most critical crypto dilemma : the self-centered manipulation of cryptocurrencies by crypto gurus…
+Fortunately, in the end of **December 2021, God, through Jesus Christ** ,  **inspired AOC CEO and Founder - ABRAHAM Mankponsè Samuel** (from Ouessè Wogoudo ; Département des Collines ; Republic of Benin ; West Africa) **to resolve the most critical crypto dilemma** : **the self-centered manipulation of cryptocurrencies by crypto gurus…**
 
-From there, all AOC Mother Coin and all AOC Tokens  (AOC ERC20 ; AOC BEP20;...) which form AOC Monetary, Financial and Economic Galaxy (=AOC MFEG), are equipped with multi-level MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS  (MA2M)..
+From there, all **AOC Mother Coin and all AOC Tokens**  (AOC ERC20 ; AOC BEP20;...) which form AOC Monetary, Financial and Economic Galaxy (=AOC MFEG), **are equipped with multi-level MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS  (MA2M)..**
 
-The currently already  revealed MARKET ANTI-MANIPULATION ALGORITHMS / PROTOCOLS / FUNCTIONALITIES / STRATEGIES / MECHANISMS (=MAMA / MAMP / MAMF / MAMS / MA2M) by God to AOC CEO and Founder are two and operating as follows :
+**The currently already  revealed MARKET ANTI-MANIPULATION ALGORITHMS / PROTOCOLS / FUNCTIONALITIES / STRATEGIES / MECHANISMS (=MAMA / MAMP / MAMF / MAMS / MA2M) by God to AOC CEO and Founder** are two and operating as follows :
 
-1 - MAMA / MAMP / MAMF / MAMS / MA2M Level 1 : Progressive Anti-Manipulation Functionality (PAMF) 
+**1** - MAMA / MAMP / MAMF / MAMS / MA2M Level 1 : **Progressive Anti-Manipulation Functionality (PAMF)** 
 
-1.1 PAMF’s HISTORIC CONTEXT 
+1.1 **PAMF’s HISTORIC CONTEXT**
 By the grace of God, the Regular Distribution of AOC BEP20 V2 token starts at any time in 2025. It will be handled by a Dapp (Decentralized Application) the smart contract of which is equipped with one of Alpha Omega Coin (AOC)’s Innovations called : Progressive Anti-Manipulation Functionality (PAMF). 
 
 
-1.2  PAMF’s DEFINITION 
+1.2  **PAMF’s DEFINITION**
 The Progressive Anti-Manipulation Functionality (PAMF) is the very first level of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M. 
 
-Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as distribution regulator, The Progressive Anti-Manipulation Functionality (PAMF) is a key mechanism built or implemented into AOC Mother Coin Algorithm and into all AOC  Tokens’ Smart Contracts , except for AOC ERC20 Token, by AOC Administration, under Jesus Christ guidance. 
+Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) **as distribution regulator**, the **Progressive Anti-Manipulation Functionality (PAMF)** is a key mechanism built or implemented into AOC Mother Coin Algorithm and into all AOC  Tokens’ Smart Contracts , except for AOC ERC20 Token, by AOC Administration, under Jesus Christ guidance. 
 
-1.3 PAMF’s SYNONYMS
+1.3 **PAMF’s SYNONYMS**
 Progressive Anti-Manipulation Functionality (PAMF)   =  Progressive Anti-Manipulation Strategy (PAMS) =  Progressive Anti-Manipulation Algorithm (PAMA) =  Progressive Anti-Manipulation Protocol (PAMP) = Progressive Anti-Manipulation Mechanism (PAMP). 
 
-1.4  PAMF’s PURPOSE
-The primary purpose of the Progressive Anti-Manipulation Functionality (PAMF) is to regulate AOC Mother Coin and all AOC Tokens (including AOC BEP20 V2 Token) distribution, based on the algorithmic principle called PMDP (=Permissive Monthly Distributed Percentage) or MPDP (= Monthly Permissive Distributed Percentage). And this, in order  to durably and permanently prevent AOC Mother Coin and AOC tokens market manipulation and ensure their price stability.
+1.4  **PAMF’s PURPOSE**
+The **primary purpose** of the Progressive Anti-Manipulation Functionality (PAMF) **is to regulate AOC Mother Coin and all AOC Tokens** (including AOC BEP20 V2 Token) **distribution**, based on the **algorithmic principle** called **PMDP** (=**P**ermissive **M**onthly **D**istributed **P**ercentage) or MPDP (= **M**onthly **P**ermissive **D**istributed **P**ercentage). And this, in order  to durably and permanently prevent AOC Mother Coin and AOC tokens market manipulation and ensure their price stability.
 
 
 
-1. 5 PAMF’s OPERATING SYSTEM
+1. 5 **PAMF’s OPERATING SYSTEM**
 In fact, instead of distributing immediately the totality of AOC Mother Coin and AOC tokens to each holder, AOC Administration uses the PAMF / PAMP/PAMA/ PAMS / PA2M to stagger the distribution of AOC Mother Coin and AOC tokens over an extended period.
 
 From there, all AOC Mother Coin and AOC tokens’ Members, whether small or large holders, are set to receive their AOC Mother Coin balance and AOC tokens gradually, through a distribution timeframe which, depending on their holding category..
