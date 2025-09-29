@@ -8,6 +8,11 @@
 2. [AlphaOmegaCoin](#alphaomegacoin)   
    - [Token Details](#token-details)
    - [AOC TECHNOLOGICAL INNOVATIONS](#aoc-technological-innovations-)
+   - [PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES](#part-a---deadly-chronic-volatility-of-existing-cryptocurrencies)
+   - [PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M)](#part-b---god-inspired-crypto-market-anti-manipulation-algorithms-mama--market-anti-manipulation-protocols-mamp--market-anti-manipulation-functionalities-mamf--market-anti-manipulation-strategies-mams--market-anti-manipulation-mechanisms--ma2m)
+   - [PART C - PAMF / PAMP / PAMA / PAMS / PA2M and RAMS / RAMF / RAMA / RAMP / RA2M CONVERGENT IMPACT](#part-c---pamf--pamp--pama--pams--pa2m--and-rams--ramf--rama--ramp--ra2m-convergent-impact)
+   - [PART D - Alpha Omega Coin (AOC), The Queen of Cryptocurrencies](#part-d----alpha-omega-coin-aoc-the-queen-of-cryptocurrencies)
+   - [LTAF : Loyality Transaction Authorization Function / Large Transaction Authorization Function](#ltaf--loyality-transaction-authorization-function--large-transaction--authorization-function)
    - [Transfer Restrictions](#transfer-restrictions)  
    - [Levels (MPP/PMP)](#levels-mpppmp)  
    - [Reentrancy Protection](#reentrancy-protection)  
@@ -177,6 +182,7 @@ In doing so, AOC CORE TEAM is preventing sudden price drops that always occur wi
 ### **PART C - PAMF / PAMP / PAMA / PAMS / PA2M  and RAMS / RAMF / RAMA / RAMP / RA2M CONVERGENT IMPACT**
 
 The convergent impact both of the **Progressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism**  (PAMF / PAMP/PAMA/ PAMS / PA2M) via AOC BEP20 V2 Token Regular Distribution Smart Contract , and of the **Regressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism**  (RAMF / RAMP/RAMA/ RAMS / RA2M) via AOC BEP20 V2 token Smart Contract, lies in their ability to work together to stabilize  AOC Coin / AOC Mother Coin and AOC tokens' market and prevent their market manipulation.
+
 ---
 ### **PART D -  Alpha Omega Coin (AOC), The Queen of Cryptocurrencies**
 
