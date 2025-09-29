@@ -5,7 +5,7 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [Alpha Omega Coin (AOC) Identification Details](#token-identification-details)   
+2. [Alpha Omega Coin (AOC) Bep20 Token V2 Identification Details](#token-identification-details)   
    - [Token Details](#token-details)
    - [AOC TECHNOLOGICAL INNOVATIONS](#aoc-technological-innovations-)
    - [PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES](#part-a---deadly-chronic-volatility-of-existing-cryptocurrencies)
