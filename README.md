@@ -340,6 +340,6 @@ npm install @openzeppelin/contracts-upgradeable
 Deploy with initializer to:
 
 1. Produce Total Supply **1 trillion AOC** to owner
-2. Set LTAF default to **60%**
+2. Set LTAF default to **50%**
 3. Configure RAMS levels (20%, 15%, 10%, 5%)
 
