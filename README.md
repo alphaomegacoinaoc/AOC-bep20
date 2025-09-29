@@ -5,7 +5,7 @@
 
 ## Table of Contents
 1. [Overview](#overview)
-2. [AlphaOmegaCoin](#alphaomegacoin)   
+2. [AlphaOmegaCoin](#token-identification-details)   
    - [Token Details](#token-details)
    - [AOC TECHNOLOGICAL INNOVATIONS](#aoc-technological-innovations-)
    - [PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES](#part-a---deadly-chronic-volatility-of-existing-cryptocurrencies)
