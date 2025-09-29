@@ -6,7 +6,6 @@
 ## Table of Contents
 1. [Overview](#overview)
 2. [Alpha Omega Coin (AOC) Bep20 V2 Token Identification Details](#alpha-omega-coin-aoc-bep20-token-v2-identification-details)   
-   - [Token Details](#token-details)
    - [AOC TECHNOLOGICAL INNOVATIONS](#aoc-technological-innovations-)
    - [PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES](#part-a---deadly-chronic-volatility-of-existing-cryptocurrencies)
    - [PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M)](#part-b---god-inspired-crypto-market-anti-manipulation-algorithms-mama--market-anti-manipulation-protocols-mamp--market-anti-manipulation-functionalities-mamf--market-anti-manipulation-strategies-mams--market-anti-manipulation-mechanisms--ma2m)
