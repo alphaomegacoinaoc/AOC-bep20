@@ -11,9 +11,7 @@
    - [PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M)](#part-b---god-inspired-crypto-market-anti-manipulation-algorithms-mama--market-anti-manipulation-protocols-mamp--market-anti-manipulation-functionalities-mamf--market-anti-manipulation-strategies-mams--market-anti-manipulation-mechanisms--ma2m)
    - [PART C - PAMF / PAMP / PAMA / PAMS / PA2M and RAMS / RAMF / RAMA / RAMP / RA2M CONVERGENT IMPACT](#part-c---pamf--pamp--pama--pams--pa2m--and-rams--ramf--rama--ramp--ra2m-convergent-impact)
    - [PART D - Alpha Omega Coin (AOC), The Queen of Cryptocurrencies](#part-d----alpha-omega-coin-aoc-the-queen-of-cryptocurrencies)
-4. [LTAF : Loyality Transaction Authorization Function / Large Transaction Authorization Function](#ltaf--loyality-transaction-authorization-function--large-transaction--authorization-function)
-   - [Reentrancy Protection](#reentrancy-protection)  
-   - [Events](#events)  
+4. [LTAF : Loyality Transaction Authorization Function / Large Transaction Authorization Function](#ltaf--loyality-transaction-authorization-function--large-transaction--authorization-function) 
 5. [Read Functions](#read-functions)  
 6. [Write Functions](#write-functions)  
    - [initialize()](#function-initialize)  
@@ -28,17 +26,18 @@
    - [excludeFromRAMS](#function-excludefromramsaddress-account)  
    - [updateLtafPercentage](#function-updateltafpercentageuint256-percentage)  
    - [updateUserInfo](#function-updateuserinfoaddress-account-uint256-year-uint256-month)  
-   - [addLevels](#function-addlevelsuint256-level-uint256-startday-uint256-endday-uint256-percentage)  
-7. [How It Works](#how-it-works)  
-8. [Dependencies](#dependencies)  
-9. [Setup and Deployment](#setup-and-deployment)  
+   - [addLevels](#function-addlevelsuint256-level-uint256-startday-uint256-endday-uint256-percentage)
+7. [Events](#events) 
+8. [How It Works](#how-it-works)  
+9. [Dependencies](#dependencies)  
+10. [Setup and Deployment](#setup-and-deployment)  
    - [Install Dependencies](#install-dependencies)  
    - [Configure](#configure)  
-10. [Usage](#usage)  
+11. [Usage](#usage)  
    - [For Users](#for-users)  
    - [For Admins (Owner)](#for-admins-owner)  
-11. [Security](#security)  
-12. [Deploy AlphaOmegaCoin](#deploy-alphaomegacoin)  
+12. [Security](#security)  
+13. [Deploy AlphaOmegaCoin](#deploy-alphaomegacoin)  
 
 ---
 
@@ -209,22 +208,12 @@ The admin uses LTAF function to motivate  results-driving AOC actors who keep fi
 
 
 
-### Reentrancy Protection
-All token transfers are protected with `ReentrancyGuard`.
-
 ---
 
-### Events
-- `Blacklisted(address)` / `RemovedFromBlacklist(address)`  
-- `IncludedInLTAF(address)` / `ExcludedFromLTAF(address)`  
-- `IncludedInRAMS(address)` / `ExcludedFromRAMS(address)`  
-- `LtafPercentageUpdated(uint256)`  
-
----
 
 ## Alpha Omega Coin
 
-AOC BEP20 Token V2 Functions are categorized as read (retrieve data) and write (modify state)
+AOC BEP20 V2 Token  Functions are categorized as read (retrieve data) and write (modify state)
 
 ## Read Functions
 - **balanceOf(address)** → returns token balance  
@@ -279,6 +268,14 @@ Manually updates user's restriction reset date.
 
 ### Function: addLevels(uint256 level, uint256 startDay, uint256 endDay, uint256 percentage)
 Adds or updates RAMS level configuration.
+
+---
+
+### Events
+- `Blacklisted(address)` / `RemovedFromBlacklist(address)`  
+- `IncludedInLTAF(address)` / `ExcludedFromLTAF(address)`  
+- `IncludedInRAMS(address)` / `ExcludedFromRAMS(address)`  
+- `LtafPercentageUpdated(uint256)`  
 
 ---
 
