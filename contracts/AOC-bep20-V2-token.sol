@@ -1,10 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.27;
+pragma solidity ^0.8.24;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/interfaces/IERC20Upgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/interfaces/IERC20MetadataUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/utils/ContextUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
@@ -15,7 +14,6 @@ contract AlphaOmegaCoin is
     Initializable,
     ContextUpgradeable,
     IERC20Upgradeable,
-    IERC20MetadataUpgradeable,
     OwnableUpgradeable,
     PausableUpgradeable,
     ReentrancyGuardUpgradeable,
@@ -81,15 +79,15 @@ contract AlphaOmegaCoin is
         __UUPSUpgradeable_init();
 
         _mint(_msgSender(), (1000 * 10 ** 9 * 10 ** 18));
-        ltafPercentage = 60;
+        ltafPercentage = 50;
 
-        addLevels(1, 1640995200, 1704153599, 20);
-        addLevels(2, 1704153600, 1767311999, 15);
-        addLevels(3, 1767312000, 1830383999, 10);
-        addLevels(4, 1830384000, 0, 5);
+    levels[1] = Level({start: 1640995200, end: 1704153599, percentage: 20});
+    levels[2] = Level({start: 1704153600, end: 1767311999, percentage: 15});
+    levels[3] = Level({start: 1767312000, end: 1830383999, percentage: 10});
+    levels[4] = Level({start: 1830384000, end: 0, percentage: 5});
     }
 
-    function _authorizeUpgrade(address) internal override onlyOwner {}
+    function _authorizeUpgrade(address newImplementation) internal override onlyOwner {}
 
     function name() external pure returns (string memory) {
         return NAME;
@@ -116,6 +114,7 @@ contract AlphaOmegaCoin is
         return true;
     }
 
+
     function allowance(address account, address spender) external view returns (uint256) {
         return _allowances[account][spender];
     }
@@ -128,187 +127,204 @@ contract AlphaOmegaCoin is
     function transferFrom(address sender, address recipient, uint256 amount) external whenNotPaused returns (bool) {
         _transfer(sender, recipient, amount);
         uint256 currentAllowance = _allowances[sender][_msgSender()];
-        require(currentAllowance >= amount, "AOC: Exceeds allowance");
+        require(currentAllowance >= amount, "Exceeds allowance");
         _approve(sender, _msgSender(), currentAllowance - amount);
         return true;
     }
 
     function blacklistUser(address _address) external onlyOwner whenNotPaused {
-        require(!blacklisted[_address], "AOC: Already blacklisted");
+        require(!blacklisted[_address], "Already blacklisted");
         blacklisted[_address] = true;
         emit Blacklisted("Blacklisted", _address, block.timestamp);
     }
 
     function removeFromBlacklist(address _address) external onlyOwner whenNotPaused {
-        require(blacklisted[_address], "AOC: ! blacklisted");
+        require(blacklisted[_address], "Not blacklisted");
         blacklisted[_address] = false;
         emit RemovedFromBlacklist("Removed", _address, block.timestamp);
 }
 
     function includeInRAMS(address account) external onlyOwner whenNotPaused {
-        require(excludedFromRAMS[account], "AOC: Already included");
-        require(!includedInLTAF[account], "AOC: In LTAF");
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-        excludedFromRAMS[account] = false;
-        includedInLTAF[account] = false;
-        userStatus[account].ramsRemovalYear = 0;
-        userStatus[account].ramsRemovalMonth = 0;
-        if (userStatus[account].ltafRemovalYear != 0) {
-            userStatus[account].ramsInclusionYear = year;
-            userStatus[account].ramsInclusionMonth = month;
-        } else {
-            userStatus[account].ramsInclusionYear = 0;
-            userStatus[account].ramsInclusionMonth = 0;
-        }
+        require(excludedFromRAMS[account], "Already included");
+        require(!includedInLTAF[account], "In LTAF");
+        _updateRAMSStatus(account, true);
         emit IncludedInRAMS(account);
     }
 
     function excludeFromRAMS(address account) external onlyOwner whenNotPaused {
-        require(!excludedFromRAMS[account], "AOC: Already excluded");
-        excludedFromRAMS[account] = true;
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-        userStatus[account].ramsRemovalYear = year;
-        userStatus[account].ramsRemovalMonth = month;
+        require(!excludedFromRAMS[account], "Already excluded");
+        _updateRAMSStatus(account, false);
         emit ExcludedFromRAMS(account);
     }
 
-    function includeInLTAF(address account) external onlyOwner whenNotPaused {
-        require(!includedInLTAF[account], "AOC: Already included");
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-        includedInLTAF[account] = true;
-        excludedFromRAMS[account] = true;
-        userStatus[account].ltafRemovalYear = 0;
-        userStatus[account].ltafRemovalMonth = 0;
-        if (txPerMonth[account][year][month] > 0) {
-            userStatus[account].ltafInclusionYear = year;
-            userStatus[account].ltafInclusionMonth = month;
+    function _updateRAMSStatus(address account, bool include) internal {
+        (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
+        if (include) {
+            excludedFromRAMS[account] = false;
+            includedInLTAF[account] = false;
+            userStatus[account].ramsRemovalYear = 0;
+            userStatus[account].ramsRemovalMonth = 0;
+            if (userStatus[account].ltafRemovalYear != 0) {
+                userStatus[account].ramsInclusionYear = year;
+                userStatus[account].ramsInclusionMonth = month;
+            } else {
+                userStatus[account].ramsInclusionYear = 0;
+                userStatus[account].ramsInclusionMonth = 0;
+            }
         } else {
-            userStatus[account].ltafInclusionYear = 0;
-            userStatus[account].ltafInclusionMonth = 0;
+            excludedFromRAMS[account] = true;
+            if (txPerMonth[account][year][month] > 0) {
+                userStatus[account].ramsRemovalYear = year;
+                userStatus[account].ramsRemovalMonth = month;
+            } else {
+                userStatus[account].ramsRemovalYear = 0;
+                userStatus[account].ramsRemovalMonth = 0;
+            }
         }
-        userInfo[account].balance = _balances[account];
-        userInfo[account].year = year;
-        userInfo[account].month = month;
-        txPerMonth[account][year][month] = 0;
+    }
+
+    function includeInLTAF(address account) external onlyOwner whenNotPaused {
+        require(!includedInLTAF[account], "Already included");
+        _updateLTAFStatus(account, true);
         emit IncludedInLTAF(account);
     }
 
     function excludedFromLTAF(address account) external onlyOwner whenNotPaused {
-        require(includedInLTAF[account], "AOC: Already excluded");
-        includedInLTAF[account] = false;
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-        userStatus[account].ltafRemovalYear = year;
-        userStatus[account].ltafRemovalMonth = month;
+        require(includedInLTAF[account], "Already excluded");
+        _updateLTAFStatus(account, false);
         emit ExcludedFromLTAF(account);
     }
 
+    function _updateLTAFStatus(address account, bool include) internal {
+        (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
+        if (include) {
+            includedInLTAF[account] = true;
+            excludedFromRAMS[account] = true;
+            userStatus[account].ltafRemovalYear = 0;
+            userStatus[account].ltafRemovalMonth = 0;
+            if (txPerMonth[account][year][month] > 0) {
+                userStatus[account].ltafInclusionYear = year;
+                userStatus[account].ltafInclusionMonth = month;
+            } else {
+                userStatus[account].ltafInclusionYear = 0;
+                userStatus[account].ltafInclusionMonth = 0;
+            }
+            userInfo[account].balance = _balances[account];
+            userInfo[account].year = year;
+            userInfo[account].month = month;
+            txPerMonth[account][year][month] = 0;
+        } else {
+            includedInLTAF[account] = false;
+            if (txPerMonth[account][year][month] > 0) {
+                userStatus[account].ltafRemovalYear = year;
+                userStatus[account].ltafRemovalMonth = month;
+            } else {
+                userStatus[account].ltafRemovalYear = 0;
+                userStatus[account].ltafRemovalMonth = 0;
+            }
+        }
+    }
     function updateLtafPercentage(uint256 percentage) external onlyOwner whenNotPaused {
-        require(percentage > 0, "AOC: Invalid percentage");
+        require(percentage > 0, "Invalid percentage");
         ltafPercentage = percentage;
         emit LtafPercentageUpdated(ltafPercentage);
     }
 
-    function _transfer(address sender, address recipient, uint256 amount) internal virtual {
-        require(!blacklisted[sender] && !blacklisted[recipient], "AOC: Blacklisted");
-        require(sender != address(0), "AOC: Zero sender");
-        require(recipient != address(0), "AOC: Zero recipient");
+   function _transfer(address sender, address recipient, uint256 amount) internal virtual {
+    require(!blacklisted[sender] && !blacklisted[recipient], "Blacklisted");
+    require(sender != address(0) && recipient != address(0) && amount > 0, "Invalid params");
 
-        if (excludedFromRAMS[sender] && userStatus[sender].ltafRemovalYear != 0) {
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-            require(year != userStatus[sender].ltafRemovalYear || month != userStatus[sender].ltafRemovalMonth, "AOC: Ex-LTAF wait");
-        }
-        if (includedInLTAF[sender] && userStatus[sender].ramsRemovalYear != 0) {
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-            require(year != userStatus[sender].ramsRemovalYear || month != userStatus[sender].ramsRemovalMonth, "AOC: Ex-RAMS wait");
-        }
-        if (includedInLTAF[sender] && userStatus[sender].ltafInclusionYear != 0) {
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-            require(year != userStatus[sender].ltafInclusionYear || month != userStatus[sender].ltafInclusionMonth, "AOC: New LTAF wait");
-        }
-        if (!excludedFromRAMS[sender] && userStatus[sender].ramsInclusionYear != 0) {
-       (uint256 year, uint256 month, ) = DateTimeLibrary.timestampToDate(block.timestamp);
-            require(year != userStatus[sender].ramsInclusionYear || month != userStatus[sender].ramsInclusionMonth, "AOC: New RAMS wait");
-        }
+    uint256 currentTimestamp = block.timestamp;
+    (uint256 year, uint256 month, uint256 day) = DateTimeLibrary.timestampToDate(currentTimestamp);
 
-        if (includedInLTAF[sender] || !excludedFromRAMS[sender]) {
-            (uint256 year, uint256 month, uint256 day) = DateTimeLibrary.timestampToDate(block.timestamp);
-            if (
-                day <= 1 ||
-                year != userInfo[sender].year ||
-                month != userInfo[sender].month ||
-                userInfo[sender].level == 0
-            ) {
-                updateUserInfo(sender, year, month);
-            }
-            if (includedInLTAF[sender]) {
-                require(
-                    txPerMonth[sender][year][month] + amount <= ((userInfo[sender].balance * ltafPercentage) / 10 ** 2),
-                    "AOC: Exceeds LTAF"
-                );
-                txPerMonth[sender][year][month] += amount;
-            } else if (!excludedFromRAMS[sender]) {
-                if (userInfo[sender].level > 0)
-                    require(
-                        amount <= ((userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 10 ** 2),
-                        "AOC: Exceeds level"
-                    );
-                require(
-                    txPerMonth[sender][year][month] + amount <= ((userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 10 ** 2),
-                    "AOC: Exceeds month"
-                );
-                txPerMonth[sender][year][month] += amount;
-            }
+    _validateTransferRestrictions(sender, year, month);
+
+    if (includedInLTAF[sender] || !excludedFromRAMS[sender]) {
+        if (day <= 1 || year != userInfo[sender].year || month != userInfo[sender].month || userInfo[sender].level == 0) {
+            updateUserInfo(sender, year, month);
         }
-
-        uint256 senderBalance = _balances[sender];
-        require(senderBalance >= amount, "AOC: Low balance");
-        _balances[sender] = senderBalance - amount;
-        _balances[recipient] += amount;
-
-        emit Transfer(sender, recipient, amount);
+        _checkTransferLimits(sender, amount, year, month);
     }
 
+    uint256 senderBalance = _balances[sender];
+    require(senderBalance >= amount, "Low balance");
+    _balances[sender] = senderBalance - amount;
+    _balances[recipient] += amount;
+
+    emit Transfer(sender, recipient, amount);
+}
     function updateUserInfo(address account, uint256 year, uint256 month) internal {
-        if (
-            includedInLTAF[account] &&
-            (year != userInfo[account].year || month != userInfo[account].month)
-        ) {
-            userInfo[account].balance = _balances[account];
-            txPerMonth[account][year][month] = 0;
-        } else if (!includedInLTAF[account]) {
-            userInfo[account].balance = _balances[account];
+        UserInfo storage user = userInfo[account];
+        
+        if (year != user.year || month != user.month || user.level == 0) {
+            user.balance = _balances[account];
+            if (includedInLTAF[account]) {
+                txPerMonth[account][year][month] = 0;
+            }
         }
-        userInfo[account].year = year;
-        userInfo[account].month = month;
-        for (uint256 i = 1; i <= 4; i++) {
-            if (i == 4) {
-                userInfo[account].level = i;
-                break;
-            }
-            if (
-                block.timestamp >= levels[i].start &&
-                block.timestamp <= levels[i].end
-            ) {
-                userInfo[account].level = i;
-                break;
-            }
+        
+        user.year = year;
+        user.month = month;
+        
+        uint256 currentTime = block.timestamp;
+        
+        if (currentTime >= levels[4].start) {
+            user.level = 4;
+        } else if (currentTime >= levels[3].start && currentTime <= levels[3].end) {
+            user.level = 3;
+        } else if (currentTime >= levels[2].start && currentTime <= levels[2].end) {
+            user.level = 2;
+        } else if (currentTime >= levels[1].start && currentTime <= levels[1].end) {
+            user.level = 1;
+        } else {
+            user.level = 4;
         }
     }
 
     function _mint(address account, uint256 amount) internal virtual {
-        require(account != address(0), "AOC: Zero mint");
+        require(account != address(0), "Zero mint");
         _totalSupply += amount;
         _balances[account] += amount;
         emit Transfer(address(0), account, amount);
     }
 
     function _approve(address account, address spender, uint256 amount) internal virtual {
-        require(spender != address(0), "AOC: Zero spender");
         _allowances[account][spender] = amount;
         emit Approval(account, spender, amount);
     }
 
-    function addLevels(uint256 level, uint256 startDay, uint256 endDay, uint256 percentage) internal {
-        levels[level] = Level({start: startDay, end: endDay, percentage: percentage});
+    function _validateTransferRestrictions(address sender, uint256 year, uint256 month) internal view {
+        Status storage status = userStatus[sender];
+        if (excludedFromRAMS[sender] && status.ltafRemovalYear != 0) {
+            require(year != status.ltafRemovalYear || month != status.ltafRemovalMonth, "Ex-LTAF wait");
+        }
+        if (includedInLTAF[sender] && status.ramsRemovalYear != 0) {
+            require(year != status.ramsRemovalYear || month != status.ramsRemovalMonth, "Ex-RAMS wait");
+        }
+        if (!includedInLTAF[sender] && excludedFromRAMS[sender] && status.ramsRemovalYear != 0) {
+            require(year != status.ramsRemovalYear || month != status.ramsRemovalMonth, "Ex-RAMS wait");
+        }
+        if (includedInLTAF[sender] && status.ltafInclusionYear != 0) {
+            require(year != status.ltafInclusionYear || month != status.ltafInclusionMonth, "New LTAF wait");
+        }
+        if (!excludedFromRAMS[sender] && status.ramsInclusionYear != 0) {
+            require(year != status.ramsInclusionYear || month != status.ramsInclusionMonth, "New RAMS wait");
+        }
+    }
+
+    function _checkTransferLimits(address sender, uint256 amount, uint256 year, uint256 month) internal {
+        if (includedInLTAF[sender]) {
+            uint256 ltafLimit = (userInfo[sender].balance * ltafPercentage) / 100;
+            require(txPerMonth[sender][year][month] + amount <= ltafLimit, "Exceeds LTAF");
+            txPerMonth[sender][year][month] += amount;
+        } else if (!excludedFromRAMS[sender]) {
+            if (userInfo[sender].level > 0) {
+                uint256 levelLimit = (userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 100;
+                require(amount <= levelLimit, "Exceeds level");
+            }
+            uint256 monthlyLimit = (userInfo[sender].balance * levels[userInfo[sender].level].percentage) / 100;
+            require(txPerMonth[sender][year][month] + amount <= monthlyLimit, "Exceeds month");
+            txPerMonth[sender][year][month] += amount;
+        }
     }
 }
