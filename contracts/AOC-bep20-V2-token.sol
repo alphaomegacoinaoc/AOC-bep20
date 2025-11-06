@@ -14,6 +14,7 @@ contract AlphaOmegaCoin is
     Initializable,
     ContextUpgradeable,
     IERC20Upgradeable,
+    // IERC20MetadataUpgradeable,
     OwnableUpgradeable,
     PausableUpgradeable,
     ReentrancyGuardUpgradeable,
@@ -237,9 +238,11 @@ contract AlphaOmegaCoin is
     uint256 currentTimestamp = block.timestamp;
     (uint256 year, uint256 month, uint256 day) = DateTimeLibrary.timestampToDate(currentTimestamp);
 
+    if(sender != owner()) {
     _validateTransferRestrictions(sender, year, month);
+    }
 
-    if (includedInLTAF[sender] || !excludedFromRAMS[sender]) {
+    if (sender != owner() && (includedInLTAF[sender] || !excludedFromRAMS[sender])) {
         if (day <= 1 || year != userInfo[sender].year || month != userInfo[sender].month || userInfo[sender].level == 0) {
             updateUserInfo(sender, year, month);
         }
