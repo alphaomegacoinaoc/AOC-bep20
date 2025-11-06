@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-pragma solidity 0.8.24;
+pragma solidity ^0.8.24;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC20/IERC20Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
@@ -84,6 +84,7 @@ contract MultiSigTokenVault is
     event SignerAdded(address indexed signer);
     event SignerRemoved(address indexed signer);
     event ConfigUpdated(uint256 requiredApprovals, uint256 transactionTimeout);
+    event UpdatedApprovals(uint256 requiredApprovals);
 
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
@@ -140,14 +141,18 @@ contract MultiSigTokenVault is
         
         isSigner[signerToRemove] = false;
 
-        //Remove the signer from signers array
-        for (uint256 i = 0; i < signers.length; i++){
-            if(signers[i] == signerToRemove){
-                signers[i] = signers[signers.length - 1];
-                signers.pop();
+        //Find and remove more efficiently
+        uint256 signerIndex = 0;
+        for (uint256 i = 0; i < signers.length; i++) {
+            if (signers[i] == signerToRemove) {
+                signerIndex = i;
                 break;
             }
         }
+        
+        //Move last element to the position of the element to delete
+        signers[signerIndex] = signers[signers.length - 1];
+        signers.pop();
         
         emit SignerRemoved(signerToRemove);
     }
@@ -315,4 +320,10 @@ contract MultiSigTokenVault is
 
     // // Receive ETH (for contract calls that send ETH)
     // receive() external payable {}
+
+    function updateRequireApprovals(uint256 _newRequiredApprovals) external onlyMultiSig whenNotPaused {
+        require(_newRequiredApprovals > 0 && _newRequiredApprovals <= signers.length, "Invalid Approvals");
+        requiredApprovals = _newRequiredApprovals;
+        emit UpdatedApprovals(_newRequiredApprovals);
+    }
 }
