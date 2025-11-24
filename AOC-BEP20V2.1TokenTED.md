@@ -63,32 +63,33 @@ Explorer: https://bscscan.com/address/0x4B723e1FCcca5A883fEEf8923701AECbd46fEAd1
 
 # Part 4 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Smart Contract Read + Write Functions
 4.1 Read  Functions
-Function: name()
+- Function: name()
 What it does: Returns the token name ("Alpha Omega Coin").
 Purpose: Provides the token’s name for external use.
-Function: symbol()
+- Function: symbol()
 What it does: Returns the token symbol ("AOC").
 Purpose: Provides the token’s symbol for external use.
-Function: decimals()
+- Function: decimals()
 What it does: Returns the number of decimals (18).
 Purpose: Specifies token precision for calculations and display.
-Function: totalSupply()
+- Function: totalSupply()
 What it does: Returns the total AOC token supply (initially 1 trillion).
 Purpose: Shows the total circulating tokens.
-Function: balanceOf(address account)
+- Function: balanceOf(address account)
 What it does: Returns the token balance of a specified address.
 Purpose: Allows querying an account’s AOC BEP20 V2.1 balance.
-Function: allowance(address owner, address spender)
+- Function: allowance(address owner, address spender)
 What it does: Returns the remaining allowance a spender has for an owner’s tokens.
 Purpose: Checks how many AOC BEP20 V2.1 Tokens  a spender can transfer on behalf of the owner.
-4.2 Write  Functions
-Function: initialize()
+
+## 4.2 Write  Functions
+- Function: initialize()
 What it does: Sets up the contract with 1 trillion AOC BEP20 V2.1 tokens, name ("Alpha Omega Coin"), symbol ("AOC"), 18 decimals, four levels  of transfer regulation (20% for January 1, 2022–January 1, 2024 ; 15% for January 2, 2024–January 1, 2026; 10% for January 2, 2026–January 1, 2028; 10% for January 2, 2028), and initial LTAF percentage of 50%.
 Purpose: Initializes  AOC BEP20 V2.1 Token   properties, creates initial supply to the deployer, and configures transfer regulation levels.
-Function: _authorizeUpgrade(address)
+- Function: _authorizeUpgrade(address)
 What it does: Authorizes a contract upgrade (owner-only).
 Purpose: Enables future improvements to the contract securely.
-Function: transfer(address recipient, uint256 amount)
+- Function: transfer(address recipient, uint256 amount)
 What it does: Transfers AOC BEP20 V2.1 tokens from the sender to the recipient, respecting regulation (blacklist, LTAF/RAMS, level-based limits).
 Purpose: Enables users to send AOC BEP20 V2.1 tokens to others.
 
