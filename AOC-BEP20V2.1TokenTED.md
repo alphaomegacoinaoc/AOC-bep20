@@ -157,7 +157,7 @@ The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors w
 
 The function also _ensures the user isn’t in LTAF_ (_**they can’t be in both systems**_). Only the _**Multi Sig Signers can add someone to RAMS**_.
 - **Purpose:** To **_regulate how many AOC BEP20 V2.1 Tokens_** _users_ can _**send**_ or _**trade**_ _**over time**_, with _stricter limits_ as _years pass_. This encourages _holding tokens longer_ and _prevents large_ and _sudden transfers_.
-- **Simple Example:** _If you have 100_ _**AOC BEP20 V2.1 Tokens**_ and _**it’s during January 2, 2024–January 1, 2026**_, being in _**RAMS** means you can only send 15** AOC BEP20 V2.1 Tokens per month** (15% of your balance)_. _**If you try to send more, the transaction fails**._  
+- **Simple Example:** _**If you have 100**_ _**AOC BEP20 V2.1 Tokens**_ and _**it’s during January 2, 2024–January 1, 2026**_, being in _**RAMS** means **you can only send 15 AOC BEP20 V2.1 Tokens per month** (**15% of your balance**)_. _**If you try to send more, the transaction fails**._  
 The Mutli-Sig Signers  might add you to RAMS if you’re a big contributor to prevent market dumps.
 - **Why It Matters:** It keeps the _**AOC BEP20 V2.1 Token**_ stable by spreading out transfers over time, especially for users with lots of tokens.
 
