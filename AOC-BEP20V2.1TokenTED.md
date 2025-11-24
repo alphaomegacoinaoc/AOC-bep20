@@ -82,8 +82,8 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 - **What it does:** Returns the number of decimals (18).
 - **Purpose:** Specifies token precision for calculations and display.
 4. **Function: totalSupply()**
-**What it does:** Returns the total AOC token supply (initially 1 trillion).
-**Purpose:** Shows the total circulating tokens.
+- **What it does:** Returns the total AOC token supply (initially 1 trillion).
+- **Purpose:** Shows the total circulating tokens.
 5. **Function: balanceOf(address account)**
 - **What it does:** Returns the token balance of a specified address.
 - **Purpose**: Allows querying an account’s AOC BEP20 V2.1 balance.
