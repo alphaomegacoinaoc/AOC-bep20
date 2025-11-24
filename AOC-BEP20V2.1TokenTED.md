@@ -108,11 +108,11 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 - **Example:** Imagine you want to trade 100 _**AOC BEP20 V2.1 tokens**_ on a crypto exchange. You use approve to allow the exchange to spend _**AOC BEP20 V2.1 tokens**_ from your wallet. The exchange can now move those tokens when you trade, but only up to _**AOC BEP20 V2.1 tokens**_.
 - **Why It Matters:** This keeps your  _**AOC BEP20 V2.1 tokens**_ _**safe while letting apps**_ like _**exchanges**_ or _**games**_ _use them for you_, as long as they follow _**AOC BEP20 V2.1 Token’s rules**_ (_like limits on transfers_).
 ## RenounceOwnership Function
-- **What It Does:** Permanently removes the contract’s owner by setting ownership to a null address, disabling all owner-only controls (like blacklisting or pausing). It logs this change publicly with an OwnershipTransferred event.
-- **Purpose:** Makes the _**AOC BEP20 V2.1 Token**_ contract fully decentralized, ensuring no one can control or change its rules, which builds trust with users.
-- **Simple Example:** Imagine you create an AOC BEP20 V2.1 Token for a community project. To prove it’s fair and not controlled by your company, you use renounceOwnership . Now, no one can pause the contract or change its settings, making it run independently like a public utility.
+- **What It Does:** _Permanently removes the contract’s owner by setting ownership to a null address_, _**disabling all owner-only controls** _(like _blacklisting_ or _pausing_). It logs this change publicly with an OwnershipTransferred event.
+- **Purpose:** Makes the _**AOC BEP20 V2.1 Token**_ contract fully decentralized, ensuring _no one can control or change its rules_, which builds trust with users.
+- **Simple Example:** Imagine you create an _**AOC BEP20 V2.1 Token**_ for a community project. To prove it’s fair and not controlled by your company, you use renounceOwnership . Now, no one can pause the contract or change its settings, making it run independently like a public utility.
 - **Why It Matters:** Shows users the contract is trustless and not controlled by anyone, but it’s a one-time action—once done, you can’t manage the contract anymore.
-- **Purpose:** To permanently remove central control and make the contract fully autonomous
+- **Finality:** To _permanently remove central control_ and _make the contract fully autonomous_
 
 ## TransferFrom Function
 - **What It Does:** Allows an approved party (e.g., an app or contract) to move _**AOC BEP20 V2.1 tokens**_ from your wallet to another address, if you’ve given permission with the approve function. It checks AOC BEP20 V2.1 Token’s rules (like blacklisting or monthly transfer limits) and updates balances and permissions, logging a Transfer event.
