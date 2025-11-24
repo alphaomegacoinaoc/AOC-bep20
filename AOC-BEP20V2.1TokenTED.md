@@ -103,28 +103,28 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 - **Purpose:** Enables users to send **_AOC BEP20 V2.1_** tokens to others.
 
 ## Approve Function
-- **What It Does:** Allows you to grant permission to another party (like a person or an app) to spend a specific amount of your AOC BEP20 V2.1 tokens on your behalf. It records this permission and logs it publicly.
-- **Purpose:** Lets you trust apps (like exchanges or staking platforms) to handle your  AOC BEP20 V2.1 tokens without giving them full control of your wallet.
-- **Example:** Imagine you want to trade 100 AOC BEP20 V2.1 tokens on a crypto exchange. You use approve to allow the exchange to spend AOC BEP20 V2.1 tokens from your wallet. The exchange can now move those tokens when you trade, but only up to AOC BEP20 V2.1 tokens.
-- **Why It Matters:** This keeps your  AOC BEP20 V2.1 tokens safe while letting apps like exchanges or games use them for you, as long as they follow AOC BEP20 V2.1 Token’s rules (like limits on transfers).
+- **What It Does:** Allows you to _**grant permission to another party**_ (**like a _person_ or an _app_**) _to spend_ a specific amount of your _AOC BEP20 V2.1 tokens_ on your behalf. It records this permission and logs it publicly.
+- **Purpose:** Lets you_ **trust apps** _(**like _exchanges_ or _staking_ _platforms_**) to handle your _**AOC BEP20 V2.1 tokens**_ without giving them full control of your wallet.
+- **Example:** Imagine you want to trade 100 _**AOC BEP20 V2.1 tokens**_ on a crypto exchange. You use approve to allow the exchange to spend _**AOC BEP20 V2.1 tokens**_ from your wallet. The exchange can now move those tokens when you trade, but only up to _**AOC BEP20 V2.1 tokens**_.
+- **Why It Matters:** This keeps your  _**AOC BEP20 V2.1 tokens**_ _**safe while letting apps**_ like _**exchanges**_ or _**games**_ _use them for you_, as long as they follow _**AOC BEP20 V2.1 Token’s rules**_ (_like limits on transfers_).
 ## RenounceOwnership Function
 - **What It Does:** Permanently removes the contract’s owner by setting ownership to a null address, disabling all owner-only controls (like blacklisting or pausing). It logs this change publicly with an OwnershipTransferred event.
-- **Purpose:** Makes the AOC BEP20 V2.1 Token contract fully decentralized, ensuring no one can control or change its rules, which builds trust with users.
+- **Purpose:** Makes the _**AOC BEP20 V2.1 Token**_ contract fully decentralized, ensuring no one can control or change its rules, which builds trust with users.
 - **Simple Example:** Imagine you create an AOC BEP20 V2.1 Token for a community project. To prove it’s fair and not controlled by your company, you use renounceOwnership . Now, no one can pause the contract or change its settings, making it run independently like a public utility.
 - **Why It Matters:** Shows users the contract is trustless and not controlled by anyone, but it’s a one-time action—once done, you can’t manage the contract anymore.
 - **Purpose:** To permanently remove central control and make the contract fully autonomous
 
 ## TransferFrom Function
-- **What It Does:** Allows an approved party (e.g., an app or contract) to move AOC BEP20 V2.1 tokens from your wallet to another address, if you’ve given permission with the approve function. It checks AOC BEP20 V2.1 Token’s rules (like blacklisting or monthly transfer limits) and updates balances and permissions, logging a Transfer event.
-- **Purpose:** Lets apps like exchanges or staking platforms move your  AOC BEP20 V2.1 tokens for you, making AOC BEP20 V2.1 token usable in automated systems.
-- **Simple Example:** Suppose you approve a crypto exchange to use AOC BEP20 V2.1 tokens from your wallet. When you trade, the exchange uses transferFrom to send AOC BEP20 V2.1 tokens to another user’s wallet to complete the trade. The transfer follows AOC BEP20 V2.1 Token’s rules, like not exceeding 50%  of your balance monthly if you’re in the LTAF program.
+- **What It Does:** Allows an approved party (e.g., an app or contract) to move _**AOC BEP20 V2.1 tokens**_ from your wallet to another address, if you’ve given permission with the approve function. It checks AOC BEP20 V2.1 Token’s rules (like blacklisting or monthly transfer limits) and updates balances and permissions, logging a Transfer event.
+- **Purpose:** Lets apps like exchanges or staking platforms move your  _**AOC BEP20 V2.1 tokens**_ for you, making AOC BEP20 V2.1 token usable in automated systems.
+- **Simple Example:** Suppose you approve a crypto exchange to use _**AOC BEP20 V2.1 tokens**_ from your wallet. When you trade, the exchange uses transferFrom to send _**AOC BEP20 V2.1 tokens**_ to another user’s wallet to complete the trade. The transfer follows AOC BEP20 V2.1 Token’s rules, like not exceeding 50%  of your balance monthly if you’re in the LTAF program.
 - **Why It Matters:** Enables AOC BEP20 V2.1 Token  to work with apps for trading or payments, while ensuring all transfers follow the contract’s strict limits for security.
 ## includeInLTAF(address account)
-- **What It Does:** This function adds a specific wallet address (like a user’s crypto account) to LTAF. Once added, the user can only transfer up to 50%   of their  AOC BEP20 V2.1 tokens each month. It also resets their monthly transfer records to start fresh. Only the contract owner (Multi-Sig Signers) can use this function.
+- **What It Does:** This function adds a specific wallet address (like a user’s crypto account) to LTAF. Once added, the user can only transfer up to 50%   of their  _**AOC BEP20 V2.1 tokens**_ each month. It also resets their monthly transfer records to start fresh. Only the contract owner (Multi-Sig Signers) can use this function.
 - **Purpose:** LTAF  provides flexibility for authorized AOC Still Committed Actors  (e.g., Administrators; Members; or trusted entities ) to conduct significant transactions when necessary (mainly in charity-based actions), bypassing the restrictive RAMS  limits.
 - **Simple Example:** 
-Imagine you are an Active AOC  Member holding AOC BEP20 V2.1 tokens on December 1  , 2025 where you are normally subject to 15% MPP.
-If you’re added to LTAF on December 1 , 2025, you can transfer or trade 50 AOC BEP20 V2.1 tokens. This helps you realise a huge budget project or business… 
+Imagine you are an Active AOC  Member holding _**AOC BEP20 V2.1 tokens**_ on December 1  , 2025 where you are normally subject to 15% MPP.
+If you’re added to LTAF on December 1 , 2025, you can transfer or trade 50 _**AOC BEP20 V2.1 tokens**_. This helps you realise a huge budget project or business… 
 The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors who keep fighting for AOC growth…
 - **Why It Matters:** AOC  Core Team uses this to distinguish or to decorate Still Engaged AOC  Actors. It's a strict rule that only the Multi-Sig Signers can apply.
   
