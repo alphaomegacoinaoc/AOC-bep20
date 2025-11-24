@@ -38,13 +38,14 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 # Part 2 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Smart Contract Testnet + Mainnet Codes Identification Urls 
 ## Testnet : 
 # Github : 
-- Branch Name: testnet-V2.3
-- Branch Link: https://github.com/alphaomegacoinaoc/AOC-bep20-V2-token-smart-contract/tree/testnet-v2.3
-- Explorer:  : https://testnet.bscscan.com/address/0xbc0F73B52D6F37e527B07Bb01301C77Bf9716489
+- Branch Name:testnet-aoc-bep20-v2.1-token
+- Branch Link: https://github.com/alphaomegacoinaoc/AOC-bep20-V2-token-smart-contract/blob/testnet-aoc-bep20-v2.1-token/contracts/AOC-bep20-V2.1-token.sol
+- Explorer:  : https://testnet.bscscan.com/address/0xbc0F73B52D6F37e527B07Bb01301C77Bf9716489#writeProxyContract
+
 ## Mainnet :
 # Github : 
-- Branch Name: main-V3
-- Branch Link: https://github.com/alphaomegacoinaoc/AOC-bep20-V2-token-smart-contract/tree/main-v3
+- Branch Name: main-aoc-bep20-v2.1-token
+- Branch Link: https://github.com/alphaomegacoinaoc/AOC-bep20-V2-token-smart-contract/blob/main-aoc-bep20-V2.1-token/contracts/AOC-bep20-V2.1-token.sol
 - Explorer: https://bscscan.com/address/0x41ab98fbd2509bf573cb93dbe15d50d970d96957#readProxyContract
 
 
