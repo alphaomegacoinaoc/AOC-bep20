@@ -170,7 +170,7 @@ This function (excludeFromRAMS) is mainly set to allow the AOC BEP20 V2.1 Token 
 
 ## updateLtafPercentage(uint256 percentage)
 - **What It Does:** This function _ **lets the Mutli-Sig Signers  change the LTAF monthly transfer limit percentage**_ (_default is **50%**_). For example, they could set it to 40%, meaning _LTAF users can only transfer 40%_ of their _balance per month_. _Only_ the _Mutli-Sig Signers can make this change_.
--** Purpose:** To adjust how strict the LTAF rules are, depending on the needs of the AOC BEP20 V2.1 Token ecosystem, like market conditions or user behavior.
+- **Purpose:** To adjust how strict the LTAF rules are, depending on the needs of the AOC BEP20 V2.1 Token ecosystem, like market conditions or user behavior.
 - **Simple Example:** If the LTAF limit is 50% and you have 100 AOC BEP20 V2.1 Tokens, you can send 50 AOC BEP20 V2.1 Tokens per month. If the admin changes it to 30%, you can only send 30 _**AOC BEP20 V2.1 Tokens**_ per month. This helps the Mutli-Sig Signers  fine-tune how much users can move.
 - **Why It Matters:** It _**gives the contract Mutli-Sig Signers flexibility**_ to _**tighten**_ or _**loosen LTAF restrictions**_, helping **balance _AOC BEP20 V2.1 Token stability_ and _user freedom_**.
 
