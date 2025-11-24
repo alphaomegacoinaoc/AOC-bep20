@@ -93,48 +93,48 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 
 ## 4.2 Write  Functions
 1. **Function: initialize()**
-- **What it does:** Sets up the contract with 1 trillion AOC BEP20 V2.1 tokens, name ("Alpha Omega Coin"), symbol ("AOC"), 18 decimals, four levels  of transfer regulation (20% for January 1, 2022–January 1, 2024 ; 15% for January 2, 2024–January 1, 2026; 10% for January 2, 2026–January 1, 2028; 10% for January 2, 2028), and initial LTAF percentage of 50%.
-- **Purpose:** Initializes  AOC BEP20 V2.1 Token   properties, creates initial supply to the deployer, and configures transfer regulation levels.
+- **What it does:** Sets up the contract with **1 trillion AOC BEP20 V2.1 tokens**, **name** ("Alpha Omega Coin"), **symbol** ("AOC"), 18 **decimals**, **four levels  of transfer regulation** (**20%** for **January 1**, **2022**–**January 1**, **2024** ; **15%** for **January 2**, **2024–January 1**, **2026**; **10%** for **January 2**, **2026–January 1**, **2028**; **10%** for **January 2**, **2028**), and initial **LTAF** **percentage** of **50%**.
+- **Purpose:** Initializes  _AOC BEP20 V2.1 Token_  properties, _creates initial supply_ to the deployer, and _**configures transfer regulation levels**._
 2. **Function: _authorizeUpgrade(address)**
-- **What it does:** Authorizes a contract upgrade (owner-only).
+- **What it does:** Authorizes a contract upgrade (**_owner-only_**).
 - **Purpose:** Enables future improvements to the contract securely.
 3. **Function: transfer(address recipient, uint256 amount)**
-- **What it does:** Transfers AOC BEP20 V2.1 tokens from the sender to the recipient, respecting regulation (blacklist, LTAF/RAMS, level-based limits).
-- **Purpose:** Enables users to send AOC BEP20 V2.1 tokens to others.
+- **What it does:** Transfers **_AOC BEP20 V2.1 tokens_** from the sender to the _recipient_, _respecting regulation_ (_blacklist, LTAF/RAMS, level-based limits_).
+- **Purpose:** Enables users to send **_AOC BEP20 V2.1_** tokens to others.
 
 ## Approve Function
-What It Does: Allows you to grant permission to another party (like a person or an app) to spend a specific amount of your AOC BEP20 V2.1 tokens on your behalf. It records this permission and logs it publicly.
-Purpose: Lets you trust apps (like exchanges or staking platforms) to handle your  AOC BEP20 V2.1 tokens without giving them full control of your wallet.
+- **What It Does:** Allows you to grant permission to another party (like a person or an app) to spend a specific amount of your AOC BEP20 V2.1 tokens on your behalf. It records this permission and logs it publicly.
+- **Purpose:** Lets you trust apps (like exchanges or staking platforms) to handle your  AOC BEP20 V2.1 tokens without giving them full control of your wallet.
 Example: Imagine you want to trade 100 AOC BEP20 V2.1 tokens on a crypto exchange. You use approve to allow the exchange to spend AOC BEP20 V2.1 tokens from your wallet. The exchange can now move those tokens when you trade, but only up to AOC BEP20 V2.1 tokens.
 Why It Matters: This keeps your  AOC BEP20 V2.1 tokens safe while letting apps like exchanges or games use them for you, as long as they follow AOC BEP20 V2.1 Token’s rules (like limits on transfers).
-RenounceOwnership Function
-What It Does: Permanently removes the contract’s owner by setting ownership to a null address, disabling all owner-only controls (like blacklisting or pausing). It logs this change publicly with an OwnershipTransferred event.
-Purpose: Makes the AOC BEP20 V2.1 Token contract fully decentralized, ensuring no one can control or change its rules, which builds trust with users.
+## RenounceOwnership Function
+- **What It Does:** Permanently removes the contract’s owner by setting ownership to a null address, disabling all owner-only controls (like blacklisting or pausing). It logs this change publicly with an OwnershipTransferred event.
+- **Purpose:** Makes the AOC BEP20 V2.1 Token contract fully decentralized, ensuring no one can control or change its rules, which builds trust with users.
 Simple Example: Imagine you create an AOC BEP20 V2.1 Token for a community project. To prove it’s fair and not controlled by your company, you use renounceOwnership . Now, no one can pause the contract or change its settings, making it run independently like a public utility.
 Why It Matters: Shows users the contract is trustless and not controlled by anyone, but it’s a one-time action—once done, you can’t manage the contract anymore.
 Purpose: To permanently remove central control and make the contract fully autonomous
 
 ## TransferFrom Function
-What It Does: Allows an approved party (e.g., an app or contract) to move AOC BEP20 V2.1 tokens from your wallet to another address, if you’ve given permission with the approve function. It checks AOC BEP20 V2.1 Token’s rules (like blacklisting or monthly transfer limits) and updates balances and permissions, logging a Transfer event.
-Purpose: Lets apps like exchanges or staking platforms move your  AOC BEP20 V2.1 tokens for you, making AOC BEP20 V2.1 token usable in automated systems.
+- **What It Does:** Allows an approved party (e.g., an app or contract) to move AOC BEP20 V2.1 tokens from your wallet to another address, if you’ve given permission with the approve function. It checks AOC BEP20 V2.1 Token’s rules (like blacklisting or monthly transfer limits) and updates balances and permissions, logging a Transfer event.
+- **Purpose:** Lets apps like exchanges or staking platforms move your  AOC BEP20 V2.1 tokens for you, making AOC BEP20 V2.1 token usable in automated systems.
 Simple Example: Suppose you approve a crypto exchange to use AOC BEP20 V2.1 tokens from your wallet. When you trade, the exchange uses transferFrom to send AOC BEP20 V2.1 tokens to another user’s wallet to complete the trade. The transfer follows AOC BEP20 V2.1 Token’s rules, like not exceeding 50%  of your balance monthly if you’re in the LTAF program.
 Why It Matters: Enables AOC BEP20 V2.1 Token  to work with apps for trading or payments, while ensuring all transfers follow the contract’s strict limits for security.
 ## includeInLTAF(address account)
-What It Does: This function adds a specific wallet address (like a user’s crypto account) to LTAF. Once added, the user can only transfer up to 50%   of their  AOC BEP20 V2.1 tokens each month. It also resets their monthly transfer records to start fresh. Only the contract owner (Multi-Sig Signers) can use this function.
-Purpose: LTAF  provides flexibility for authorized AOC Still Committed Actors  (e.g., Administrators; Members; or trusted entities ) to conduct significant transactions when necessary (mainly in charity-based actions), bypassing the restrictive RAMS  limits.
+- **What It Does:** This function adds a specific wallet address (like a user’s crypto account) to LTAF. Once added, the user can only transfer up to 50%   of their  AOC BEP20 V2.1 tokens each month. It also resets their monthly transfer records to start fresh. Only the contract owner (Multi-Sig Signers) can use this function.
+- **Purpose:** LTAF  provides flexibility for authorized AOC Still Committed Actors  (e.g., Administrators; Members; or trusted entities ) to conduct significant transactions when necessary (mainly in charity-based actions), bypassing the restrictive RAMS  limits.
 Simple Example: 
 Imagine you are an Active AOC  Member holding AOC BEP20 V2.1 tokens on December 1  , 2025 where you are normally subject to 15% MPP.
 If you’re added to LTAF on December 1 , 2025, you can transfer or trade 50 AOC BEP20 V2.1 tokens. This helps you realise a huge budget project or business… 
 The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors who keep fighting for AOC growth…
 Why It Matters: AOC  Core Team uses this to distinguish or to decorate Still Engaged AOC  Actors. It's a strict rule that only the Multi-Sig Signers can apply.
-Implementation in Contract:
+**Implementation in Contract:**
 The includedInLTAF mapping identifies addresses authorized for LTAF, controlled by the Multi-Sig Signers.
 The ltafPercentage variable (default 50% ) sets the maximum percentage of a user’s balance that can be transferred in a single or multiple transactions for LTAF-authorized accounts.
 In the _transfer function, if a sender is included in LTAF, their transfer amount is validated against ltafPercentage of their balance instead of the RAMS level percentage.
 The owner(Signers) can update ltafPercentage using the updateLtafPercentage function.
-excludedFromLTAF(address account)
-What It Does: This function removes a wallet address from the LTAF, meaning the user is no longer allowed to transfer 50% of their AOC BEP20 V2.1 tokens per month. From there, the said wallet falls back under RAMS restrictions. The AOC BEP20 V2.1 token’s contract records when this happens (like a timestamp) to track the change. Only the Multi Sig Signers can use this function.
-Purpose: To remove a user from the LTAF transfer increase, obliging them to fall back under RAMS, and trade their tokens instead of the 50% monthly cap (though other rules, like RAMS, might still apply).
+# excludedFromLTAF(address account)
+- **What It Does:** This function removes a wallet address from the LTAF, meaning the user is no longer allowed to transfer 50% of their AOC BEP20 V2.1 tokens per month. From there, the said wallet falls back under RAMS restrictions. The AOC BEP20 V2.1 token’s contract records when this happens (like a timestamp) to track the change. Only the Multi Sig Signers can use this function.
+- **Purpose**: To remove a user from the LTAF transfer increase, obliging them to fall back under RAMS, and trade their tokens instead of the 50% monthly cap (though other rules, like RAMS, might still apply).
 Simple Example: If you were in LTAF and could send up to 50 units  out of your 100 AOC BEP20 V2.1 tokens per month, this function removes that allowance or grace. Now you cannot send all AOC BEP20 V2.1 tokens if you want, as long as you fall under other transaction regulation  rules.
 Why It Matters: It helps remove users back to RAMS restrictions.
 includeInRAMS(address account)
