@@ -10,7 +10,8 @@
 
 # Overview
 
-Alpha Omega Coin (AOC) - The Queen of Cryptocurrencies, operates on an interoperable Monetary, Financial and Economic Galaxy (AOC MFEG)  which is composed of AOC Coin (=AOC Mother Coin) and several tokens including the AOC BEP20 Token the version 2.1 (= AOC BEP20 V2.1 Token) of which we are dealing with in this Technical Explanatory Documentation (=TED) .
+# Alpha Omega Coin (AOC)
+The Queen of Cryptocurrencies, operates on an interoperable Monetary, Financial and Economic Galaxy (AOC MFEG)  which is composed of AOC Coin (=AOC Mother Coin) and several tokens including the AOC BEP20 Token the version 2.1 (= AOC BEP20 V2.1 Token) of which we are dealing with in this Technical Explanatory Documentation (=TED) .
 
 
 AOC BEP20 Token V2.1 smart contract is an ERC20-compliant token with AOC level 2 Market Anti-Manipulation Functionality (MAMF) called Regressive Anti-Manipulation Strategy  (RAMS), AOC level 3 Market Anti-Manipulation Functionality  (MAMF) called  Loyalty Transaction Authorization Functionality (LTAF), blacklisting, etc. It has no burning and no minting features.
@@ -21,41 +22,41 @@ In this TED, for Memory Records (MR), Community Education (CE), Administrative C
 
 
 # Part 1 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Identification Core Details
-- Name: Alpha Omega Coin (AOC)
-- Symbol: AOC
-- Decimals: 18
-- Initial Fixed Supply: 1,000,000,000,000 (1 trillion AOC)
-- Total Maximum Fixed Supply: 1,000,000,000,000 (1 trillion AOC) No minting and No Burning
-- TYPE: Utility, Donation, Charity and Payment Token (UDCPT) 
-- Network / Blockchain: Binance Smart Chain
-- Version : Version 2.1 (V2.1)
-- Upgradeability: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
-- Pausable: Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
-- Blacklist: Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
+- # Name: Alpha Omega Coin (AOC)
+- # Symbol: AOC
+- # Decimals: 18
+- # Initial Fixed Supply: 1,000,000,000,000 (1 trillion AOC)
+- # Total Maximum Fixed Supply: 1,000,000,000,000 (1 trillion AOC) No minting and No Burning
+- # TYPE: Utility, Donation, Charity and Payment Token (UDCPT) 
+- # Network / Blockchain: Binance Smart Chain
+- # Version : Version 2.1 (V2.1)
+- # Upgradeability: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
+- # Pausable: Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
+- # Blacklist: Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
 
 
 
 
 # Part 2 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Smart Contract Testnet + Mainnet Codes Identification Urls 
 ## Testnet : 
-Github : 
+# Github : 
 - Branch Name: testnet-V2.3
 - Branch Link: https://github.com/alphaomegacoinaoc/AOC-bep20-V2-token-smart-contract/tree/testnet-v2.3
 - Explorer:  : https://testnet.bscscan.com/address/0xbc0F73B52D6F37e527B07Bb01301C77Bf9716489
 ## Mainnet :
-Github : 
+# Github : 
 - Branch Name: main-V3
 - Branch Link: https://github.com/alphaomegacoinaoc/AOC-bep20-V2-token-smart-contract/tree/main-v3
 - Explorer: https://bscscan.com/address/0x41ab98fbd2509bf573cb93dbe15d50d970d96957#readProxyContract
 
 
 # Part 3 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Multi-Sig Smart Contract Testnet + Mainnet Codes Identification Urls 
-Testnet : 
+# Testnet : 
 Github : Branch Name: 
 Branch Link: 
 Explorer:  : https://testnet.bscscan.com/address/0x6cddB529f72Dccb700ADCB4C1c26eD01f6562F7E#code
 
-Mainnet :
+# Mainnet :
 Github : Branch Name: 
               Branch Link:
 Explorer: https://bscscan.com/address/0x4B723e1FCcca5A883fEEf8923701AECbd46fEAd1#readProxyContract
