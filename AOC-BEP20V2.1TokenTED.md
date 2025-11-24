@@ -71,7 +71,7 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 
 
 # Part 4 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Smart Contract Read + Write Functions
-4.1 Read  Functions
+## 4.1 Read  Functions
 1. **Function: name()**
 - **What it does:** Returns the token name ("Alpha Omega Coin").
 - **Purpose:** Provides the token’s name for external use.
