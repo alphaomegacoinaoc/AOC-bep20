@@ -21,17 +21,17 @@ In this TED, for Memory Records (MR), Community Education (CE), Administrative C
 
 
 # Part 1 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Identification Core Details
-Name: Alpha Omega Coin (AOC)
-Symbol: AOC
-Decimals: 18
-Initial Fixed Supply: 1,000,000,000,000 (1 trillion AOC)
-Total Maximum Fixed Supply: 1,000,000,000,000 (1 trillion AOC) No minting and No Burning
-TYPE: Utility, Donation, Charity and Payment Token (UDCPT) 
-Network / Blockchain: Binance Smart Chain
-Version : Version 2.1 (V2.1)
-Upgradeability: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
-Pausable: Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
-Blacklist: Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
+- Name: Alpha Omega Coin (AOC)
+- Symbol: AOC
+- Decimals: 18
+- Initial Fixed Supply: 1,000,000,000,000 (1 trillion AOC)
+- Total Maximum Fixed Supply: 1,000,000,000,000 (1 trillion AOC) No minting and No Burning
+-TYPE: Utility, Donation, Charity and Payment Token (UDCPT) 
+- Network / Blockchain: Binance Smart Chain
+- Version : Version 2.1 (V2.1)
+- Upgradeability: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
+- Pausable: Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
+- Blacklist: Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
 
 
 
