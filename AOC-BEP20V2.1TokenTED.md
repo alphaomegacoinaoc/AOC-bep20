@@ -9,9 +9,7 @@
 # AOC BEP20 V2.1 Token Smart Contract 
 
 # Overview
-
-# Alpha Omega Coin (AOC)
-The Queen of Cryptocurrencies, operates on an interoperable Monetary, Financial and Economic Galaxy (AOC MFEG)  which is composed of AOC Coin (=AOC Mother Coin) and several tokens including the AOC BEP20 Token the version 2.1 (= AOC BEP20 V2.1 Token) of which we are dealing with in this Technical Explanatory Documentation (=TED) .
+**Alpha Omega Coin (AOC)** The Queen of Cryptocurrencies, operates on an interoperable Monetary, Financial and Economic Galaxy (AOC MFEG)  which is composed of AOC Coin (=AOC Mother Coin) and several tokens including the AOC BEP20 Token the version 2.1 (= AOC BEP20 V2.1 Token) of which we are dealing with in this Technical Explanatory Documentation (=TED) .
 
 
 AOC BEP20 Token V2.1 smart contract is an ERC20-compliant token with AOC level 2 Market Anti-Manipulation Functionality (MAMF) called Regressive Anti-Manipulation Strategy  (RAMS), AOC level 3 Market Anti-Manipulation Functionality  (MAMF) called  Loyalty Transaction Authorization Functionality (LTAF), blacklisting, etc. It has no burning and no minting features.
@@ -22,17 +20,17 @@ In this TED, for Memory Records (MR), Community Education (CE), Administrative C
 
 
 # Part 1 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Identification Core Details
-- # Name: Alpha Omega Coin (AOC)
-- # Symbol: AOC
-- # Decimals: 18
-- # Initial Fixed Supply: 1,000,000,000,000 (1 trillion AOC)
-- # Total Maximum Fixed Supply: 1,000,000,000,000 (1 trillion AOC) No minting and No Burning
-- # TYPE: Utility, Donation, Charity and Payment Token (UDCPT) 
-- # Network / Blockchain: Binance Smart Chain
-- # Version : Version 2.1 (V2.1)
-- # Upgradeability: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
-- # Pausable: Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
-- # Blacklist: Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
+- **Name**: Alpha Omega Coin (AOC)
+- **Symbol**: AOC
+- **Decimals**: 18
+- **Initial** Fixed Supply: 1,000,000,000,000 (1 trillion AOC)
+- **Total** Maximum Fixed Supply: 1,000,000,000,000 (1 trillion AOC) No minting and No Burning
+- **TYPE**: Utility, Donation, Charity and Payment Token (UDCPT) 
+- **Network** / **Blockchain**: Binance Smart Chain
+- **Version** : Version 2.1 (V2.1)
+- **Upgradeability**: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
+- **Pausable**: Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
+- **Blacklist**: Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
 
 
 
