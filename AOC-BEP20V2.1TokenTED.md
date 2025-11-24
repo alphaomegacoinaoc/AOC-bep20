@@ -23,8 +23,8 @@ In this TED, for Memory Records (MR), Community Education (CE), Administrative C
 - **Name**: Alpha Omega Coin (AOC)
 - **Symbol**: AOC
 - **Decimals**: 18
-- **Initial Fixed Supply** : 1,000,000,000,000 (1 trillion AOC)
-- **Total** Maximum Fixed Supply: 1,000,000,000,000 (1 trillion AOC) No minting and No Burning
+- **Initial Fixed Supply** : 1,000,000,000,000 (1 trillion)
+- **Total Maximum Fixed Supply** : 1,000,000,000,000 (1 trillion) No minting and No Burning
 - **TYPE**: Utility, Donation, Charity and Payment Token (UDCPT) 
 - **Network** / **Blockchain**: Binance Smart Chain
 - **Version** : Version 2.1 (V2.1)
