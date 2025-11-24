@@ -149,10 +149,10 @@ The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors w
 - **What  Does includeInRAMS(address account) do?**
 - This function _**adds by default  all AOC BEP20 V2.1 Token Holders’ wallets to RAMS**_, which _limits how many AOC BEP20 V2.1 Tokens_ a user can _transfer on the first day of each month_, from  (_**2 PM GMT+1**_).
 - *RAMS is enforced through a levels mapping, with specific time periods and decreasing transfer regulations* :
-- **Period of time 1:** _**1 Jan 2022**_ – _**1 Jan 2024**_ → _**20%**_ transfer limit
-- **Period of time 2:** _**2 Jan 2024**_ – _**1 Jan 2026**_ → _**15%**_ transfer limit
-- **Period of time 3:** _**2 Jan 2026**_ – _**1 Jan 2028**_ → _**10%**_ transfer limit
-- **Period of time 4:** _**2 Jan 2028**_ and _**onwards**_ → _**5%**_ transfer limit,
+- **Period of time 1:**  _**1 Jan 2022**_ – _**1 Jan 2024**_ → _**20%**_ transfer limit
+- **Period of time 2:**  _**2 Jan 2024**_ – _**1 Jan 2026**_ → _**15%**_ transfer limit
+- **Period of time 3:**  _**2 Jan 2026**_ – _**1 Jan 2028**_ → _**10%**_ transfer limit
+- **Period of time 4:**  _**2 Jan 2028**_ and _**onwards**_ → _**5%**_ transfer limit,
 - REMINDER: _**20%, 15%, 10% and 5%**_ are each called _**MPP**_ (_Monthly Permissive Percentage_) or _**PMP**_ (_Permissive Monthly Percentage_). 
 
 The function also _ensures the user isn’t in LTAF_ (_**they can’t be in both systems**_). Only the _**Multi Sig Signers can add someone to RAMS**_.
