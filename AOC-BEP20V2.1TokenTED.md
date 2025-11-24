@@ -153,13 +153,13 @@ The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors w
 - **Period of time 2:**  _**2 Jan 2024**_ – _**1 Jan 2026**_ → _**15%**_ transfer limit
 - **Period of time 3:**  _**2 Jan 2026**_ – _**1 Jan 2028**_ → _**10%**_ transfer limit
 - **Period of time 4:**  _**2 Jan 2028**_ and _**onwards**_ → _**5%**_ transfer limit,
-- REMINDER: _**20%, 15%, 10% and 5%**_ are each called _**MPP**_ (_Monthly Permissive Percentage_) or _**PMP**_ (_Permissive Monthly Percentage_). 
+- _**REMINDER**:_ _**20%, 15%, 10% and 5%**_ are each called _**MPP**_ (_**M**onthly **P**ermissive **P**ercentage_) or _**PMP**_ (_**P**ermissive **M**onthly **P**ercentage_). 
 
 The function also _ensures the user isn’t in LTAF_ (_**they can’t be in both systems**_). Only the _**Multi Sig Signers can add someone to RAMS**_.
-- **Purpose:** To regulate _how many AOC BEP20 V2.1 Tokens_ users can _**send**_ or _**trade**_ over time, with _stricter limits_ as _years pass_. This encourages _holding tokens longer_ and _prevents large_ and _sudden transfers_.
-- **Simple Example:** If you have 100 AOC BEP20 V2.1 Tokens and it’s during January 2, 2024–January 1, 2026, being in RAMS means you can only send 15 AOC BEP20 V2.1 Tokens per month (15% of your balance). If you try to send more, the transaction fails.  
+- **Purpose:** To **_regulate how many AOC BEP20 V2.1 Tokens_** _users_ can _**send**_ or _**trade**_ _**over time**_, with _stricter limits_ as _years pass_. This encourages _holding tokens longer_ and _prevents large_ and _sudden transfers_.
+- **Simple Example:** _If you have 100_ _**AOC BEP20 V2.1 Tokens**_ and _**it’s during January 2, 2024–January 1, 2026**_, being in _**RAMS** means you can only send 15** AOC BEP20 V2.1 Tokens per month** (15% of your balance)_. _**If you try to send more, the transaction fails**._  
 The Mutli-Sig Signers  might add you to RAMS if you’re a big contributor to prevent market dumps.
-- **Why It Matters:** It keeps the AOC BEP20 V2.1 Token stable by spreading out transfers over time, especially for users with lots of tokens.
+- **Why It Matters:** It keeps the _**AOC BEP20 V2.1 Token**_ stable by spreading out transfers over time, especially for users with lots of tokens.
 
 ## excludeFromRAMS(address account)
 - **What It Does:** This function _**removes a wallet address from RAMS**_, so _the user no longer faces the level-based monthly transfer limits_ (_**20%, 15%, 10%, or 5%**_). The contract logs when this happens. Only _the Mutli-Sig Signers can use this function_.
@@ -170,15 +170,15 @@ This function (_excludeFromRAMS_) is mainly _set to allow the AOC BEP20 V2.1 Tok
 
 ## updateLtafPercentage(uint256 percentage)
 - **What It Does:** This function _ **lets the Mutli-Sig Signers  change the LTAF monthly transfer limit percentage**_ (_default is **50%**_). For example, they could set it to 40%, meaning _LTAF users can only transfer 40%_ of their _balance per month_. _Only_ the _Mutli-Sig Signers can make this change_.
-- **Purpose:** To adjust how strict the LTAF rules are, depending on the needs of the AOC BEP20 V2.1 Token ecosystem, like market conditions or user behavior.
-- **Simple Example:** If the LTAF limit is 50% and you have 100 AOC BEP20 V2.1 Tokens, you can send 50 AOC BEP20 V2.1 Tokens per month. If the admin changes it to 30%, you can only send 30 _**AOC BEP20 V2.1 Tokens**_ per month. This helps the Mutli-Sig Signers  fine-tune how much users can move.
+- **Purpose:** _**To adjust how strict the LTAF rules are, depending on the needs of the AOC BEP20 V2.1 Token ecosystem, like market conditions or user behavior.**_
+- **Simple Example:** If the_ **LTAF limit is 50%**_ and _you have 100 AOC BEP20 V2.1 Tokens_, you can _**send 50 AOC BEP20 V2.1 Tokens per month**_. If the admin changes it to 30%, you can only send 30 _**AOC BEP20 V2.1 Tokens**_ per month. This helps the Mutli-Sig Signers  fine-tune how much users can move.
 - **Why It Matters:** It _**gives the contract Mutli-Sig Signers flexibility**_ to _**tighten**_ or _**loosen LTAF restrictions**_, helping **balance _AOC BEP20 V2.1 Token stability_ and _user freedom_**.
 
 ## updateUserInfo(address account, uint256 year, uint256 month)
 - **What It Does:** This internal function (_not directly callable by users or visible in the explorer_) _**updates a users  AOC BEP20 V2.1 Tokens’ balance**_ and their _**RAMS level**_ (_based on the current year_), and _their monthly transfer records_. It _runs automatically when a user tries to transfer AOC BEP20 V2.1 Tokens_, ensuring their _limits are up-to-date_.
 - **Purpose:** To keep _track of a user’s current balance_ and _restrictions_ (**_RAMS_** or **_LTAF_**) accurately, _resetting transfer counts at the start of each month_ or _year_.
 - **Simple Example:** From January 2, 2024 to January 1, 2026, if you are in RAMS, this function checks your balance (say, 100 AOC BEP20 V2.1 Tokens) and sets your transfer limit or MPP / PMP to 15% (15 AOC BEP20 V2.1 Tokens / month) because it falls within the RAMS Second Active Timeline (RAMS SAT), which is January 2, 2024 - January 1, 2026. It also resets your monthly transfer count to zero if it’s a new month. This happens behind the scenes when you try to send AOC BEP20 V2.1 tokens.
--** Why It Matters:** It e_nsures the system always knows how many AOC BEP20 V2.1 tokens you can send based on the current time_ and _your restrictions_, keeping everything fair and accurate.
+- **Why It Matters:** It e_nsures the system always knows how many AOC BEP20 V2.1 tokens you can send based on the current time_ and _your restrictions_, keeping everything fair and accurate.
 
 ## Function:addLevels(uint256 level, uint256 startDay, uint256 endDay, uint256 percentage)
 - **What it does:** _**Sets transfer limit levels with start/end timestamps**_ and a percentage limit (_**MPP(Monthly Permissive Percentage**_) or **_PMP_** (**_Permissive Monthly Percentage_**) (internal).
