@@ -15,7 +15,7 @@
 **AOC BEP20 Token V2.1 smart contract** is an **ERC20-compliant token** with **AOC level 2** **M**arket **A**nti-**M**anipulation **F**unctionality (**MAMF**) called **R**egressive **A**nti-**M**anipulation **S**trategy  (**RAMS**), **AOC level 3** **M**arket **A**nti-**M**anipulation **F**unctionality  (**MAMF**) called  **L**oyalty **T**ransaction **A**uthorization **F**unctionality (**LTAF**), **blacklisting**, etc. It has **no** **burning** and **no** **minting** **features**.
 
 
-In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducation (**CE**), **A**dministrative **C**ontinuity (**AC**)  and for **A**udit **S**ervices (**AS**) sake, **AOC Core Team** and **AOC Web3 Team** are **providing technical guidance** on **AOC BEP20 Token V2.1 smart contract. **
+In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducation (**CE**), **A**dministrative **C**ontinuity (**AC**)  and for **A**udit **S**ervices (**AS**) sake, **AOC Core Team** and **AOC Web3 Team** are **providing technical guidance** on **AOC BEP20 Token V2.1 smart contract.**
 
 
 
