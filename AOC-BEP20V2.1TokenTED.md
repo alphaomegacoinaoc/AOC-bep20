@@ -115,18 +115,18 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 - **Finality:** To _permanently remove central control_ and _make the contract fully autonomous_
 
 ## TransferFrom Function
-- **What It Does:** Allows an approved party (e.g., an app or contract) to move _**AOC BEP20 V2.1 tokens**_ from your wallet to another address, if you’ve given permission with the approve function. It checks AOC BEP20 V2.1 Token’s rules (like blacklisting or monthly transfer limits) and updates balances and permissions, logging a Transfer event.
-- **Purpose:** Lets apps like exchanges or staking platforms move your  _**AOC BEP20 V2.1 tokens**_ for you, making AOC BEP20 V2.1 token usable in automated systems.
+- **What It Does:** _**Allows an approved party**_ (e.g., an _app_ or _contract_) to move _**AOC BEP20 V2.1 tokens**_ from your wallet to another address, if you’ve given permission with the approve function._ **It checks AOC BEP20 V2.1 Token’s rules**_ (like _blacklisting_ or _monthly transfer limits_) and _updates balances_ and _permissions_, logging a Transfer event.
+- **Purpose:** _**Lets apps**_ like _exchanges_ or _staking platforms_ move your  _**AOC BEP20 V2.1 tokens**_ for you, making _**AOC BEP20 V2.1**_ _token usable_ in _automated systems_.
 - **Simple Example:** Suppose you approve a crypto exchange to use _**AOC BEP20 V2.1 tokens**_ from your wallet. When you trade, the exchange uses transferFrom to send _**AOC BEP20 V2.1 tokens**_ to another user’s wallet to complete the trade. The transfer follows AOC BEP20 V2.1 Token’s rules, like not exceeding 50%  of your balance monthly if you’re in the LTAF program.
-- **Why It Matters:** Enables AOC BEP20 V2.1 Token  to work with apps for trading or payments, while ensuring all transfers follow the contract’s strict limits for security.
+- **Why It Matters:** _**Enables AOC BEP20 V2.1 Token to work with apps**_ for _**trading**_ or _**payments**_, while ensuring all transfers follow the contract’s strict limits for security.
 ## includeInLTAF(address account)
-- **What It Does:** This function adds a specific wallet address (like a user’s crypto account) to LTAF. Once added, the user can only transfer up to 50%   of their  _**AOC BEP20 V2.1 tokens**_ each month. It also resets their monthly transfer records to start fresh. Only the contract owner (Multi-Sig Signers) can use this function.
-- **Purpose:** LTAF  provides flexibility for authorized AOC Still Committed Actors  (e.g., Administrators; Members; or trusted entities ) to conduct significant transactions when necessary (mainly in charity-based actions), bypassing the restrictive RAMS  limits.
+- **What It Does:** This function _**adds a specific wallet address**_ (_like a user’s crypto account_) to_ **LTAF**_. Once added, the user can _only transfer up to **50%**_  of their  _**AOC BEP20 V2.1 tokens**_ _**each month**_. It also _resets their monthly transfer records_ to _start fresh._ Only the contract owner (_**Multi-Sig Signers**_) can use this function.
+- **Purpose:** _**LTAF provides flexibility**_ for _**authorized AOC Still Committed Actors**_ (e.g., _Administrators; Members;_ or _trusted entities_) _**to conduct significant transactions**_ when necessary (_**mainly in charity-based actions**_), **bypassing the restrictive _RAMS_  limits.**
 - **Simple Example:** 
-Imagine you are an Active AOC  Member holding _**AOC BEP20 V2.1 tokens**_ on December 1  , 2025 where you are normally subject to 15% MPP.
-If you’re added to LTAF on December 1 , 2025, you can transfer or trade 50 _**AOC BEP20 V2.1 tokens**_. This helps you realise a huge budget project or business… 
+Imagine you are an Active AOC  Member holding _**AOC BEP20 V2.1 tokens**_ on _December 1  , 2025_ where you are normally subject to _15% MPP_.
+If you’re added to _LTAF_ on _December 1 , 2025_, you can _transfer_ or _trade 50_ _**AOC BEP20 V2.1 tokens**_. This helps you realise a huge budget project or business… 
 The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors who keep fighting for AOC growth…
-- **Why It Matters:** AOC  Core Team uses this to distinguish or to decorate Still Engaged AOC  Actors. It's a strict rule that only the Multi-Sig Signers can apply.
+- **Why It Matters:** _**AOC Core Team**_uses this to _distinguish_ or to _decorate_ Still _Engaged AOC Actors_. It's a strict rule that only the Multi-Sig Signers can apply.
   
 **Implementation in Contract:**
 - The includedInLTAF mapping identifies addresses authorized for LTAF, controlled by the Multi-Sig Signers.
@@ -134,54 +134,54 @@ The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors w
 - In the _transfer function, if a sender is included in LTAF, their transfer amount is validated against ltafPercentage of their balance instead of the RAMS level percentage.
 - The owner(Signers) can update ltafPercentage using the updateLtafPercentage function.
 # excludedFromLTAF(address account)
-- **What It Does:** This function removes a wallet address from the LTAF, meaning the user is no longer allowed to transfer 50% of their AOC BEP20 V2.1 tokens per month. From there, the said wallet falls back under RAMS restrictions. The AOC BEP20 V2.1 token’s contract records when this happens (like a timestamp) to track the change. Only the Multi Sig Signers can use this function.
-- **Purpose**: To remove a user from the LTAF transfer increase, obliging them to fall back under RAMS, and trade their tokens instead of the 50% monthly cap (though other rules, like RAMS, might still apply).
-- **Simple Example:** If you were in LTAF and could send up to 50 units  out of your 100 AOC BEP20 V2.1 tokens per month, this function removes that allowance or grace. Now you cannot send all AOC BEP20 V2.1 tokens if you want, as long as you fall under other transaction regulation  rules.
+- **What It Does:** This function _**removes a wallet address from the LTAF**_, meaning the user is **_no longer allowed to transfer 50%_** of their _**AOC BEP20 V2.1 tokens**_ per month. From there, the _**said wallet falls back under RAMS restrictions.**_ The _**AOC BEP20 V2.1 token’s**_ contract _records when this happens_ (_like a timestamp_) to track the change. _**Only the Multi Sig Signers**_ can use this _function_.
+- **Purpose**: _To remove a user from the LTAF transfer increase_, obliging them to fall back under RAMS, and _trade their tokens instead of the 50% monthly cap_ (though other rules, like RAMS, might still apply).
+- **Simple Example:** If you were in LTAF and could send up to 50 units  out of your 100 _**AOC BEP20 V2.1 tokens**_ per month, this function _removes that allowance_ or _grace_. Now you cannot send all _**AOC BEP20 V2.1 tokens**_ if you want, as long as you fall under other transaction regulation  rules.
 - **Why It Matters:** It helps remove users back to RAMS restrictions.
 # includeInRAMS(address account)
 
 ## BASIC NOTIONS
 
-Alpha Omega Coin (AOC) - The Queen of cryptocurrencies , is the very first cryptocurrency in the world which is equipped with Market Anti-Manipulation Functionalities or Strategies (MAMF or MAMS). Multi-levels, MAMF or MAMS include RAMS.    
-
-- RAMS = Regressive Anti-Manipulation Strategy , is also called RAMF = Regressive Anti-Manipulation Functionality.
-- RAMS protects AOC BEP20 V2.1 token’s price, market , ecosystem and community  from price flooding, dumping , manipulation and from waste of wealth, by limiting transaction sizes, promoting stability and long-term commitment from holders.
+**Alpha Omega Coin (AOC)** - _The Queen of cryptocurrencies_ , is the _very first cryptocurrency in the world_ which is _equipped_ with **_Market Anti-Manipulation Functionalities_** or _**Strategies**_ (_MAMF_ or _MAMS_). _Multi-levels_ _**MAMF**_ or _**MAMS**_ include _RAMS_.    
+- **RAMS** = _Regressive Anti-Manipulation Strategy_ , is also called _**RAMF = Regressive Anti-Manipulation Functionality**_.
+- _RAMS protects_ _**AOC BEP20 V2.1 token’s**_ _**price**_, _**market**_ , _**ecosystem**_ and _**community**_ from _**price flooding**_, _**dumping**_ , _**manipulation**_ and _from_ _**waste of wealth**_, by _limiting transaction sizes_, _promoting stability_ and _long-term commitment from holders._
+  
 - **What  Does includeInRAMS(address account) do?**
-- This function adds by default all AOC BEP20 V2.1 Token Holders’ wallets to RAMS, which limits how many AOC BEP20 V2.1 Tokens a user can transfer on the first day of each month, from  (2 PM GMT+1).
-- RAMS is enforced through a levels mapping, with specific time periods and decreasing transfer regulations :
-- Period of time: 1 Jan 2022 – 1 Jan 2024 → 20% transfer limit
-- Period of time: 2 Jan 2024 – 1 Jan 2026 → 15% transfer limit
-- Period of time: 2 Jan 2026 – 1 Jan 2028 → 10% transfer limit
-- Period of time: 2 Jan 2028 and onwards → 5% transfer limit,
-REMINDER: 20%, 15%, 10% and 5% are each called MPP (Monthly Permissive Percentage) or PMP (Permissive Monthly Percentage). 
+- This function _**adds by default  all AOC BEP20 V2.1 Token Holders’ wallets to RAMS**_, which _limits how many AOC BEP20 V2.1 Tokens_ a user can _transfer on the first day of each month_, from  (_**2 PM GMT+1**_).
+- *RAMS is enforced through a levels mapping, with specific time periods and decreasing transfer regulations* :
+- **Period of time 1:** _**1 Jan 2022**_ – _**1 Jan 2024**_ → _**20%**_ transfer limit
+- **Period of time 2:** _**2 Jan 2024**_ – _**1 Jan 2026**_ → _**15%**_ transfer limit
+- **Period of time 3:** _**2 Jan 2026**_ – _**1 Jan 2028**_ → _**10%**_ transfer limit
+- **Period of time 4:** _**2 Jan 2028**_ and _**onwards**_ → _**5%**_ transfer limit,
+- REMINDER: _**20%, 15%, 10% and 5%**_ are each called _**MPP**_ (_Monthly Permissive Percentage_) or _**PMP**_ (_Permissive Monthly Percentage_). 
 
-The function also ensures the user isn’t in LTAF (they can’t be in both systems). Only the Multi Sig Signers can add someone to RAMS.
-- **Purpose:** To regulate how much AOC BEP20 V2.1 Tokens users can send or trade over time, with stricter limits as years pass. This encourages holding tokens longer and prevents large and sudden transfers.
+The function also _ensures the user isn’t in LTAF_ (_**they can’t be in both systems**_). Only the _**Multi Sig Signers can add someone to RAMS**_.
+- **Purpose:** To regulate _how many AOC BEP20 V2.1 Tokens_ users can _**send**_ or _**trade**_ over time, with _stricter limits_ as _years pass_. This encourages _holding tokens longer_ and _prevents large_ and _sudden transfers_.
 - **Simple Example:** If you have 100 AOC BEP20 V2.1 Tokens and it’s during January 2, 2024–January 1, 2026, being in RAMS means you can only send 15 AOC BEP20 V2.1 Tokens per month (15% of your balance). If you try to send more, the transaction fails.  
 The Mutli-Sig Signers  might add you to RAMS if you’re a big contributor to prevent market dumps.
 - **Why It Matters:** It keeps the AOC BEP20 V2.1 Token stable by spreading out transfers over time, especially for users with lots of tokens.
 
 ## excludeFromRAMS(address account)
-- **What It Does:** This function removes a wallet address from RAMS, so the user no longer faces the level-based monthly transfer limits (20%, 15%, 10%, or 5%). The contract logs when this happens. Only the Mutli-Sig Signers  can use this function.
-- **Purpose:** To lift the RAMS restrictions , allowing a user to transfer their AOC BEP20 V2.1 Tokens freely (unless they’re in LTAF or blacklisted).
+- **What It Does:** This function _**removes a wallet address from RAMS**_, so _the user no longer faces the level-based monthly transfer limits_ (_**20%, 15%, 10%, or 5%**_). The contract logs when this happens. Only _the Mutli-Sig Signers can use this function_.
+- **Purpose:** To _**lift**_ the _**RAMS restrictions** _, _allowing a user to transfer their AOC BEP20 V2.1 Tokens freely_ (unless they’re in _LTAF_ or _blacklisted_).
 - **Simple Example:** If you’re in RAMS and limited to sending 10 AOC BEP20 V2.1 Tokens out of 100 in 2026, this function removes that limit. You can now send all 100 AOC BEP20 V2.1 Tokens in one go, assuming no other transfer regulations apply. The Mutli-Sig Signers might do this as a very particular reward.
 - **Why It Matters:** It gives users more freedom to use their tokens once they are granted special permission to use them freely.
 This function (excludeFromRAMS) is mainly set to allow the AOC BEP20 V2.1 Token (Regular) Distribution Wallet to continue distributing AOC BEP20 V2.1 Tokens to eligible members, holder category by holder category, without interruption, until the distribution timeframe or deadline allocated to each holder category has expired.
 
 ## updateLtafPercentage(uint256 percentage)
-- **What It Does:** This function lets the Mutli-Sig Signers  change the LTAF monthly transfer limit percentage (default is 50%). For example, they could set it to 40%, meaning LTAF users can only transfer 40% of their balance per month. Only the Mutli-Sig Signers  can make this change.
+- **What It Does:** This function _ **lets the Mutli-Sig Signers  change the LTAF monthly transfer limit percentage**_ (_default is **50%**_). For example, they could set it to 40%, meaning _LTAF users can only transfer 40%_ of their _balance per month_. _Only_ the _Mutli-Sig Signers can make this change_.
 -** Purpose:** To adjust how strict the LTAF rules are, depending on the needs of the AOC BEP20 V2.1 Token ecosystem, like market conditions or user behavior.
-- **Simple Example:** If the LTAF limit is 50% and you have 100 AOC BEP20 V2.1 Tokens, you can send 50 AOC BEP20 V2.1 Tokens per month. If the admin changes it to 30%, you can only send 30 AOC BEP20 V2.1 Tokens  per month. This helps the Mutli-Sig Signers  fine-tune how much users can move.
-- **Why It Matters:** It gives the contract Mutli-Sig Signers  flexibility to tighten or loosen LTAF restrictions, helping balance AOC BEP20 V2.1 Token stability and user freedom.
+- **Simple Example:** If the LTAF limit is 50% and you have 100 AOC BEP20 V2.1 Tokens, you can send 50 AOC BEP20 V2.1 Tokens per month. If the admin changes it to 30%, you can only send 30 _**AOC BEP20 V2.1 Tokens**_ per month. This helps the Mutli-Sig Signers  fine-tune how much users can move.
+- **Why It Matters:** It _**gives the contract Mutli-Sig Signers flexibility**_ to _**tighten**_ or _**loosen LTAF restrictions**_, helping **balance _AOC BEP20 V2.1 Token stability_ and _user freedom_**.
 
 ## updateUserInfo(address account, uint256 year, uint256 month)
-- **What It Does:** This internal function (not directly callable by users or visible in the explorer) updates a users  AOC BEP20 V2.1 Tokens’ balance and their RAMS level (based on the current year), and their monthly transfer records. It runs automatically when a user tries to transfer AOC BEP20 V2.1 Tokens, ensuring their limits are up-to-date.
-- **Purpose:** To keep track of a user’s current balance and restrictions (RAMS or LTAF) accurately, resetting transfer counts at the start of each month or year.
+- **What It Does:** This internal function (_not directly callable by users or visible in the explorer_) _**updates a users  AOC BEP20 V2.1 Tokens’ balance**_ and their _**RAMS level**_ (_based on the current year_), and _their monthly transfer records_. It _runs automatically when a user tries to transfer AOC BEP20 V2.1 Tokens_, ensuring their _limits are up-to-date_.
+- **Purpose:** To keep _track of a user’s current balance_ and _restrictions_ (**_RAMS_** or **_LTAF_**) accurately, _resetting transfer counts at the start of each month_ or _year_.
 - **Simple Example:** From January 2, 2024 to January 1, 2026, if you are in RAMS, this function checks your balance (say, 100 AOC BEP20 V2.1 Tokens) and sets your transfer limit or MPP / PMP to 15% (15 AOC BEP20 V2.1 Tokens / month) because it falls within the RAMS Second Active Timeline (RAMS SAT), which is January 2, 2024 - January 1, 2026. It also resets your monthly transfer count to zero if it’s a new month. This happens behind the scenes when you try to send AOC BEP20 V2.1 tokens.
--** Why It Matters:** It ensures the system always knows how many AOC BEP20 V2.1 tokens you can send based on the current time and your restrictions, keeping everything fair and accurate.
+-** Why It Matters:** It e_nsures the system always knows how many AOC BEP20 V2.1 tokens you can send based on the current time_ and _your restrictions_, keeping everything fair and accurate.
 
 ## Function:addLevels(uint256 level, uint256 startDay, uint256 endDay, uint256 percentage)
-- **What it does:** Sets transfer limit levels with start/end timestamps and a percentage limit (MPP (Monthly Permissive Percentage) or PMP (Permissive Monthly Percentage) (internal).
+- **What it does:** _**Sets transfer limit levels with start/end timestamps**_ and a percentage limit (_**MPP(Monthly Permissive Percentage**_) or **_PMP_** (**_Permissive Monthly Percentage_**) (internal).
 - **Purpose:** Defines time-based transfer limits for users during initialization.
 
 
