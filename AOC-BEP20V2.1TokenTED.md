@@ -25,7 +25,7 @@ In this TED, for Memory Records (MR), Community Education (CE), Administrative C
 - **Decimals**: 18
 - **Initial Fixed Supply** : 1,000,000,000,000 (1 trillion)
 - **Total Maximum Fixed Supply** : 1,000,000,000,000 (1 trillion) No minting and No Burning
-- **TYPE**: Utility, Donation, Charity and Payment Token (UDCPT) 
+- **TYPE**: **U**tility, **D**onation, **C**harity and **P**ayment **T**oken (**UDCPT**) 
 - **Network** / **Blockchain**: Binance Smart Chain
 - **Version** : Version 2.1 (V2.1)
 - **Upgradeability**: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
