@@ -104,7 +104,7 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 
 ## Approve Function
 - **What It Does:** Allows you to _**grant permission to another party**_ (**like a _person_ or an _app_**) _to spend_ a specific amount of your _AOC BEP20 V2.1 tokens_ on your behalf. It records this permission and logs it publicly.
-- **Purpose:** Lets you_ **trust apps** _(**like _exchanges_ or _staking_ _platforms_**) to handle your _**AOC BEP20 V2.1 tokens**_ without giving them full control of your wallet.
+- **Purpose:** Lets you _**trust apps**_ (**like _exchanges_ or _staking_ _platforms_**) to handle your _**AOC BEP20 V2.1 tokens**_ without giving them full control of your wallet.
 - **Example:** Imagine you want to trade 100 _**AOC BEP20 V2.1 tokens**_ on a crypto exchange. You use approve to allow the exchange to spend _**AOC BEP20 V2.1 tokens**_ from your wallet. The exchange can now move those tokens when you trade, but only up to _**AOC BEP20 V2.1 tokens**_.
 - **Why It Matters:** This keeps your  _**AOC BEP20 V2.1 tokens**_ _**safe while letting apps**_ like _**exchanges**_ or _**games**_ _use them for you_, as long as they follow _**AOC BEP20 V2.1 Token’s rules**_ (_like limits on transfers_).
 ## RenounceOwnership Function
