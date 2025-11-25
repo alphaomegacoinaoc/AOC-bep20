@@ -108,30 +108,30 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 - **Example:** Imagine you want to trade 100 _**AOC BEP20 V2.1 tokens**_ on a crypto exchange. You use approve to allow the exchange to spend _**AOC BEP20 V2.1 tokens**_ from your wallet. The exchange can now move those tokens when you trade, but only up to _**AOC BEP20 V2.1 tokens**_.
 - **Why It Matters:** This keeps your  _**AOC BEP20 V2.1 tokens**_ _**safe while letting apps**_ like _**exchanges**_ or _**games**_ _use them for you_, as long as they follow _**AOC BEP20 V2.1 Token’s rules**_ (_like limits on transfers_).
 ## RenounceOwnership Function
-- **What It Does:** _Permanently removes the contract’s owner by setting ownership to a null address_, _**disabling all owner-only controls** _(like _blacklisting_ or _pausing_). It logs this change publicly with an OwnershipTransferred event.
+- **What It Does:** _Permanently removes the contract’s owner by setting ownership to a null address_, _**disabling all owner-only controls**_(like _blacklisting_ or _pausing_). It logs this change publicly with an OwnershipTransferred event.
 - **Purpose:** Makes the _**AOC BEP20 V2.1 Token**_ contract fully decentralized, ensuring _no one can control or change its rules_, which builds trust with users.
 - **Simple Example:** Imagine you create an _**AOC BEP20 V2.1 Token**_ for a community project. To prove it’s fair and not controlled by your company, you use renounceOwnership . Now, no one can pause the contract or change its settings, making it run independently like a public utility.
 - **Why It Matters:** Shows users the contract is trustless and not controlled by anyone, but it’s a one-time action—once done, you can’t manage the contract anymore.
 - **Finality:** To _permanently remove central control_ and _make the contract fully autonomous_
 
 ## TransferFrom Function
-- **What It Does:** _**Allows an approved party**_ (e.g., an _app_ or _contract_) to move _**AOC BEP20 V2.1 tokens**_ from your wallet to another address, if you’ve given permission with the approve function._ **It checks AOC BEP20 V2.1 Token’s rules**_ (like _blacklisting_ or _monthly transfer limits_) and _updates balances_ and _permissions_, logging a Transfer event.
+- **What It Does:** _**Allows an approved party**_ (e.g., an _app_ or _contract_) to move _**AOC BEP20 V2.1 tokens**_ from your wallet to another address, if you’ve given permission with the approve function. _**It checks AOC BEP20 V2.1 Token’s rules**_ (like _blacklisting_ or _monthly transfer limits_) and _updates balances_ and _permissions_, logging a Transfer event.
 - **Purpose:** _**Lets apps**_ like _exchanges_ or _staking platforms_ move your  _**AOC BEP20 V2.1 tokens**_ for you, making _**AOC BEP20 V2.1**_ _token usable_ in _automated systems_.
 - **Simple Example:** Suppose you approve a crypto exchange to use _**AOC BEP20 V2.1 tokens**_ from your wallet. When you trade, the exchange uses transferFrom to send _**AOC BEP20 V2.1 tokens**_ to another user’s wallet to complete the trade. The transfer follows AOC BEP20 V2.1 Token’s rules, like not exceeding 50%  of your balance monthly if you’re in the LTAF program.
 - **Why It Matters:** _**Enables AOC BEP20 V2.1 Token to work with apps**_ for _**trading**_ or _**payments**_, while ensuring all transfers follow the contract’s strict limits for security.
 ## includeInLTAF(address account)
-- **What It Does:** This function _**adds a specific wallet address**_ (_like a user’s crypto account_) to_ **LTAF**_. Once added, the user can _only transfer up to **50%**_  of their  _**AOC BEP20 V2.1 tokens**_ _**each month**_. It also _resets their monthly transfer records_ to _start fresh._ Only the contract owner (_**Multi-Sig Signers**_) can use this function.
+- **What It Does:** This function _**adds a specific wallet address**_ (_like a user’s crypto account_) to _**LTAF**_. Once added, the user can _only transfer up to _**50%**_  of their  _**AOC BEP20 V2.1 tokens**_ _**each month**_. It also _resets their monthly transfer records_ to _start fresh._ Only the contract owner _(**Multi-Sig Signers**)_ can use this function.
 - **Purpose:** _**LTAF provides flexibility**_ for _**authorized AOC Still Committed Actors**_ (e.g., _Administrators; Members;_ or _trusted entities_) _**to conduct significant transactions**_ when necessary (_**mainly in charity-based actions**_), **bypassing the restrictive _RAMS_  limits.**
 - **Simple Example:** 
 Imagine you are an Active AOC  Member holding _**AOC BEP20 V2.1 tokens**_ on _December 1  , 2025_ where you are normally subject to _15% MPP_.
 If you’re added to _LTAF_ on _December 1 , 2025_, you can _transfer_ or _trade 50_ _**AOC BEP20 V2.1 tokens**_. This helps you realise a huge budget project or business… 
 The Muti-Sig Signers use this function to motivate Results-Driving AOC  Actors who keep fighting for AOC growth…
-- **Why It Matters:** _**AOC Core Team**_uses this to _distinguish_ or to _decorate_ Still _Engaged AOC Actors_. It's a strict rule that only the Multi-Sig Signers can apply.
+- **Why It Matters:** _**AOC Core Team**_ uses this to _distinguish_ or to _decorate_ Still _Engaged AOC Actors_. It's a strict rule that only the Multi-Sig Signers can apply.
   
 **Implementation in Contract:**
 - The includedInLTAF mapping identifies addresses authorized for LTAF, controlled by the Multi-Sig Signers.
 - The ltafPercentage variable (default 50% ) sets the maximum percentage of a user’s balance that can be transferred in a single or multiple transactions for LTAF-authorized accounts.
-- In the _transfer function, if a sender is included in LTAF, their transfer amount is validated against ltafPercentage of their balance instead of the RAMS level percentage.
+- In the _transfer function_, if a sender is included in LTAF, their transfer amount is validated against ltafPercentage of their balance instead of the RAMS level percentage.
 - The owner(Signers) can update ltafPercentage using the updateLtafPercentage function.
 # excludedFromLTAF(address account)
 - **What It Does:** This function _**removes a wallet address from the LTAF**_, meaning the user is **_no longer allowed to transfer 50%_** of their _**AOC BEP20 V2.1 tokens**_ per month. From there, the _**said wallet falls back under RAMS restrictions.**_ The _**AOC BEP20 V2.1 token’s**_ contract _records when this happens_ (_like a timestamp_) to track the change. _**Only the Multi Sig Signers**_ can use this _function_.
