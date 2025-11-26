@@ -1,12 +1,13 @@
-## Alpha Omega Coin (AOC), The Queen of cryptocurrencies
-
+# Alpha Omega Coin (AOC), The Queen of cryptocurrencies
+<br>
 
 # Technical Explanatory Documentation (TED)
 
                                                               
-# About 
+## About 
 
 # AOC BEP20 V2.1 Token Smart Contract 
+<br>
 
 # Overview
 **Alpha Omega Coin (AOC)**, **The Queen of Cryptocurrencies**, operates on an interoperable **M**onetary, **F**inancial and **E**conomic **G**alaxy (**AOC MFEG**)  which is composed of **AOC C**oin (=**AOC M**other **C**oin) and **several tokens** **including** the **AOC BEP20 Token** the **version 2.1** (**=** **AOC BEP20 V2.1 Token**) of which we are dealing with in this **T**echnical **E**xplanatory **D**ocumentation (=**TED**) .
