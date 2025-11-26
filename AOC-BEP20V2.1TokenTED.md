@@ -167,7 +167,7 @@ The Mutli-Sig Signers  might add you to RAMS if you’re a big contributor to pr
 - **Purpose:** To _**lift**_ the _**RAMS restrictions**_, _allowing a user to transfer their AOC BEP20 V2.1 Tokens freely_ (unless they’re in _LTAF_ or _blacklisted_).
 - **Simple Example:** If you’re in RAMS and limited to sending 10 AOC BEP20 V2.1 Tokens out of 100 in 2026, this function removes that limit. You can now send all 100 AOC BEP20 V2.1 Tokens in one go, assuming no other transfer regulations apply. The Mutli-Sig Signers might do this as a very particular reward.
 - **Why It Matters:** _It gives users more freedom to use their tokens once they are granted special permission to use them freely_.
-This function (_excludeFromRAMS_) is mainly _set to allow the AOC BEP20 V2.1 Token (Regular) Distribution Wallet to continue distributing AOC BEP20 V2.1 Tokens to eligible members_, _**holder category**_ by _**holder category**_, without _interruption_, _until the distribution timeframe or deadline allocated to each holder category has expired_.
+This function (**_excludeFromRAMS_**) is _**mainly set to allow the AOC BEP20 V2.1 Token**_ (Regular) _**Distribution Wallet to continue distributing AOC BEP20 V2.1 Tokens to eligible members**_, _**holder category**_ by _**holder category**_, without **_interruption_**, _until the **distribution timeframe** or **deadline allocated to each holder** category has expired_.
 
 ## updateLtafPercentage(uint256 percentage)
 - **What It Does:** This function _**lets the Mutli-Sig Signers  change the LTAF monthly transfer limit percentage**_ (_default is **50%**_). For example, they could set it to 40%, meaning _LTAF users can only transfer 40%_ of their _balance per month_. _Only_ the _Mutli-Sig Signers can make this change_.
