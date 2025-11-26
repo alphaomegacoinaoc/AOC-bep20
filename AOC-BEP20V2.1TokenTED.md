@@ -24,8 +24,8 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 - **Name**: Alpha Omega Coin (AOC)
 - **Symbol**: AOC
 - **Decimals**: 18
-- **Initial Fixed Supply** : 1,000,000,000,000 (1 trillion)
-- **Total Maximum Fixed Supply** : 1,000,000,000,000 (1 trillion) _**No minting and No Burning**_
+- **Initial Fixed Supply** : 1,000,000,000,000 (**1 trillion**)
+- **Total Maximum Fixed Supply** : 1,000,000,000,000 (**1 trillion**) _**No minting and No Burning**_
 - **TYPE**: **U**tility, **D**onation, **C**harity and **P**ayment **T**oken (**UDCPT**) 
 - **Network** / **Blockchain**: **B**inance **S**mart **C**hain (**BSC**)
 - **Version** : Version 2.1 (V2.1)
