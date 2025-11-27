@@ -5,10 +5,13 @@
 
 ## About : AOC BEP20 V2.1 Token Smart Contract
 ### Overview
-**Alpha Omega Coin (_AOC_)**, **The Queen of Cryptocurrencies**, operates on an interoperable **M**onetary, **F**inancial and **E**conomic **G**alaxy (_**AOC MFEG**_) which is composed of **AOC C**oin (=AOC Mother Coin) and several tokens including the AOC BEP20 Token the version 2.1 (= AOC BEP20 V2.1 Token) of which we are dealing with in this Innovative Functionalities Notional Fxplanatory Documentation (=IFNED) .
-AOC BEP20 V2.1 Token smart contract is an ERC20-compliant token with AOC level 2 Market Anti-Manipulation Functionality (MAMF) called Regressive Anti-Manipulation Strategy (RAMS), AOC level 3 Market Anti-Manipulation Functionality (MAMF) called Loyalty Transaction Authorization Functionality (LTAF), blacklisting, etc. 
-AOC BEP20 V2.1 Token smart contract has no burning and no minting features.
-In this IFNED, for Memory Records (MR), Community Education (CE), Administrative Continuity (AC) and for Audit Services (AS) sake, AOC Core Team and AOC Web3 Team are providing technical guidance on AOC BEP20 Token V2.1 smart contract.
+**Alpha Omega Coin (_AOC_)**, **The Queen of Cryptocurrencies**, operates on an interoperable **M**onetary, **F**inancial and **E**conomic **G**alaxy (_**AOC MFEG**_) which is composed of **AOC C**oin (_**=AOC M**other **C**oin_) and **several tokens including** the **AOC BEP20 Token** the **version 2.1** (_**= AOC BEP20 V2.1 Token**_) of which we are dealing with in this **I**nnovative **F**unctionalities **N**otional **E**xplanatory **D**ocumentation (_**=IFNED**_).
+
+**AOC BEP20 V2.1 Token smart contract** is an **ERC20-compliant token** with **AOC level 2 M**arket **A**nti-Manipulation **F**unctionality (_**MAMF**_) called **R**egressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_), **AOC level 3 M**arket **A**nti-**M**anipulation **F**unctionality (_**MAMF**_) called **L**oyalty **T**ransaction **A**uthorization **F**unctionality (_**LTAF**_), **blacklisting**, etc. 
+
+**AOC BEP20 V2.1 Token smart contract** has _**no burning**_ and _**no minting features.**_
+
+In this **IFNED**, for **M**emory **R**ecords (_**MR**_), **C**ommunity **E**ducation (_**CE**_), **A**dministrative **C**ontinuity (_**AC**_) and for **A**udit **S**ervices (_**AS**_) sake, **AOC Core Team and AOC Web3 Team** are _**providing technical guidance**_ on _**AOC BEP20 Token V2.1 smart contract**_.
 
 
 
