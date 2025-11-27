@@ -41,29 +41,50 @@ Similarly, **because of crypto whales, cryptocurrency holders with small and med
 
 The first **Alpha Omega Coin** (_**AOC**_) **Token** (_**=AOC ERC20 V1**_) **launched on October 28, 2020**,which was listed on _**Latoken**_ on _**May 3, 2021**_ : with the _**start price**_ of _**$2**_, _**suffered the same fate**_, till to drop under _**$0.1**_…
 
-PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M) / MARKET ANTI-MANIPULATION SYSTEMS (MAMS) 
-Fortunately, in the end of December 2021, God, through Jesus Christ , inspired AOC CEO and Founder - ABRAHAM Mankponsè Samuel (from Ouessè Wogoudo ; Département des Collines ; Republic of Benin ; West Africa) to resolve the most critical crypto dilemma : the self-centered manipulation of cryptocurrencies by crypto gurus…
-From there, all AOC Mother Coin and all AOC Tokens (AOC ERC20 ; AOC BEP20;...) which form AOC Monetary, Financial and Economic Galaxy (=AOC MFEG), are equipped with multi-level MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M) / MARKET ANTI-MANIPULATION SYSTEMS (MAMS)...
+#### PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M) / MARKET ANTI-MANIPULATION SYSTEMS (MAMS) 
 
-The currently already revealed MARKET ANTI-MANIPULATION ALGORITHMS / PROTOCOLS / FUNCTIONALITIES / STRATEGIES / MECHANISMS / SYSTEMS (=MAMA / MAMP / MAMF / MAMS / MA2M) by God to AOC CEO and Founder are many including the  two fundamental or core ones operating as follows :
-1 - MAMA / MAMP / MAMF / MAMS / MA2M/ MAMS  Level 1 : Progressive Anti-Manipulation Functionality (PAMF)
-1.1 PAMF’s HISTORIC CONTEXT
-By the grace of God, the Regular Distribution of AOC BEP20 V2.1 token started on November 5,  2025, by11 GMT+1. It is  handled by a Dapp (Decentralized Application) the smart contract of which is equipped with one of Alpha Omega Coin (AOC)’s Innovations called : Progressive Anti-Manipulation Functionality (PAMF).
-1.2 PAMF’s DÉFINITION
-The Progressive Anti-Manipulation Functionality (PAMF) is the very first level of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M.
-Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as distribution regulator, the Progressive Anti-Manipulation Functionality (PAMF) is a key mechanism built or implemented into AOC Mother Coin Algorithm and into all AOC Tokens’ Smart Contracts , except  AOC ERC20 Token, by AOC Administration, under Jesus Christ guidance.
-1.3 PAMF’s SYNONYMS
-Progressive Anti-Manipulation Functionality (PAMF) = Progressive Anti-Manipulation Strategy (PAMS) = Progressive Anti-Manipulation Algorithm (PAMA) = Progressive Anti-Manipulation Protocol (PAMP) = Progressive Anti-Manipulation Mechanism (PAMP).
-1.4 PAMF’s PURPOSE
-The primary purpose of the Progressive Anti-Manipulation Functionality (PAMF) is to regulate AOC Mother Coin and all AOC Tokens (including AOC BEP20 V2.1 Token) distribution, based on the algorithmic principle called PMDP (=Permissive Monthly Distributed Percentage) or MPDP (= Monthly Permissive Distributed Percentage). And this, in order to durably and permanently prevent AOC Mother Coin and AOC tokens’ market manipulation and ensure their price stability.
-1.5 PAMF’s OPERATING SYSTEM
-In fact, instead of distributing immediately the totality of AOC Mother Coin and AOC tokens to each holder, AOC Administration uses the PAMF / PAMP/PAMA/ PAMS / PA2M to stagger the distribution of AOC Mother Coin and AOC tokens over an extended period.
-From there, all AOC Mother Coin and AOC tokens’ Members, whether small or large holders, are set to receive their AOC Mother Coin balance and AOC tokens gradually, through a distribution timeframe which, depending on their holding category..
-As far as AOC BEP20 V2.1 Token is concerned, its distribution timeframe varies from three (3) to eight (8) years. To know more about AOC BEP20 V2.1 Token Regular Distribution Plan , kindly follow this link : https://tokendistribution.alphaomegacoin.com/ 
-Therefore, the PAMF / PAMP/PAMA/ PAMS / PA2M is committed to reducing the risk of AOC Mother Coin and AOC tokens market flooding, price dumping and market manipulation, especially by large holders.
-By spreading the Distribution of AOC BEP20 V2.1 token over several months or years through the PAMF / PAMP/PAMA/ PAMS / PA2M, AOC CORE TEAM is showing their willingness which consists in stabilizing, durably and permanently, the price, the value and the market of AOC Mother Coin and AOC tokens, including AOC BEP20 V2.1 token.
-In doing so, AOC CORE TEAM is preventing sudden price drops that can occur when large quantities of tokens are released for sale simultaneously.
-2 - MAMA / MAMP / MAMF / MAMS / MA2M Level 2 : Regressive Anti-Manipulation Strategy (RAMS)
+Fortunately, in the end of **December 2021, God, through Jesus Christ , inspired AOC CEO and Founder - ABRAHAM Mankponsè Samuel** (from Ouessè Wogoudo ; Département des Collines ; Republic of Benin ; West Africa) **to resolve the most critical crypto dilemma : the self-centered manipulation of cryptocurrencies by crypto gurus…**
+
+From there, all **AOC Mother Coin and all AOC Tokens** (AOC ERC20 ; AOC BEP20;...) which form **AOC Monetary, Financial and Economic Galaxy** (_**=AOC MFEG**_), **are equipped with multi-level MARKET ANTI-MANIPULATION ALGORITHMS** (MAMA) / **MARKET ANTI-MANIPULATION PROTOCOLS** (MAMP) / **MARKET ANTI-MANIPULATION FUNCTIONALITIES** (MAMF) / **MARKET ANTI-MANIPULATION STRATEGIES** (MAMS) / **MARKET ANTI-MANIPULATION MECHANISMS** (MA2M) / **MARKET ANTI-MANIPULATION SYSTEMS** (MAMS)...
+
+**The currently already revealed MARKET ANTI-MANIPULATION** ALGORITHMS / **PROTOCOLS** / **FUNCTIONALITIES** / STRATEGIES / **MECHANISMS** / SYSTEMS (**=MAMA** / MAMP / **MAMF** / MAMS / **MA2M**) **by God to AOC CEO and Founder** are many including the  two fundamental or core ones operating as follows :
+
+#### 1 - MAMA / MAMP / MAMF / MAMS / MA2M/ MAMS  Level 1 : **Progressive Anti-Manipulation Functionality (PAMF)**
+
+##### 1.1 PAMF’s HISTORIC CONTEXT
+
+By the grace of God, the _**Regular Distribution of AOC BEP20 V2.1 token**_ started on **November 5,  2025, by11 GMT+1**. It is  handled by a _**Dapp**_ (_**Decentralized Application**_) the smart contract of which is equipped with one of **Alpha Omega Coin** (**AOC**)’s **Innovations** called : _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_).
+
+##### 1.2 PAMF’s DÉFINITION
+
+The _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) is **the very first level** of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M.
+
+Working within **AOC Monetary, Financial and Economic Galaxy** (_**AOC MFEG**_) **as distribution regulator**, the _**Progressive Anti-Manipulation Functionality**_(_**PAMF**_) is a key mechanism built or implemented into _**AOC Mother Coin Algorithm**_ and into all _**AOC Tokens’ Smart Contracts**_ , except  _**AOC ERC20 Token**_, by _**AOC Administration**_, under _**Jesus Christ guidance**_.
+
+##### 1.3 PAMF’s SYNONYMS
+
+_**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) = Progressive Anti-Manipulation Strategy (PAMS) = _**Progressive Anti-Manipulation Algorithm**_ (_**PAMA**_) = Progressive Anti-Manipulation Protocol (PAMP) = _**Progressive Anti-Manipulation Mechanism**_ (_**PAMP**_).
+
+##### 1.4 PAMF’s PURPOSE
+
+The **primary purpose** of the _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) **is to regulate AOC Mother Coin and all AOC Tokens** (including _AOC BEP20 V2.1 Token_) **distribution**, based on the **algorithmic principle** called **PMDP** (=**P**ermissive **M**onthly **D**istributed **P**ercentage) or MPDP (= **M**onthly **P**ermissive **D**istributed **P**ercentage). And this, in order to durably and permanently prevent A**OC Mother Coin and AOC tokens’ market manipulation and ensure their price stability.**
+
+##### 1.5 PAMF’s OPERATING SYSTEM
+
+In fact, **instead of distributing immediately the totality of AOC Mother Coin and AOC tokens to each holder**, AOC Administration uses the PAMF / PAMP/PAMA/ PAMS / PA2M to stagger the distribution of _**AOC Mother Coin**_ and _**AOC tokens**_ over an extended period.
+
+From there, all **AOC Mother Coin and AOC tokens’ Members**, whether small or large holders, **are set to receive their AOC Mother Coin balance and AOC tokens gradually**, through **a distribution timeframe** which, depending on their holding category..
+
+As far as **AOC BEP20 V2.1 Token** is concerned, its **distribution timeframe varies from three (3) to eight (8) years**. To _**know more about AOC BEP20 V2.1 Token Regular Distribution Plan**_ , kindly follow this link : https://tokendistribution.alphaomegacoin.com/
+
+Therefore, the **PAMF / PAMP/PAMA/ PAMS / PA2M is committed to reducing the risk of AOC Mother Coin and AOC tokens market flooding, price dumping and market manipulation, especially by large holders.**
+
+**By spreading the Distribution of AOC BEP20 V2.1 token over several months or years through the PAMF / PAMP/PAMA/ PAMS / PA2M, AOC CORE TEAM is showing their willingness which consists in stabilizing, durably and permanently, the price, the value and the market of AOC Mother Coin and AOC tokens**, including AOC BEP20 V2.1 token.
+
+In doing so, **AOC CORE TEAM** is **preventing sudden price drops** that can occur when large quantities of tokens are released for sale simultaneously.
+
+#### 2 - MAMA / MAMP / MAMF / MAMS / MA2M Level 2 : **R**egressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_)
+
 2.1 RAMS’ HISTORIC CONTEXT
 For AOC Members who freely and voluntarily participated in AOC BEP20 Manual Initiatives in between February 7, 2022 and July 1, 2024, and for those who participated in AOC BEP20 V2.1 Automatic or AOC BEP20 V2.1 Web3 Initiatives via web3.alphaomegacoin.com  , from May 18, 2024 to September 5, 2025, AOC BEP20 V2.1 Token Regular Distribution started on November 5, 2025 by 11 GMT+1….
 While, for contributors who will contribute to AOC Project through November-December 2025 , during the effective AOC 100% Online Aggressive Marketing Campaigns , they will start receiving their AOC BEP20 V2.1 Tokens once the said Aggressive Marketing Campaigns are over…
