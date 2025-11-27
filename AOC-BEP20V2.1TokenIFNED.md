@@ -87,7 +87,7 @@ In doing so, **AOC CORE TEAM** is **preventing sudden price drops** that can occ
 
 #### 2.1 RAMS’ HISTORIC CONTEXT
 
-For AOC Members who freely and voluntarily participated in **AOC BEP20 Manual Initiatives** in between **February 7, 2022** and **July 1, 2024**, and for those who participated in _**AOC BEP20 V2.1 Automatic**_ or _**AOC BEP20 V2.1 Web3 Initiatives**_ via web3.alphaomegacoin.com  , from _**May 18, 2024**_ to _**September 5, 2025**_, **AOC BEP20 V2.1 Token Regular Distribution** started on _**November 5, 2025**_ by **11 GMT+1….**
+For AOC Members who freely and voluntarily participated in **AOC BEP20 Manual Initiatives** in between **February 7, 2022** and **July 1, 2024**, and for those who participated in _**AOC BEP20 V2.1 Automatic**_ or _**AOC BEP20 V2.1 Web3 Initiatives**_ via https://web3.alphaomegacoin.com/  , from _**May 18, 2024**_ to _**September 5, 2025**_, **AOC BEP20 V2.1 Token Regular Distribution** started on _**November 5, 2025**_ by **11 GMT+1….**
 
 While, for _**contributors who will contribute to AOC Project**_ through _**November-December 2025**_ , during the effective **AOC 100% Online Aggressive Marketing Campaigns** , they **will start receiving their AOC BEP20 V2.1 Tokens once the said Aggressive Marketing Campaigns are over…**
 
