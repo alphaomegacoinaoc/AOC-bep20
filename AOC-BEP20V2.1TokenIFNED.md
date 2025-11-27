@@ -14,7 +14,7 @@
 In this **IFNED**, for **M**emory **R**ecords (_**MR**_), **C**ommunity **E**ducation (_**CE**_), **A**dministrative **C**ontinuity (_**AC**_) and for **A**udit **S**ervices (_**AS**_) sake, **AOC Core Team and AOC Web3 Team** are _**providing technical guidance**_ on _**AOC BEP20 Token V2.1 smart contract**_.
 
 
-### Alpha Omega Coin (AOC) Bep20 Token V2 Identification Details :
+## Alpha Omega Coin (AOC) Bep20 Token V2 Identification Details :
 - **Name** : Alpha Omega Coin
 - **Symbol** : AOC
 - **Decimals** : 18
@@ -28,10 +28,10 @@ In this **IFNED**, for **M**emory **R**ecords (_**MR**_), **C**ommunity **E**duc
 - **Pausable** : Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
 - **Blacklist** : Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
 
-### AOC TECHNOLOGICAL INNOVATIONS :
-### ANTI-PRICE-DUMPING AND MARKET ANTI-MANIPULATION FUNCTIONALITIES
+## AOC TECHNOLOGICAL INNOVATIONS :
+## ANTI-PRICE-DUMPING AND MARKET ANTI-MANIPULATION FUNCTIONALITIES
 
-#### PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES
+### PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES
 
 As of **November 27, 2025**,  all the _**30000+ existing cryptocurrencies**_ (=tokes and coins), including **Bitcoin** the crypto-mother, are facing _**deadly price dumping and market volatility**_, caused by the so-called minority crypto-whales (=the biggest crypto holders) who are used to orchestrating **crypto price/value pumping and dumping events** by manipulating the market to their will and to their selfish interests.
 
@@ -41,7 +41,7 @@ Similarly, **because of crypto whales, cryptocurrency holders with small and med
 
 The first **Alpha Omega Coin** (_**AOC**_) **Token** (_**=AOC ERC20 V1**_) **launched on October 28, 2020**,which was listed on _**Latoken**_ on _**May 3, 2021**_ : with the _**start price**_ of _**$2**_, _**suffered the same fate**_, till to drop under _**$0.1**_…
 
-#### PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M) / MARKET ANTI-MANIPULATION SYSTEMS (MAMS) 
+### PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M) / MARKET ANTI-MANIPULATION SYSTEMS (MAMS) 
 
 Fortunately, in the end of **December 2021, God, through Jesus Christ , inspired AOC CEO and Founder - ABRAHAM Mankponsè Samuel** (from Ouessè Wogoudo ; Département des Collines ; Republic of Benin ; West Africa) **to resolve the most critical crypto dilemma : the self-centered manipulation of cryptocurrencies by crypto gurus…**
 
@@ -49,27 +49,27 @@ From there, all **AOC Mother Coin and all AOC Tokens** (AOC ERC20 ; AOC BEP20;..
 
 **The currently already revealed MARKET ANTI-MANIPULATION** ALGORITHMS / **PROTOCOLS** / **FUNCTIONALITIES** / STRATEGIES / **MECHANISMS** / SYSTEMS (**=MAMA** / MAMP / **MAMF** / MAMS / **MA2M**) **by God to AOC CEO and Founder** are many including the  two fundamental or core ones operating as follows :
 
-#### 1 - MAMA / MAMP / MAMF / MAMS / MA2M/ MAMS  Level 1 : **Progressive Anti-Manipulation Functionality (PAMF)**
+### 1 - MAMA / MAMP / MAMF / MAMS / MA2M/ MAMS  Level 1 : **Progressive Anti-Manipulation Functionality (PAMF)**
 
-##### 1.1 PAMF’s HISTORIC CONTEXT
+#### 1.1 PAMF’s HISTORIC CONTEXT
 
 By the grace of God, the _**Regular Distribution of AOC BEP20 V2.1 token**_ started on **November 5,  2025, by11 GMT+1**. It is  handled by a _**Dapp**_ (_**Decentralized Application**_) the smart contract of which is equipped with one of **Alpha Omega Coin** (**AOC**)’s **Innovations** called : _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_).
 
-##### 1.2 PAMF’s DÉFINITION
+#### 1.2 PAMF’s DÉFINITION
 
 The _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) is **the very first level** of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M.
 
 Working within **AOC Monetary, Financial and Economic Galaxy** (_**AOC MFEG**_) **as distribution regulator**, the _**Progressive Anti-Manipulation Functionality**_(_**PAMF**_) is a key mechanism built or implemented into _**AOC Mother Coin Algorithm**_ and into all _**AOC Tokens’ Smart Contracts**_ , except  _**AOC ERC20 Token**_, by _**AOC Administration**_, under _**Jesus Christ guidance**_.
 
-##### 1.3 PAMF’s SYNONYMS
+#### 1.3 PAMF’s SYNONYMS
 
 _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) = Progressive Anti-Manipulation Strategy (PAMS) = _**Progressive Anti-Manipulation Algorithm**_ (_**PAMA**_) = Progressive Anti-Manipulation Protocol (PAMP) = _**Progressive Anti-Manipulation Mechanism**_ (_**PAMP**_).
 
-##### 1.4 PAMF’s PURPOSE
+#### 1.4 PAMF’s PURPOSE
 
 The **primary purpose** of the _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) **is to regulate AOC Mother Coin and all AOC Tokens** (including _AOC BEP20 V2.1 Token_) **distribution**, based on the **algorithmic principle** called **PMDP** (=**P**ermissive **M**onthly **D**istributed **P**ercentage) or MPDP (= **M**onthly **P**ermissive **D**istributed **P**ercentage). And this, in order to durably and permanently prevent A**OC Mother Coin and AOC tokens’ market manipulation and ensure their price stability.**
 
-##### 1.5 PAMF’s OPERATING SYSTEM
+#### 1.5 PAMF’s OPERATING SYSTEM
 
 In fact, **instead of distributing immediately the totality of AOC Mother Coin and AOC tokens to each holder**, AOC Administration uses the PAMF / PAMP/PAMA/ PAMS / PA2M to stagger the distribution of _**AOC Mother Coin**_ and _**AOC tokens**_ over an extended period.
 
@@ -83,9 +83,9 @@ Therefore, the **PAMF / PAMP/PAMA/ PAMS / PA2M is committed to reducing the risk
 
 In doing so, **AOC CORE TEAM** is **preventing sudden price drops** that can occur when large quantities of tokens are released for sale simultaneously.
 
-#### 2 - MAMA / MAMP / MAMF / MAMS / MA2M Level 2 : **R**egressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_)
+### 2 - MAMA / MAMP / MAMF / MAMS / MA2M Level 2 : **R**egressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_)
 
-##### 2.1 RAMS’ HISTORIC CONTEXT
+#### 2.1 RAMS’ HISTORIC CONTEXT
 
 For AOC Members who freely and voluntarily participated in **AOC BEP20 Manual Initiatives** in between **February 7, 2022** and **July 1, 2024**, and for those who participated in _**AOC BEP20 V2.1 Automatic**_ or _**AOC BEP20 V2.1 Web3 Initiatives**_ via web3.alphaomegacoin.com  , from _**May 18, 2024**_ to _**September 5, 2025**_, **AOC BEP20 V2.1 Token Regular Distribution** started on _**November 5, 2025**_ by **11 GMT+1….**
 
@@ -93,17 +93,17 @@ While, for _**contributors who will contribute to AOC Project**_ through _**Nove
 
 From there, and especially from the moment when **AOC BEP20 V2.1 Token** is listed on Decentralized Exchanges (DEXs) like **PANCAKESWAP** and **UNISWAP**, the **Regressive Anti-Manipulation Strategy** (_**RAMS**_) starts working as monthly transactions regulator.
 
-##### 2.2 RAMS’ DEFINITION
+#### 2.2 RAMS’ DEFINITION
 
 The Regressive Anti-Manipulation Strategy (RAMS) is the second level of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M.
 
 Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as a transaction regulator, the Regressive Anti-Manipulation Strategy (RAMS) is a key mechanism built or implemented into AOC Mother Coin Algorithm and into all AOC Tokens’ Smart Contracts , including AOC BEP20 V2 Token, by AOC Administration, under Jesus Christ guidance.
 
-##### 2.3 RAMS’ SYNONYMS
+#### 2.3 RAMS’ SYNONYMS
 
 Regressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_) = **R**egressive **A**nti-**M**anipulation **F**unctionality (_**RAMF**_) = **R**egressive **A**nti-**M**anipulation **A**lgorithm (_**RAMA**_) = **R**egressive **A**nti-**M**anipulation **P**rotocol (_**RAMP**_) = **R**egressive **A**nti-**M**anipulation **M**echanism (_**RA2M**_).
 
-##### 2.4 RAMS’ PURPOSE
+#### 2.4 RAMS’ PURPOSE
 
 The **primary objective** of the RAMS / RAMF / RAMA/ RAMP / RA2M is to prevent market flooding after the token's listing, which could lead to extreme price fluctuations.
 
@@ -111,7 +111,7 @@ In other words, the RAMS / RAMF / RAMA / RAMP / RA2M protects AOC Mother Coin an
 
 By limiting transactions, the RAMS / RAMF / RAMA / RAMP / RA2M helps maintain a more stable and predictable value of AOC Mother Coin and the one of all AOC Tokens, thereby promoting sustainable growth within AOC Community International .
 
-##### 2.5 RAMS’ OPERATING SYSTEM
+#### 2.5 RAMS’ OPERATING SYSTEM
 
 Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as a transaction regulatory mechanism, the RAMS / RAMF / RAMA/ RAMP / RA2M is designed to preserve the stability and value of AOC Mother Coin and the one of all AOC Tokens. It regulates transactions made by Members by setting a Permissive Monthly Percentage (PMP) or Monthly Permissive Percentage (MPP), which determines the amount of tokens that can be transferred to another wallet or exchange during a month, counting from the first day of the month, by 2 PM GMT+1…
 
@@ -141,11 +141,11 @@ In doing so, AOC CORE TEAM is preventing sudden price drops that always occur wi
 
 The convergent impact both of the **Progressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism** (PAMF / PAMP/PAMA/ PAMS / PA2M) via AOC BEP20 V2 Token Regular Distribution Smart Contract , and of the **Regressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism** (RAMF / RAMP/RAMA/ RAMS / RA2M) via AOC BEP20 V2.1 token Smart Contract, lies in their ability to work together to stabilize AOC Coin / AOC Mother Coin and AOC tokens' market and prevent their market manipulation.
 
-#### PART D - Alpha Omega Coin (AOC), The Queen of Cryptocurrencies
+### PART D - Alpha Omega Coin (AOC), The Queen of Cryptocurrencies
 
 With its **PAMF / PAMP/PAMA/ PAMS / PA2M** and **RAMF / RAMP/RAMA/ RAMS / RA2M** as previously demonstrated, combined to its **Jesus Christ-focused spiritual , humanitarian, social,.., and philanthropic teachings and values**, making of it **the very first cryptocurrency to embrace and spread openly the Holistic Gospel of Jesus of Nazareth, and the very first one to permanently escape from market manipulation, Alpha Omega Coin (AOC) is nothing else than The Queen of Cryptocurrencies…**
 
-#### LTAF : Loyality Transaction Authorization Function
+### LTAF : Loyality Transaction Authorization Function
 
 
 LTAF provides flexibility for authorized AOC Still Committed Actors (e.g., Administrators ; Members; or trusted entities) to conduct significant transactions when necessary* (mainly in charity-based actions), bypassing the restrictive RAMF / RAMP/RAMA/ RAMS / RA2M limits during a month or a certain number of months…Not every month nor life long…
