@@ -14,29 +14,32 @@
 In this **IFNED**, for **M**emory **R**ecords (_**MR**_), **C**ommunity **E**ducation (_**CE**_), **A**dministrative **C**ontinuity (_**AC**_) and for **A**udit **S**ervices (_**AS**_) sake, **AOC Core Team and AOC Web3 Team** are _**providing technical guidance**_ on _**AOC BEP20 Token V2.1 smart contract**_.
 
 
+### Alpha Omega Coin (AOC) Bep20 Token V2 Identification Details :
+- **Name** : Alpha Omega Coin
+- **Symbol** : AOC
+- **Decimals** : 18
+- **Initial Fixed Supply** : 1,000,000,000,000 (_**1 trillion**_)
+- **Total Maximum Fixed Supply** : 1,000,000,000,000 (_**1 trillion**_) _**No minting and No Burning**_
+- **TYPE** : **U**tility, **D**onation, **C**harity and **P**ayment **T**oken (_**UDCPT**_)
+- **Network / Blockchain** : **B**inance **S**mart **C**hain (_**BSC**_)
+- **Standard** : **B**inance _Smart Chain_ **E**volution **P**roposal **20** (_**BEP20**_)
+- **Version** : Version 2.1 (_**V2.1**_)
+- **Upgradeability** : Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
+- **Pausable** : Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
+- **Blacklist** : Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
 
-Alpha Omega Coin (AOC) Bep20 Token V2 Identification Details
-Name: Alpha Omega Coin
-Symbol: AOC
-Decimals: 18
-Initial Fixed Supply : 1,000,000,000,000 (1 trillion)
-Total Maximum Fixed Supply : 1,000,000,000,000 (1 trillion) No minting and No Burning
-TYPE: Utility, Donation, Charity and Payment Token (UDCPT)
-Network / Blockchain: Binance Smart Chain (BSC)
-Standard: Binance Smart Chain Evolution Proposal 20 (BEP20)
-Version : Version 2.1 (V2.1)
-Upgradeability: Uses OpenZeppelin UUPS (Universal Upgradeable Proxy Standard)
-Pausable: Multi-sig Owners can pause/unpause transfers for security sake, migration sake or for a community-oriented intervention
-Blacklist: Multi-Sig Owners can block addresses from sending/receiving tokens for security sake, scam prevention, protection from malicious attacks and also for internal regulations sake
+### AOC TECHNOLOGICAL INNOVATIONS :
+### ANTI-PRICE-DUMPING AND MARKET ANTI-MANIPULATION FUNCTIONALITIES
 
-AOC TECHNOLOGICAL INNOVATIONS :
-ANTI-PRICE-DUMPING AND MARKET ANTI-MANIPULATION FUNCTIONALITIES
+#### PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES
 
-PART A - DEADLY CHRONIC VOLATILITY OF EXISTING CRYPTOCURRENCIES
-As of November 27, 2025,  all the 30000+ existing cryptocurrencies (=tokes and coins), including Bitcoin the crypto-mother, are facing deadly price dumping and market volatility, caused by the so-called minority crypto-whales (=the biggest crypto holders) who are used to orchestrating crypto price/value pumping and dumping events by manipulating the market to their will and to their selfish interests.
-In doing so, crypto whales have transformed the cryptosphere into a crypto jungle where the strongest dominate the weakest…
-Similarly, because of crypto whales, cryptocurrency holders with small and medium portfolios, fearing a (very) long-term downward trend, are selling off their crypto holdings, thus dispossessing themselves of their crypto wealth.
-The first Alpha Omega Coin (AOC) Token (=AOC ERC20 V1) launched on October 28, 2020,which was listed on Latoken on May 3, 2021 : with the start price of $2, suffered the same fate, till to drop under $0.1…
+As of **November 27, 2025**,  all the _**30000+ existing cryptocurrencies**_ (=tokes and coins), including **Bitcoin** the crypto-mother, are facing _**deadly price dumping and market volatility**_, caused by the so-called minority crypto-whales (=the biggest crypto holders) who are used to orchestrating **crypto price/value pumping and dumping events** by manipulating the market to their will and to their selfish interests.
+
+In doing so, _**crypto whales have transformed the cryptosphere into a crypto jungle where the strongest dominate the weakest…**_
+
+Similarly, **because of crypto whales, cryptocurrency holders with small and medium portfolios**, fearing a (very) long-term downward trend, _**are selling off their crypto holdings**_, thus dispossessing themselves of their crypto wealth.
+
+The first **Alpha Omega Coin** (_**AOC**_) **Token** (_**=AOC ERC20 V1**_) **launched on October 28, 2020**,which was listed on _**Latoken**_ on _**May 3, 2021**_ : with the _**start price**_ of _**$2**_, _**suffered the same fate**_, till to drop under _**$0.1**_…
 
 PART B - GOD INSPIRED CRYPTO MARKET ANTI-MANIPULATION ALGORITHMS (MAMA) / MARKET ANTI-MANIPULATION PROTOCOLS (MAMP) / MARKET ANTI-MANIPULATION FUNCTIONALITIES (MAMF) / MARKET ANTI-MANIPULATION STRATEGIES (MAMS) / MARKET ANTI-MANIPULATION MECHANISMS (MA2M) / MARKET ANTI-MANIPULATION SYSTEMS (MAMS) 
 Fortunately, in the end of December 2021, God, through Jesus Christ , inspired AOC CEO and Founder - ABRAHAM Mankponsè Samuel (from Ouessè Wogoudo ; Département des Collines ; Republic of Benin ; West Africa) to resolve the most critical crypto dilemma : the self-centered manipulation of cryptocurrencies by crypto gurus…
