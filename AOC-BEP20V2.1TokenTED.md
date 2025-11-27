@@ -21,7 +21,7 @@ In this **TED**, for **M**emory **R**ecords (**MR**), **C**ommunity **E**ducatio
 
 
 # Part 1 : Alpha Omega Coin  (AOC) BEP20 V2.1 Token  Identification Core Details
-- **Name**: Alpha Omega Coin (AOC)
+- **Name**: Alpha Omega Coin
 - **Symbol**: AOC
 - **Decimals**: 18
 - **Initial Fixed Supply** : 1,000,000,000,000 (**1 trillion**)
