@@ -85,45 +85,74 @@ In doing so, **AOC CORE TEAM** is **preventing sudden price drops** that can occ
 
 #### 2 - MAMA / MAMP / MAMF / MAMS / MA2M Level 2 : **R**egressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_)
 
-2.1 RAMS’ HISTORIC CONTEXT
-For AOC Members who freely and voluntarily participated in AOC BEP20 Manual Initiatives in between February 7, 2022 and July 1, 2024, and for those who participated in AOC BEP20 V2.1 Automatic or AOC BEP20 V2.1 Web3 Initiatives via web3.alphaomegacoin.com  , from May 18, 2024 to September 5, 2025, AOC BEP20 V2.1 Token Regular Distribution started on November 5, 2025 by 11 GMT+1….
-While, for contributors who will contribute to AOC Project through November-December 2025 , during the effective AOC 100% Online Aggressive Marketing Campaigns , they will start receiving their AOC BEP20 V2.1 Tokens once the said Aggressive Marketing Campaigns are over…
-From there, and especially from the moment when AOC BEP20 V2.1 Token is listed on Decentralized Exchanges (DEXs) like PANCAKESWAP and UNISWAP, the Regressive Anti-Manipulation Strategy (RAMS) starts working as monthly transactions regulator.
-2.2 RAMS’ DEFINITION
+##### 2.1 RAMS’ HISTORIC CONTEXT
+
+For AOC Members who freely and voluntarily participated in **AOC BEP20 Manual Initiatives** in between **February 7, 2022** and **July 1, 2024**, and for those who participated in _**AOC BEP20 V2.1 Automatic**_ or _**AOC BEP20 V2.1 Web3 Initiatives**_ via web3.alphaomegacoin.com  , from _**May 18, 2024**_ to _**September 5, 2025**_, **AOC BEP20 V2.1 Token Regular Distribution** started on _**November 5, 2025**_ by **11 GMT+1….**
+
+While, for _**contributors who will contribute to AOC Project**_ through _**November-December 2025**_ , during the effective **AOC 100% Online Aggressive Marketing Campaigns** , they **will start receiving their AOC BEP20 V2.1 Tokens once the said Aggressive Marketing Campaigns are over…**
+
+From there, and especially from the moment when **AOC BEP20 V2.1 Token** is listed on Decentralized Exchanges (DEXs) like **PANCAKESWAP** and **UNISWAP**, the **Regressive Anti-Manipulation Strategy** (_**RAMS**_) starts working as monthly transactions regulator.
+
+##### 2.2 RAMS’ DEFINITION
+
 The Regressive Anti-Manipulation Strategy (RAMS) is the second level of AOC Mother Coin and all AOC Tokens’ MAMA / MAMP / MAMF / MAMS / MA2M.
+
 Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as a transaction regulator, the Regressive Anti-Manipulation Strategy (RAMS) is a key mechanism built or implemented into AOC Mother Coin Algorithm and into all AOC Tokens’ Smart Contracts , including AOC BEP20 V2 Token, by AOC Administration, under Jesus Christ guidance.
-2.3 RAMS’ SYNONYMS
-Regressive Anti-Manipulation Strategy (RAMS) = Regressive Anti-Manipulation Functionality (RAMF) = Regressive Anti-Manipulation Algorithm (RAMA) = Regressive Anti-Manipulation Protocol (RAMP) = Regressive Anti-Manipulation Mechanism (RA2M).
-2.4 RAMS’ PURPOSE
-The primary objective of the RAMS / RAMF / RAMA/ RAMP / RA2M is to prevent market flooding after the token's listing, which could lead to extreme price fluctuations.
+
+##### 2.3 RAMS’ SYNONYMS
+
+Regressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_) = **R**egressive **A**nti-**M**anipulation **F**unctionality (_**RAMF**_) = **R**egressive **A**nti-**M**anipulation **A**lgorithm (_**RAMA**_) = **R**egressive **A**nti-**M**anipulation **P**rotocol (_**RAMP**_) = **R**egressive **A**nti-**M**anipulation **M**echanism (_**RA2M**_).
+
+##### 2.4 RAMS’ PURPOSE
+
+The **primary objective** of the RAMS / RAMF / RAMA/ RAMP / RA2M is to prevent market flooding after the token's listing, which could lead to extreme price fluctuations.
+
 In other words, the RAMS / RAMF / RAMA / RAMP / RA2M protects AOC Mother Coin and all AOC tokens (including AOC BEP20 V2.1 Token) , AOC ecosystem and market from price dumping and manipulation by limiting transaction sizes, promoting stability and long-term commitment from holders.
+
 By limiting transactions, the RAMS / RAMF / RAMA / RAMP / RA2M helps maintain a more stable and predictable value of AOC Mother Coin and the one of all AOC Tokens, thereby promoting sustainable growth within AOC Community International .
-5 RAMS’ OPERATING SYSTEM
+
+##### 2.5 RAMS’ OPERATING SYSTEM
+
 Working within AOC Monetary, Financial and Economic Galaxy (AOC MFEG) as a transaction regulatory mechanism, the RAMS / RAMF / RAMA/ RAMP / RA2M is designed to preserve the stability and value of AOC Mother Coin and the one of all AOC Tokens. It regulates transactions made by Members by setting a Permissive Monthly Percentage (PMP) or Monthly Permissive Percentage (MPP), which determines the amount of tokens that can be transferred to another wallet or exchange during a month, counting from the first day of the month, by 2 PM GMT+1…
-Within AOC BEP20 V2.1 Token ecosystem, the RAMS / RAMF / RAMA/ RAMP / RA2M is enforced through a levels mapping, with specific time periods and decreasing monthly transfer limits through years as as follows :
-Period of time N°1 : 1 Jan 2022 – 1 Jan 2024 → 20% transfer limit 
-Period of time N°2 : 2 Jan 2024 – 1 Jan 2026 → 15% transfer limit 
-Period of time N°3 : 2 Jan 2026 – 1 Jan 2028 → 10% transfer limit 
-Period of time N°4 : 2 Jan 2028 and onwards (till the second coming of Jesus Christ of Nazareth / the end of the world) → 5% transfer limit
-REMINDER: 20% , 15%, 10% and 5% are each called MPP (Monthly Permissive Percentage) or PMP (Permissive Monthly Percentage).
-PRECISIONS :
-For Distribution sake, AOC BEP20  V2.1 Token Distribution Wallet is excluded from RAMS. -Once the MPP or the PMP is reached (during a single or multiple transaction) in the course of a month, there may be new entering transactions..But no outgoing transaction is possible during the same month…Holders must wait until the next month's first day to be able to transact again…
+
+Within AOC BEP20 V2.1 Token ecosystem, the **RAMS / RAMF / RAMA/ RAMP / RA2M is enforced through a levels mapping**, with specific time periods and decreasing monthly transfer limits through years as as follows :
+
+**Period of time N°1** : 1 Jan 2022 – 1 Jan 2024 → **20%** transfer limit 
+
+**Period of time N°2** : 2 Jan 2024 – 1 Jan 2026 → **15%** transfer limit 
+
+**Period of time N°3** : 2 Jan 2026 – 1 Jan 2028 → **10%** transfer limit 
+
+**Period of time N°4** : 2 Jan 2028 and onwards (till the second coming of Jesus Christ of Nazareth / the end of the world) → **5%** transfer limit
+
+**REMINDER: 20% , 15%, 10% and 5%** are each called **MPP** (**M**onthly **P**ermissive **P**ercentage) or **PMP** (**P**ermissive **M**onthly **P**ercentage).
+
+**PRECISIONS :**
+
+- For Distribution sake, AOC BEP20  V2.1 Token Distribution Wallet is excluded from RAMS. -Once the MPP or the PMP is reached (during a single or multiple transaction) in the course of a month, there may be new entering transactions..But no outgoing transaction is possible during the same month…Holders must wait until the next month's first day to be able to transact again…
+  
 Therefore, the RAMS / RAMF / RAMA/ RAMP / RA2M is committed to reducing the risk of AOC Mother Coin and AOC tokens market flooding, price dumping and market manipulation, especially by large holders.
+
 By limiting the monthly transaction of AOC BEP20 V2.1 token over several months or years through the RAMS / RAMF / RAMA/ RAMP / RA2M, AOC CORE TEAM is showing their willingness which consists in stabilizing, durably and permanently, the price, the value and the market of AOC Mother Coin and AOC tokens, including AOC BEP20 V2.1 token.
+
 In doing so, AOC CORE TEAM is preventing sudden price drops that always occur within the existing crypto-space when large quantities of tokens are released for sale simultaneously.
 
-PART C - PAMF / PAMP / PAMA / PAMS / PA2M and RAMS / RAMF / RAMA / RAMP / RA2M CONVERGENT IMPACT
-The convergent impact both of the Progressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism (PAMF / PAMP/PAMA/ PAMS / PA2M) via AOC BEP20 V2 Token Regular Distribution Smart Contract , and of the Regressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism (RAMF / RAMP/RAMA/ RAMS / RA2M) via AOC BEP20 V2.1 token Smart Contract, lies in their ability to work together to stabilize AOC Coin / AOC Mother Coin and AOC tokens' market and prevent their market manipulation.
+#### PART C - PAMF / PAMP / PAMA / PAMS / PA2M and RAMS / RAMF / RAMA / RAMP / RA2M CONVERGENT IMPACT
 
-PART D - Alpha Omega Coin (AOC), The Queen of Cryptocurrencies
-With its PAMF / PAMP/PAMA/ PAMS / PA2M and RAMF / RAMP/RAMA/ RAMS / RA2M as previously demonstrated, combined to its Jesus Christ-focused spiritual , humanitarian, social,.., and philanthropic teachings and values, making of it the very first cryptocurrency to embrace and spread openly the Holistic Gospel of Jesus of Nazareth, and the very first one to permanently escape from market manipulation, Alpha Omega Coin (AOC) is nothing else than The Queen of Cryptocurrencies…
+The convergent impact both of the **Progressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism** (PAMF / PAMP/PAMA/ PAMS / PA2M) via AOC BEP20 V2 Token Regular Distribution Smart Contract , and of the **Regressive Anti-Manipulation / Functionality/ Protocol / Algorithm / Strategy /Mechanism** (RAMF / RAMP/RAMA/ RAMS / RA2M) via AOC BEP20 V2.1 token Smart Contract, lies in their ability to work together to stabilize AOC Coin / AOC Mother Coin and AOC tokens' market and prevent their market manipulation.
 
-LTAF : Loyality Transaction Authorization Function
+#### PART D - Alpha Omega Coin (AOC), The Queen of Cryptocurrencies
+
+With its **PAMF / PAMP/PAMA/ PAMS / PA2M** and **RAMF / RAMP/RAMA/ RAMS / RA2M** as previously demonstrated, combined to its **Jesus Christ-focused spiritual , humanitarian, social,.., and philanthropic teachings and values**, making of it **the very first cryptocurrency to embrace and spread openly the Holistic Gospel of Jesus of Nazareth, and the very first one to permanently escape from market manipulation, Alpha Omega Coin (AOC) is nothing else than The Queen of Cryptocurrencies…**
+
+#### LTAF : Loyality Transaction Authorization Function
 
 
 LTAF provides flexibility for authorized AOC Still Committed Actors (e.g., Administrators ; Members; or trusted entities) to conduct significant transactions when necessary* (mainly in charity-based actions), bypassing the restrictive RAMF / RAMP/RAMA/ RAMS / RA2M limits during a month or a certain number of months…Not every month nor life long…
-For AOC BEP20 V2.1 token, the default LTAF percentage is 50%...While the maximum is 70%.
-If you have 100 AOC BEP20 V2 tokens in a month and you’re added to LTAF, you can transfer or trade 50 AOC to 80 AOC. This helps you realise a huge budget project or business… The admin uses the LTAF function to motivate results-driving AOC actors who keep fighting for AOC growth…
+
+For AOC BEP20 V2.1 token, the default **LTAF percentage is 50%**...While the **maximum is 70%.**
+
+If you have 100 AOC BEP20 V2 tokens in a month and you’re added to LTAF, you can transfer or trade 50 AOC to 80 AOC. This helps you realise a huge budget project or business… The admin uses the **LTAF** function to motivate results-driving AOC actors who keep fighting for AOC growth…
 
 
  
