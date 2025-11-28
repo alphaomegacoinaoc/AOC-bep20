@@ -55,7 +55,7 @@ From there, all **AOC Mother Coin and all AOC Tokens** (**AOC ERC20** ; **AOC BE
 
 #### 1.1 PAMF’s HISTORIC CONTEXT
 
-By the grace of God, the _**Regular Distribution of AOC BEP20 V2.1 token**_ started on **November 5,  2025, by11 GMT+1**. It is  handled by a _**Dapp**_ (_**Decentralized Application**_) the smart contract of which is equipped with one of **Alpha Omega Coin** (**AOC**)’s **Innovations** called : _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_).
+By the grace of God, the _**Regular Distribution of AOC BEP20 V2.1 token**_ started on **November 5,  2025, by11 GMT+1**. It is  handled by a _**Dapp**_ (_**Decentralized Application**_) the smart contract of which is equipped with **one** of **Alpha Omega Coin** (**AOC**)’s **Innovative, Revolutionary and Reformist Cryptographic Algorithms (I2RCAs)** called : _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_).
 
 #### 1.2 PAMF’s DÉFINITION
 
