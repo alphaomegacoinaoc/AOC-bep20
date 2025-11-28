@@ -154,7 +154,7 @@ LTAF provides flexibility for authorized AOC Still Committed Actors (e.g., Admin
 
 For **_AOC BEP20 V2.1_** token, the default **_LTAF percentage is 50%_**...While the **maximum is 70%.**
 
-If you have **100 AOC BEP20 V2 tokens** in a month and you’re added to _LTAF_, you can transfer or trade _50 AOC_ to _80 AOC_. This helps you realise a huge budget project or business… The admin uses the **_LTAF_** function to motivate results-driving AOC actors who keep fighting for AOC growth…
+If you have **100 AOC BEP20 V2 tokens** in a month and you’re added to _LTAF_, you can transfer or trade _50 AOC BEP20 V2.1_ to _70 AOC BEP20 V2.1_. This helps you realise a huge budget project or business… The admin uses the **_LTAF_** function to motivate results-driving AOC actors who keep fighting for AOC growth…
 
 
  
