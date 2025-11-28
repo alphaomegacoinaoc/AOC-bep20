@@ -69,15 +69,15 @@ _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) = **P**rogressive
 
 #### 1.4 PAMF’s PURPOSE
 
-The **primary purpose** of the _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) **is to regulate AOC Mother Coin and all AOC Tokens** (including _AOC BEP20 V2.1 Token_) **distribution**, based on the **algorithmic principle** called **PMDP** (=**P**ermissive **M**onthly **D**istributed **P**ercentage) or MPDP (= **M**onthly **P**ermissive **D**istributed **P**ercentage). And this, in order to durably and permanently prevent A**OC Mother Coin and AOC tokens’ market manipulation and ensure their price stability.**
+The **primary purpose** of the _**Progressive Anti-Manipulation Functionality**_ (_**PAMF**_) **is to regulate AOC Mother Coin and all AOC Tokens** (including _AOC BEP20 V2.1 Token_) **distribution**, based on the **algorithmic principle** called **PMDP** (=**P**ermissive **M**onthly **D**istributive **P**ercentage) or MPDP (= **M**onthly **P**ermissive **D**istributive **P**ercentage). And this, in order to durably and permanently prevent A**OC Mother Coin and AOC tokens’ market manipulation and ensure their price stability.**
 
 #### 1.5 PAMF’s OPERATING SYSTEM
 
 In fact, **instead of distributing immediately the totality of AOC Mother Coin and AOC tokens to each holder**, AOC Administration uses the PAMF / PAMP/PAMA/ PAMS / PA2M to stagger the distribution of _**AOC Mother Coin**_ and _**AOC tokens**_ over an extended period.
 
-From there, all **_AOC Mother Coin and AOC tokens_’ _Members_**, whether small or large holders, **are set to receive their _AOC Mother Coin_ balance and AOC tokens gradually**, through **a distribution timeframe** which, depending on their holding category..
+From there, all **_AOC Mother Coin and AOC tokens_’ _Members_**, whether small or large holders, **are set to gradually receive their  _AOC Mother Coin_ and AOC tokens balance**, through **a distribution timeframe**, depending on their holding category..
 
-As far as **AOC BEP20 V2.1 Token** is concerned, its **distribution timeframe varies from three (3) to eight (8) years**. To _**know more about AOC BEP20 V2.1 Token Regular Distribution Plan**_ , kindly follow this link : https://tokendistribution.alphaomegacoin.com/
+As far as **AOC BEP20 V2.1 Token** is concerned, its **category-based distribution timeframe varies from three (3) to eight (8) years**. To _**know more about AOC BEP20 V2.1 Token Regular Distribution Plan**_ , kindly follow this link : https://tokendistribution.alphaomegacoin.com/
 
 Therefore, the **_PAMF_ / _PAMP_ / _PAMA_ / _PAMS_ / _PA2M_ is committed to reducing the risk of _AOC Mother Coin_ and _AOC tokens_ market _flooding_, _price dumping_ and _market manipulation_, especially by large holders.**
 
