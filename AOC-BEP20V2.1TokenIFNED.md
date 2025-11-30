@@ -99,7 +99,7 @@ From there, and especially from the moment when **_AOC BEP20 V2.1 Token_** is li
 
 The **R**egressive **A**nti-**M**anipulation **S**trategy (_**RAMS**_) is the second level of **_AOC Mother Coin_** and all _AOC Tokens_’ _**MAMA**_ / **_MAMP_** / **_MAMF_** / **_MAMS_** / **_MA2M_**.
 
-Working within **AOC M**onetary, **F**inancial and **E**conomic **G**alaxy (**AOC MFEG**) as a transaction regulator, the **R**egressive **A**nti-**M**anipulation **S**trategy (**RAMS**) is a key mechanism built or implemented into **_AOC Mother Coin_** Algorithm and into all AOC Tokens’ Smart Contracts , including **_AOC BEP20 V2 Token_**, by AOC Administration, under Jesus Christ guidance.
+Working within **AOC M**onetary, **F**inancial and **E**conomic **G**alaxy (**AOC MFEG**) as a transaction regulator, the **R**egressive **A**nti-**M**anipulation **S**trategy (**RAMS**) is a key mechanism built or implemented into **_AOC Mother Coin_** Algorithm and into all AOC Tokens’ Smart Contracts , including **_AOC BEP20 V2.1 Token_**, by AOC Administration, under Jesus Christ guidance.
 
 #### 2.3 RAMS’ SYNONYMS
 
