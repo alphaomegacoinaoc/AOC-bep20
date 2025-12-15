@@ -228,18 +228,18 @@ contract MultiSigTokenVault is
     }
 
     // Emergency controls
-    function pause() external onlySigner {
+    function pause() external onlyMultiSig {
         _pause();
     }
 
-    function unpause() external onlySigner {
+    function unpause() external onlyMultiSig {
         _unpause();
     }
 
     // Configuration: update only the transaction timeout (in seconds)
     function setTransactionTimeout(uint256 newTransactionTimeoutSeconds)
         external
-        onlySigner
+        onlyMultiSig
         whenNotPaused
     {
         require(newTransactionTimeoutSeconds > 0, "Timeout must be > 0");
