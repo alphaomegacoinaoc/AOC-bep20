@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity 0.8.24;
 
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
@@ -10,10 +10,11 @@ import "@openzeppelin/contracts-upgradeable/security/PausableUpgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/security/ReentrancyGuardUpgradeable.sol";
 import "./library/DateTime.sol";
 
-contract AlphaOmegaCoin is
+contract AlphaOmegaCoinV2 is
     Initializable,
     ContextUpgradeable,
     IERC20Upgradeable,
+    // IERC20MetadataUpgradeable,
     OwnableUpgradeable,
     PausableUpgradeable,
     ReentrancyGuardUpgradeable,
@@ -66,6 +67,7 @@ contract AlphaOmegaCoin is
     event ExcludedFromLTAF(address indexed account);
     event LtafPercentageUpdated(uint256 percentage);
 
+    uint256 public versionNumber;
     /// @custom:oz-upgrades-unsafe-allow constructor
     constructor() {
     _disableInitializers();
@@ -225,7 +227,7 @@ contract AlphaOmegaCoin is
         }
     }
     function updateLtafPercentage(uint256 percentage) external onlyOwner whenNotPaused {
-        require(percentage > 0, "Invalid percentage");
+        require(percentage > 0 && percentage <= 100, "Invalid percentage");
         ltafPercentage = percentage;
         emit LtafPercentageUpdated(ltafPercentage);
     }
@@ -237,9 +239,11 @@ contract AlphaOmegaCoin is
     uint256 currentTimestamp = block.timestamp;
     (uint256 year, uint256 month, uint256 day) = DateTimeLibrary.timestampToDate(currentTimestamp);
 
+    if(sender != owner()) {
     _validateTransferRestrictions(sender, year, month);
+    }
 
-    if (includedInLTAF[sender] || !excludedFromRAMS[sender]) {
+    if (sender != owner() && (includedInLTAF[sender] || !excludedFromRAMS[sender])) {
         if (day <= 1 || year != userInfo[sender].year || month != userInfo[sender].month || userInfo[sender].level == 0) {
             updateUserInfo(sender, year, month);
         }
@@ -289,6 +293,8 @@ contract AlphaOmegaCoin is
     }
 
     function _approve(address account, address spender, uint256 amount) internal virtual {
+        require(account != address(0), "Zero account");
+        require(spender != address(0), "Zero spender");
         _allowances[account][spender] = amount;
         emit Approval(account, spender, amount);
     }
